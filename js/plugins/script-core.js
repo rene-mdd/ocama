@@ -928,7 +928,7 @@
 
 			$(window).on('scroll hotale-set-sticky-mobile-navigation', function(){
 
-				if( hotale_display == 'mobile-landscape' || hotale_display == 'mobile-portrait' || hotale_display == 'tablet' ){
+				// if( hotale_display == 'mobile-landscape' || hotale_display == 'mobile-portrait' || hotale_display == 'tablet' ){
 
 					var page_offset = parseInt($('html').css('margin-top'));
 
@@ -951,7 +951,7 @@
 							t.mobile_menu.css('display', 'block');
 						}
 					}
-				}
+				// }
 
 			});
 
