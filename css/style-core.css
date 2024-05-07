@@ -1055,7 +1055,7 @@ input[type="reset"]:focus {
 
 .hotale-top-bar-right-social {
 	display: inline;
-	margin-right: 10px;
+	margin-right: 60px;
 }
 
 .hotale-top-bar-right-social a {
@@ -8385,6 +8385,9 @@ span.paypal-button-text.true {
 	padding-top: 40px;
 	margin-top: -40px;
 }
+.landing-page-container {
+	height: calc(100vh - 75px);
+}
 
 @media only screen and (max-width: 999px) {
 	#gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {
@@ -8703,9 +8706,7 @@ textarea.input {
 
 /* additional styles */
 .landing-page-text-wrapper {
-	background-color: #5A86AD
-	;
-
+	background-color: #5A86AD;
 }
 .landing-page-text {
 	padding: 100px 0;
