@@ -5240,13 +5240,13 @@ body .hotale-mobile-header .hotale-logo {
 /*--- mobile landscape style ---*/
 @media only screen and (max-width: 767px) {
 	body.hotale-body-front .hotale-container {
-		max-width: 500px;
+		/* max-width: 500px; */
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 
 	body.hotale-body-front .gdlr-core-container {
-		max-width: 500px;
+		/* max-width: 500px; */
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -8385,6 +8385,7 @@ span.paypal-button-text.true {
 	padding-top: 40px;
 	margin-top: -40px;
 }
+
 .landing-page-container {
 	height: calc(100vh - 75px);
 }
@@ -8705,16 +8706,75 @@ textarea.input {
 }
 
 /* additional styles */
-.landing-page-text-wrapper {
-	background-color: #5A86AD;
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: URL('./fonts/CormorantGaramond-Bold.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-BoldItalic.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-Italic.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-Light.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-LightItalic.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-Medium.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-MediumItalic.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-Regular.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-SemiBold.ttf') format('truetype'),
+		URL('./fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype'),
 }
+
+body {
+	font-family: 'Cormorant Garamond';
+}
+
+.landing-page-text-wrapper {
+	background-color: #849ca8;
+}
+
 .landing-page-text {
 	padding: 100px 0;
 	max-width: 900px;
 	text-align: center;
 	margin: auto;
 }
+
 .hotale-page-wrapper .landing-page-text h1 {
 	font-weight: 300;
 	color: white;
+}
+
+.villas-wrapper {
+	background-color: #f7f7f7;
+}
+
+.gdlr-core-pbf-wrapper-content .flex-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.experiences-wrapper {
+	background-color: #f3f3f3;
+}
+
+.gdlr-core-pbf-element .gdlr-core-item-pdb {
+	padding-bottom: 0;
+	;
+}
+
+.gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .gdlr-core-title-item-title {
+	margin-bottom: 10px;
+}
+
+.image-container-width .side-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+	.gdlr-core-pbf-wrapper .image-container-width {
+		max-width: none;
+	}
+}
+.gdlr-core-page-builder-body .landing-page-container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
