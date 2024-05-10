@@ -16,6 +16,40 @@
  * 1.0 - Reset
  */
 
+ /* additional styles top */
+ /* @font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-BoldItalic.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-Italic.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-Light.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-LightItalic.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-Medium.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-MediumItalic.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-Regular.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-SemiBold.ttf') format('ttf'),
+		url('./fonts/CormorantGaramond-SemiBoldItalic.ttf') format('ttf'),
+} */
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('./fonts/CormorantGaramond-Light.ttf') format('ttf');
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('./fonts/CormorantGaramond-Medium.ttf') format('ttf');
+	font-weight: 400;
+}
+
+body {
+	font-family: 'Cormorant Garamond';
+}
+
 html,
 body,
 div,
@@ -2916,6 +2950,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 .hotale-copyright-container {
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	margin: auto;
 }
 
 .hotale-copyright-text {
@@ -5145,7 +5180,6 @@ body .hotale-mobile-header .hotale-logo {
 		width: 100%;
 		margin-bottom: 10px;
 	}
-
 }
 
 .hotale-header-wrap.hotale-header-style-plain,
@@ -5160,6 +5194,9 @@ body .hotale-mobile-header .hotale-logo {
 }
 
 @media only screen and (max-width: 999px) {
+	.gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .second-section-title {
+		font-size: 45px;
+	}
 
 	body {
 		width: 100%;
@@ -8687,7 +8724,7 @@ span.paypal-button-text.true {
 #gdlr-core-column-23:hover .gdlr-core-pbf-column-content-margin .gdlr-core-pbf-background-wrap {}
 
 #gdlr-core-social-network-1.gdlr-core-social-network-item .gdlr-core-social-network-icon:hover {
-	background-color: #df8961 !important;
+	background-color: #013220 !important;
 }
 
 #gdlr-core-social-network-1.gdlr-core-social-network-item .gdlr-core-social-network-icon:hover {
@@ -8706,23 +8743,6 @@ textarea.input {
 }
 
 /* additional styles */
-@font-face {
-	font-family: 'Cormorant Garamond';
-	src: URL('./fonts/CormorantGaramond-Bold.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-BoldItalic.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-Italic.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-Light.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-LightItalic.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-Medium.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-MediumItalic.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-Regular.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-SemiBold.ttf') format('truetype'),
-		URL('./fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype'),
-}
-
-body {
-	font-family: 'Cormorant Garamond';
-}
 
 .landing-page-text-wrapper {
 	background-color: #849ca8;
@@ -8740,8 +8760,12 @@ body {
 	color: white;
 }
 
+.dining-wrapper {
+	background-color: white;
+}
+
 .villas-wrapper {
-	background-color: #f7f7f7;
+	background-color: #f3f3f3;
 }
 
 .gdlr-core-pbf-wrapper-content .flex-reverse {
@@ -8755,14 +8779,13 @@ body {
 
 .gdlr-core-pbf-element .gdlr-core-item-pdb {
 	padding-bottom: 0;
-	;
 }
 
 .gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .gdlr-core-title-item-title {
 	margin-bottom: 10px;
 }
 
-.image-container-width .side-img{
+.image-container-width .side-img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -8773,8 +8796,72 @@ body {
 		max-width: none;
 	}
 }
+
 .gdlr-core-page-builder-body .landing-page-container {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.gdlr-core-pbf-column .villas-sidetext-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.gdlr-core-pbf-column .side-text-parent {
+	height: 100%;
+}
+
+.gdlr-core-title-item-title-wrap .second-section-title {
+	font-size: 70px;
+	font-weight: 500;
+	text-transform: none;
+	color: #222222;
+}
+
+.hotale-item-pdlr .contact-footer-wrapper {
+	color: #013220;
+}
+
+.hotale-footer-wrapper .footer-wrapper-ocama {
+	margin: auto;
+	font-size: 150%;
+}
+.hotale-footer-wrapper .footer-wrapper-ocama {
+	margin: auto;
+	font-size: 150%;
+}
+.hotale-item-pdlr .contact-description {
+	color: #013220;
+}
+
+.contact-footer-wrapper .contact-icons-wrapper p {
+	display: flex;
+	align-items: center;
+}
+.contact-footer-wrapper .contact-icons-wrapper img {
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+.gdlr-core-item-mglr .gdlr-core-testimonial p {
+	margin: 0;
+}
+.gdlr-core-testimonial-head .review-name {
+	font-weight: bold;
+}
+.gdlr-core-testimonial .review-container {
+	height: 750px !important;
+}
+.gdlr-core-testimonial-author-image .review-image {
+	height: 80px;
+	width: 80px;
+}
+.gdlr-core-rating .star-correction {
+	margin-left: -2px !important;
+}
+.center-maintenance {
+	margin: auto;
 }

@@ -1,3 +1,4 @@
+
 .hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
@@ -69,7 +70,8 @@
 
 .gdlr-core-newsletter-item.gdlr-core-style-curve3 .gdlr-core-newsletter-email input[type="email"] {
     box-shadow: 0 10px 45px rgb(0 0 0 / 10%);
-    -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1) -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 45px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .gdlr-core-newsletter-item.gdlr-core-style-curve3 .gdlr-core-newsletter-email input[type="email"] {
@@ -908,7 +910,7 @@ blockquote {
 }
 
 .hotale-footer-wrapper .hotale-widget h1 {
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .hotale-footer-wrapper .hotale-widget h2 {
@@ -1767,11 +1769,11 @@ ul.gdlr-core-custom-menu-widget.gdlr-core-menu-style-box2 li.current-menu-ancest
 }
 
 .hotale-footer-wrapper a {
-    color: #8e8e8e;
+    color: #013220;
 }
 
 .hotale-footer-wrapper a:hover {
-    color: #e66a31;
+    color: #c2c29d;
 }
 
 .hotale-footer-wrapper,
