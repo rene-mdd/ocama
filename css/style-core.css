@@ -16,8 +16,8 @@
  * 1.0 - Reset
  */
 
- /* additional styles top */
- /* @font-face {
+/* additional styles top */
+/* @font-face {
 	font-family: 'Cormorant Garamond';
 	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf'),
 		url('./fonts/CormorantGaramond-BoldItalic.ttf') format('ttf'),
@@ -35,11 +35,13 @@
 	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf');
 	font-weight: 700;
 }
+
 @font-face {
 	font-family: 'Cormorant Garamond';
 	src: url('./fonts/CormorantGaramond-Light.ttf') format('ttf');
 	font-weight: 100;
 }
+
 @font-face {
 	font-family: 'Cormorant Garamond';
 	src: url('./fonts/CormorantGaramond-Medium.ttf') format('ttf');
@@ -1090,6 +1092,8 @@ input[type="reset"]:focus {
 .hotale-top-bar-right-social {
 	display: inline;
 	margin-right: 60px;
+	margin: auto;
+	padding-left: 58px;
 }
 
 .hotale-top-bar-right-social a {
@@ -5157,6 +5161,7 @@ body.hotale-boxed .gdlr-core-column-extend-right .gdlr-core-pbf-background-wrap 
 
 .hotale-mobile-header .hotale-mobile-header-container {
 	position: relative;
+	margin-top: 6px;
 }
 
 .hotale-mobile-header .hotale-logo-inner {
@@ -5315,7 +5320,7 @@ body .hotale-mobile-header .hotale-logo {
 	}
 
 	.hotale-top-bar-right-social {
-		margin-left: 0px;
+		/* margin-left: 0px; */
 	}
 
 	.hotale-top-bar-right-social a:first-child {
@@ -8829,10 +8834,12 @@ textarea.input {
 	margin: auto;
 	font-size: 150%;
 }
+
 .hotale-footer-wrapper .footer-wrapper-ocama {
 	margin: auto;
 	font-size: 150%;
 }
+
 .hotale-item-pdlr .contact-description {
 	color: #013220;
 }
@@ -8841,27 +8848,55 @@ textarea.input {
 	display: flex;
 	align-items: center;
 }
+
 .contact-footer-wrapper .contact-icons-wrapper img {
 	margin-right: 10px;
 	width: 30px;
 	height: 30px;
 }
+
 .gdlr-core-item-mglr .gdlr-core-testimonial p {
 	margin: 0;
 }
+
 .gdlr-core-testimonial-head .review-name {
 	font-weight: bold;
 }
+
 .gdlr-core-testimonial .review-container {
 	height: 750px !important;
 }
+
 .gdlr-core-testimonial-author-image .review-image {
 	height: 80px;
 	width: 80px;
 }
+
 .gdlr-core-rating .star-correction {
 	margin-left: -2px !important;
 }
+
 .center-maintenance {
 	margin: auto;
+}
+
+.hotale-mobile-header-wrap .header-button-wrapper a {
+	display: inline-block;
+	background: #013220;
+	color: white !important;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 20px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	padding: 0 20px;
+	height: 40px;
+	margin-right: 6px;
+	line-height: 2.6;
+	font-size: 15px;
+}
+
+.hotale-mobile-header-wrap .header-button-wrapper a:hover {
+	opacity: 0.8;
 }
