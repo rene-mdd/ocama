@@ -1091,9 +1091,9 @@ input[type="reset"]:focus {
 
 .hotale-top-bar-right-social {
 	display: inline;
-	margin-right: 60px;
-	margin: auto;
-	padding-left: 58px;
+	margin-right: 25px;
+	margin-left: auto;
+	/* padding-left: 58px; */
 }
 
 .hotale-top-bar-right-social a {
@@ -5319,9 +5319,6 @@ body .hotale-mobile-header .hotale-logo {
 		display: block;
 	}
 
-	.hotale-top-bar-right-social {
-		/* margin-left: 0px; */
-	}
 
 	.hotale-top-bar-right-social a:first-child {
 		margin-left: 0px;
@@ -5551,10 +5548,6 @@ body .hotale-mobile-header .hotale-logo {
 
 	body .hotale-top-bar {
 		padding: 15px 0px;
-	}
-
-	.hotale-top-bar-right-social {
-		display: block;
 	}
 
 	.hotale-top-bar-right .tourmaster-user-top-bar {
@@ -8751,13 +8744,18 @@ textarea.input {
 
 .landing-page-text-wrapper {
 	background-color: #849ca8;
+	padding: 110px 0;
+
 }
 
 .landing-page-text {
-	padding: 100px 0;
 	max-width: 900px;
 	text-align: center;
 	margin: auto;
+	padding-left: 40px;
+    padding-right: 40px;
+	max-width: 900px;
+
 }
 
 .hotale-page-wrapper .landing-page-text h1 {
@@ -8896,7 +8894,39 @@ textarea.input {
 	line-height: 2.6;
 	font-size: 15px;
 }
+.mobile-book-now-btn {
+	display: none;
+	background: #013220;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	width: 100%;
+	position: absolute;
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	cursor: pointer;
+	outline: inherit;
+	padding: 0 20px;
+	height: 60px;
+	line-height: 2.6;
+	font-size: 15px;
+	text-align: center;
+}
+.mobile-book-now-btn a {
+	color: white !important;
+	font-size: x-large;
+}
 
 .hotale-mobile-header-wrap .header-button-wrapper a:hover {
 	opacity: 0.8;
+}
+@media only screen and (max-width: 767px) {
+	.mobile-book-now-btn {
+		display: block;
+	}
+	.hotale-mobile-header-wrap .header-button-wrapper a {
+		display: none;
+	}
+	.hotale-mobile-header-wrap .header-button-wrapper {
+		display: none;
+	}
 }
