@@ -31,25 +31,35 @@
 		url('./fonts/CormorantGaramond-SemiBoldItalic.ttf') format('ttf'),
 } */
 @font-face {
-	font-family: 'Cormorant Garamond';
+	font-family: 'Cormorant Garamond' serif;
 	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf');
 	font-weight: 700;
 }
 
 @font-face {
-	font-family: 'Cormorant Garamond';
+	font-family: 'Cormorant Garamond' serif;
 	src: url('./fonts/CormorantGaramond-Light.ttf') format('ttf');
 	font-weight: 100;
 }
 
 @font-face {
-	font-family: 'Cormorant Garamond';
+	font-family: 'Cormorant Garamond' serif;
 	src: url('./fonts/CormorantGaramond-Medium.ttf') format('ttf');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Cormorant Garamond' serif;
+	src: url('./fonts/') format('ttf');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Grown';
+	src: url('./fonts/Grown.ttf') format('ttf');
 	font-weight: 400;
 }
 
 body {
-	font-family: 'Cormorant Garamond';
+	font-family: 'Cormorant Garamond', serif;
 }
 
 html,

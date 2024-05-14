@@ -1,4 +1,5 @@
 
+
 .hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
@@ -672,7 +673,7 @@ footer {
 .hotale-body h6,
 .hotale-body .hotale-title-font,
 .hotale-body .gdlr-core-title-font {
-    /* font-family: "Playfair Display", serif; */
+    font-family: "Grown";
 }
 
 .woocommerce-breadcrumb,
