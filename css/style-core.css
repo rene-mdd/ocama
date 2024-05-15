@@ -17,46 +17,6 @@
  */
 
 /* additional styles top */
-/* @font-face {
-	font-family: 'Cormorant Garamond';
-	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-BoldItalic.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-Italic.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-Light.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-LightItalic.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-Medium.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-MediumItalic.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-Regular.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-SemiBold.ttf') format('ttf'),
-		url('./fonts/CormorantGaramond-SemiBoldItalic.ttf') format('ttf'),
-} */
-@font-face {
-	font-family: 'Cormorant Garamond' serif;
-	src: url('./fonts/CormorantGaramond-Bold.ttf') format('ttf');
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: 'Cormorant Garamond' serif;
-	src: url('./fonts/CormorantGaramond-Light.ttf') format('ttf');
-	font-weight: 100;
-}
-
-@font-face {
-	font-family: 'Cormorant Garamond' serif;
-	src: url('./fonts/CormorantGaramond-Medium.ttf') format('ttf');
-	font-weight: 400;
-}
-@font-face {
-	font-family: 'Cormorant Garamond' serif;
-	src: url('./fonts/') format('ttf');
-	font-weight: 400;
-}
-@font-face {
-	font-family: 'Grown';
-	src: url('./fonts/Grown.ttf') format('ttf');
-	font-weight: 400;
-}
 
 body {
 	font-family: 'Cormorant Garamond', serif;
@@ -8754,8 +8714,7 @@ textarea.input {
 
 .landing-page-text-wrapper {
 	background-color: #849ca8;
-	padding: 110px 0;
-
+	padding: 110px 0 165px 0;
 }
 
 .landing-page-text {
@@ -8768,9 +8727,11 @@ textarea.input {
 
 }
 
-.hotale-page-wrapper .landing-page-text h1 {
-	font-weight: 300;
+.hotale-page-wrapper .landing-page-text p {
+	font-weight: bold;
 	color: white;
+	line-height: 1.1;
+	font-size: 38px;
 }
 
 .dining-wrapper {
@@ -8795,7 +8756,8 @@ textarea.input {
 }
 
 .gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .gdlr-core-title-item-title {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .image-container-width .side-img {
@@ -8903,6 +8865,7 @@ textarea.input {
 	margin-right: 6px;
 	line-height: 2.6;
 	font-size: 15px;
+	font-weight: bold;
 }
 .mobile-book-now-btn {
 	display: none;
@@ -8920,6 +8883,7 @@ textarea.input {
 	line-height: 2.6;
 	font-size: 15px;
 	text-align: center;
+	font-weight: bold;
 }
 .mobile-book-now-btn a {
 	color: white !important;

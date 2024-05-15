@@ -1,5 +1,3 @@
-
-
 .hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
@@ -673,7 +671,7 @@ footer {
 .hotale-body h6,
 .hotale-body .hotale-title-font,
 .hotale-body .gdlr-core-title-font {
-    font-family: "Grown";
+    font-family:'Grown Personal Use', sans-serif;
 }
 
 .woocommerce-breadcrumb,
@@ -7504,33 +7502,36 @@ html :where(img[class*=wp-image-]) {
     max-width: 100%
 }
 
- /* additional styles */
+/* additional styles */
 
 .header-button-wrapper a {
-	display: inline-block;
-	background: #013220;
-	color: white !important;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	border-radius: 20px;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-	padding: 0 20px;
-	height: 40px;
-	margin-right: 6px;
-	line-height: 2.6;
-	font-size: 15px;
+    display: inline-block;
+    background: #013220;
+    color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 0 20px;
+    height: 40px;
+    margin-right: 6px;
+    line-height: 2.6;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 767px) {
-	.mobile-book-now-btn {
-		display: block;
-	}
-	 .header-button-wrapper a {
-		display: none;
-	}
-	.header-button-wrapper {
-		display: none;
-	}
+    .mobile-book-now-btn {
+        display: block;
+    }
+
+    .header-button-wrapper a {
+        display: none;
+    }
+
+    .header-button-wrapper {
+        display: none;
+    }
 }
