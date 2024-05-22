@@ -8837,7 +8837,7 @@ textarea.input {
 }
 
 .gdlr-core-testimonial .review-container {
-	height: 750px !important;
+	min-height: 750px !important;
 }
 
 .gdlr-core-testimonial-author-image .review-image {

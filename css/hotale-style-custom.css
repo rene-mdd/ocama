@@ -403,7 +403,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 }
 
 .hotale-logo-inner {
-    max-width: 103px;
+    max-width: 150px;
 }
 
 @media only screen and (max-width: 999px) {
@@ -466,11 +466,11 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 
 .hotale-animate-fixed-navigation.hotale-header-style-plain .hotale-logo-inner,
 .hotale-animate-fixed-navigation.hotale-header-style-boxed .hotale-logo-inner {
-    max-width: 103px;
+    max-width: 150px;
 }
 
 .hotale-mobile-header.hotale-fixed-navigation .hotale-logo-inner {
-    max-width: 103px;
+    max-width: 150px;
 }
 
 .hotale-animate-fixed-navigation.hotale-header-style-plain .hotale-logo,
