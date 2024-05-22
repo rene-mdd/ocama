@@ -8716,19 +8716,22 @@ textarea.input {
 	background-color: #849ca8;
 	padding: 110px 0 165px 0;
 }
+.room-list-page-text-wrapper {
+	background-color: #828261;
+	padding: 110px 0 110px 0;
+}
 
 .landing-page-text {
 	max-width: 900px;
 	text-align: center;
 	margin: auto;
 	padding-left: 40px;
-    padding-right: 40px;
+	padding-right: 40px;
 	max-width: 900px;
 
 }
 
 .hotale-page-wrapper .landing-page-text p {
-	font-weight: bold;
 	color: white;
 	line-height: 1.1;
 	font-size: 38px;
@@ -8755,10 +8758,10 @@ textarea.input {
 	padding-bottom: 0;
 }
 
-.gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .gdlr-core-title-item-title {
+/* .gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .gdlr-core-title-item-title {
 	margin-bottom: 20px;
 	margin-top: 20px;
-}
+} */
 
 .image-container-width .side-img {
 	display: flex;
@@ -8867,6 +8870,7 @@ textarea.input {
 	font-size: 15px;
 	font-weight: bold;
 }
+
 .mobile-book-now-btn {
 	display: none;
 	background: #013220;
@@ -8885,6 +8889,7 @@ textarea.input {
 	text-align: center;
 	font-weight: bold;
 }
+
 .mobile-book-now-btn a {
 	color: white !important;
 	font-size: x-large;
@@ -8893,13 +8898,73 @@ textarea.input {
 .hotale-mobile-header-wrap .header-button-wrapper a:hover {
 	opacity: 0.8;
 }
+
+/* amenities villas list */
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper {
+	width: 100%;
+	margin: 0 20px 100px 20px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper h1 {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities-bottom {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities div, .flex-amenities-bottom div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+	text-align: center;
+	min-width: 160px;
+}
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities span, .flex-amenities-bottom span {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.gdlr-core-pbf-wrapper .gdlr-core-pbf-element .landing-villas-info {
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 500;
+	color: #ffffff;
+	padding: 14px 33px 14px 33px;
+	text-transform: none;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #013220;
+}
+
+.gdlr-core-pbf-wrapper .gdlr-core-pbf-element .landing-villas-info:hover {
+	background: #705547;
+}
+
 @media only screen and (max-width: 767px) {
 	.mobile-book-now-btn {
 		display: block;
 	}
+
 	.hotale-mobile-header-wrap .header-button-wrapper a {
 		display: none;
 	}
+
 	.hotale-mobile-header-wrap .header-button-wrapper {
 		display: none;
 	}

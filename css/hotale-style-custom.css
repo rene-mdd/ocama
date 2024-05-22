@@ -571,7 +571,8 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 }
 
 .hotale-page-title-wrap {
-    background-image: url(https://demo.goodlayers.com/hotale/resort2/wp-content/uploads/sites/6/2022/05/resort2-title-bg.jpg);
+    background-image: url(/upload/villas-list/villas-list-header.jpg);
+    height: 345px;
 }
 
 body.single-product .hotale-header-background-transparent {

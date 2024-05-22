@@ -465,6 +465,7 @@ body .tourmaster-room-single-header-title-wrap h1{ color: #fff; margin-bottom: 0
 .tourmaster-room-side-thumbnail .tourmaster-room-thumbnail{ width: 40% }
 .tourmaster-room-side-thumbnail .tourmaster-room-content-wrap{ width: 60%; padding: 0px 0px 0px 40px; }
 .tourmaster-room-side-thumbnail .tourmaster-bottom{ display: flex; align-items: center; justify-content: space-between; }
+
 .tourmaster-room-side-thumbnail .tourmaster-read-more{ margin-top: 2px; }
 .tourmaster-room-side-thumbnail .tourmaster-price-wrap.tourmaster-no-bg{ font-weight: 500; }
 .tourmaster-room-side-thumbnail .tourmaster-price-wrap.tourmaster-no-bg .tourmaster-price-discount{ font-weight: 600; }
