@@ -8447,6 +8447,9 @@ span.paypal-button-text.true {
 		padding-top: 0px !important;
 		padding-bottom: 80px !important;
 	}
+	#gdlr-core-column-4 .single-room-icon-padding {
+		padding-bottom: 0px !important;
+	}
 }
 
 #gdlr-core-column-5:hover .gdlr-core-pbf-column-content-margin,
@@ -8721,10 +8724,11 @@ textarea.input {
 	background-color: #828261;
 	padding: 110px 0 110px 0;
 }
+
 .about-us-page-text-wrapper {
 	background-color: #849ca8;
 	padding: 110px 0 165px 0;
-	display:flex;
+	display: flex;
 }
 
 .landing-page-text {
@@ -8735,14 +8739,15 @@ textarea.input {
 	padding-right: 40px;
 	max-width: 900px;
 }
+
 .about-us-landing-page-text {
 	max-width: 900px;
 	margin: auto;
 	padding-left: 40px;
 	padding-right: 40px;
 	color: white;
-    line-height: 1.1;
-    font-size: 28px;
+	line-height: 1.1;
+	font-size: 28px;
 }
 
 .landing-page-text p {
@@ -8772,10 +8777,30 @@ textarea.input {
 	padding-bottom: 0;
 }
 
-/* .gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .gdlr-core-title-item-title {
-	margin-bottom: 20px;
-	margin-top: 20px;
-} */
+.hotale-body-outer-wrapper .our-story-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 110px 40px;
+}
+
+.hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
+.our-story-text-wrapper {
+	max-width: 770px;
+
+}
+
+.hotale-body-outer-wrapper .our-story-container h3 {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+
+.hotale-body-outer-wrapper .about-us-ocama-map img {
+	height: auto;
+	margin-bottom: -5px;
+}
+
 
 .image-container-width .side-img {
 	display: flex;
@@ -8987,6 +9012,11 @@ textarea.input {
 .hotale-page-wrapper .values-list-wrapper div,
 .values-list-wrapper-bottom div {
 	margin-top: 20px;
+}
+
+.gdlr-core-page-builder-body .single-room-wrapper {
+	display: flex;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 767px) {
