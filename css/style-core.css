@@ -8447,6 +8447,7 @@ span.paypal-button-text.true {
 		padding-top: 0px !important;
 		padding-bottom: 80px !important;
 	}
+
 	#gdlr-core-column-4 .single-room-icon-padding {
 		padding-bottom: 0px !important;
 	}
@@ -9017,6 +9018,21 @@ textarea.input {
 .gdlr-core-page-builder-body .single-room-wrapper {
 	display: flex;
 	justify-content: center;
+}
+
+.gdlr-core-pbf-column-content .amenities-flex-icons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.gdlr-core-column-service-icon-left .villa-properties-flex {
+	margin: 0 !important;
+}
+
+.center-title {
+	text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
