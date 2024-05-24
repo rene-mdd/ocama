@@ -8749,6 +8749,7 @@ textarea.input {
 	color: white;
 	line-height: 1.1;
 	font-size: 28px;
+	text-align: center;
 }
 
 .landing-page-text p {
@@ -9033,6 +9034,17 @@ textarea.input {
 
 .center-title {
 	text-align: center;
+}
+
+.gdlr-core-testimonial-item .gdlr-core-testimonial-author-image img {
+	border-radius: 0 !important;
+}
+
+.gdlr-core-pbf-wrapper-content .gdlr-core-title-item .subtitle-about-us {
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
