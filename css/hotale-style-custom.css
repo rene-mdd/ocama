@@ -672,7 +672,7 @@ footer {
 .hotale-body h6,
 .hotale-body .hotale-title-font,
 .hotale-body .gdlr-core-title-font {
-    font-family:'Grown Personal Use', sans-serif;
+    font-family: 'Grown Personal Use', sans-serif;
 }
 
 .woocommerce-breadcrumb,
@@ -7505,34 +7505,348 @@ html :where(img[class*=wp-image-]) {
 
 /* additional styles */
 
-.header-button-wrapper a {
-    display: inline-block;
-    background: #013220;
-    color: white !important;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 20px;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    padding: 0 20px;
-    height: 40px;
-    margin-right: 6px;
-    line-height: 2.6;
-    font-size: 15px;
-    font-weight: bold;
+
+.landing-page-text-wrapper {
+	background-color: #849ca8;
+	padding: 110px 0 165px 0;
+}
+
+.room-list-page-text-wrapper {
+	background-color: #828261;
+	padding: 110px 0 110px 0;
+}
+
+.about-us-page-text-wrapper {
+	background-color: #849ca8;
+	padding: 110px 0 165px 0;
+	display: flex;
+}
+
+.landing-page-text {
+	max-width: 900px;
+	text-align: center;
+	margin: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	max-width: 900px;
+}
+
+.about-us-landing-page-text {
+	max-width: 900px;
+	margin: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: white;
+	line-height: 1.1;
+	font-size: 28px;
+	text-align: center;
+}
+
+.landing-page-text p {
+	color: white;
+	line-height: 1.1;
+	font-size: 38px;
+}
+
+.dining-wrapper {
+	background-color: white;
+}
+
+.villas-wrapper {
+	background-color: #f3f3f3;
+}
+
+.gdlr-core-pbf-wrapper-content .flex-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.experiences-wrapper {
+	background-color: #f3f3f3;
+}
+
+.gdlr-core-pbf-element .gdlr-core-item-pdb {
+	padding-bottom: 0;
+}
+
+.hotale-body-outer-wrapper .our-story-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 110px 40px;
+}
+
+.hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
+.our-story-text-wrapper {
+	max-width: 770px;
+
+}
+
+.hotale-body-outer-wrapper .our-story-container h3 {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+
+.hotale-body-outer-wrapper .about-us-ocama-map img {
+	height: auto;
+	margin-bottom: -5px;
+}
+
+
+.image-container-width .side-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 767px) {
-    .mobile-book-now-btn {
-        display: block;
-    }
+	.gdlr-core-pbf-wrapper .image-container-width {
+		max-width: none;
+	}
+}
 
-    .header-button-wrapper a {
-        display: none;
-    }
+.gdlr-core-page-builder-body .landing-page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-    .header-button-wrapper {
-        display: none;
-    }
+.gdlr-core-pbf-column .villas-sidetext-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.gdlr-core-pbf-column .side-text-parent {
+	height: 100%;
+}
+
+.gdlr-core-title-item-title-wrap .second-section-title {
+	font-size: 70px;
+	font-weight: 500;
+	text-transform: none;
+	color: #222222;
+}
+
+.hotale-item-pdlr .contact-footer-wrapper {
+	color: #013220;
+}
+
+.hotale-footer-wrapper .footer-wrapper-ocama {
+	margin: auto;
+	font-size: 150%;
+}
+
+.hotale-footer-wrapper .footer-wrapper-ocama {
+	margin: auto;
+	font-size: 150%;
+}
+
+.hotale-item-pdlr .contact-description {
+	color: #013220;
+}
+
+.contact-footer-wrapper .contact-icons-wrapper p {
+	display: flex;
+	align-items: center;
+}
+
+.contact-footer-wrapper .contact-icons-wrapper img {
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.gdlr-core-item-mglr .gdlr-core-testimonial p {
+	margin: 0;
+}
+
+.gdlr-core-testimonial-head .review-name {
+	font-weight: bold;
+}
+
+.gdlr-core-testimonial .review-container {
+	min-height: 750px !important;
+}
+
+.gdlr-core-testimonial-author-image .review-image {
+	height: 80px;
+	width: 80px;
+}
+
+.gdlr-core-rating .star-correction {
+	margin-left: -2px !important;
+}
+
+.center-maintenance {
+	margin: auto;
+}
+
+.hotale-mobile-header .header-button-wrapper a {
+	display: inline-block;
+	background: #013220;
+	color: white !important;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 20px;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	padding: 0 20px;
+	height: 40px;
+	margin-right: 6px;
+	line-height: 2.6;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.mobile-book-now-btn {
+	display: none;
+	background: #013220;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	width: 100%;
+	position: absolute;
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	cursor: pointer;
+	outline: inherit;
+	padding: 0 20px;
+	height: 60px;
+	line-height: 2.6;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.mobile-book-now-btn a {
+	color: white !important;
+	font-size: x-large;
+}
+
+.hotale-mobile-header-wrap .header-button-wrapper a:hover {
+	opacity: 0.8;
+}
+
+/* amenities villas list */
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper {
+	width: 100%;
+	margin: 0 20px 100px 20px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper h1 {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities-bottom {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities div,
+.flex-amenities-bottom div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+	text-align: center;
+	min-width: 160px;
+}
+
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities span,
+.flex-amenities-bottom span {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.gdlr-core-pbf-wrapper .gdlr-core-pbf-element .landing-villas-info {
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 500;
+	color: #ffffff;
+	padding: 14px 33px 14px 33px;
+	text-transform: none;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: #013220;
+}
+
+.gdlr-core-pbf-wrapper .gdlr-core-pbf-element .landing-villas-info:hover {
+	background: #705547;
+}
+
+.hotale-page-wrapper .value-container {
+	margin-top: 50px;
+}
+
+.hotale-page-wrapper .values-list-wrapper,
+.values-list-wrapper-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.hotale-page-wrapper .values-list-wrapper div,
+.values-list-wrapper-bottom div {
+	margin-top: 20px;
+}
+
+.gdlr-core-page-builder-body .single-room-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.gdlr-core-pbf-column-content .amenities-flex-icons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.gdlr-core-column-service-icon-left .villa-properties-flex {
+	margin: 0 !important;
+}
+
+.center-title {
+	text-align: center;
+}
+
+.gdlr-core-testimonial-item .gdlr-core-testimonial-author-image img {
+	border-radius: 0 !important;
+}
+
+.gdlr-core-pbf-wrapper-content .gdlr-core-title-item .subtitle-about-us {
+	font-weight: 500;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+	.mobile-book-now-btn {
+		display: block;
+	}
+
+	.hotale-mobile-header-wrap .header-button-wrapper a {
+		display: none;
+	}
+
+	.hotale-mobile-header-wrap .header-button-wrapper {
+		display: none;
+	}
 }
