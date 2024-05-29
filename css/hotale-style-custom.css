@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Parchment";
+    src: url("https://db.onlinewebfonts.com/t/a844729f70281579017e703a84941e16.eot");
+    src: url("https://db.onlinewebfonts.com/t/a844729f70281579017e703a84941e16.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a844729f70281579017e703a84941e16.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a844729f70281579017e703a84941e16.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a844729f70281579017e703a84941e16.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a844729f70281579017e703a84941e16.svg#Parchment")format("svg");
+}
+
 .hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
@@ -672,7 +682,7 @@ footer {
 .hotale-body h6,
 .hotale-body .hotale-title-font,
 .hotale-body .gdlr-core-title-font {
-    font-family: 'Grown Personal Use', sans-serif;
+    font-family: "Parchment";
 }
 
 .woocommerce-breadcrumb,
@@ -7686,7 +7696,7 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-mobile-header .header-button-wrapper a {
 	display: inline-block;
-	background: #013220;
+	background-color: #013220;
 	color: white !important;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	border-radius: 20px;
@@ -7837,8 +7847,12 @@ html :where(img[class*=wp-image-]) {
 	margin-bottom: 30px;
 }
 
+.pages-header-style {
+    height: 470px;
+}
+
 @media only screen and (max-width: 767px) {
-	.mobile-book-now-btn {
+	.hotale-body .mobile-book-now-btn {
 		display: block;
 	}
 
@@ -7846,7 +7860,7 @@ html :where(img[class*=wp-image-]) {
 		display: none;
 	}
 
-	.hotale-mobile-header-wrap .header-button-wrapper {
+	.hotale-mobile-header .header-button-wrapper {
 		display: none;
 	}
 }
