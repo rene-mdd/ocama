@@ -19,7 +19,9 @@
 /* additional styles top */
 
 body {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: "Della Respira", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 html,
@@ -5170,7 +5172,7 @@ body .hotale-mobile-header .hotale-logo {
 
 @media only screen and (max-width: 999px) {
 	.gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .second-section-title {
-		font-size: 45px;
+		font-size: 75px !important;
 	}
 
 	body {
