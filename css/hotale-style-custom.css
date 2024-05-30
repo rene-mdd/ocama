@@ -7881,6 +7881,9 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-turey-background-header {
     background-image: url(../upload/villas-headers/casa-turey-header.jpg) !important
 }
+.hotale-page-wrapper .casa-tanama-background-header {
+    background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
+}
 
 @media only screen and (max-width: 767px) {
     .hotale-body .mobile-book-now-btn {
