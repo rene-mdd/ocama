@@ -7884,6 +7884,18 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-tanama-background-header {
     background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
 }
+.hotale-page-wrapper .casa-guama-background-header {
+    background-image: url(../upload/villas-headers/casa-guama-header.jpg) !important
+}
+.hotale-page-wrapper .casa-bagua-background-header {
+    background-image: url(../upload/villas-headers/casa-bagua-header.jpg) !important
+}
+.hotale-page-wrapper .casa-bajacu-background-header {
+    background-image: url(../upload/villas-headers/casa-bajacu-header.jpg) !important
+}
+.hotale-page-wrapper .casa-kachi-background-header {
+    background-image: url(../upload/villas-headers/casa-kachi-header.jpg) !important
+}
 
 @media only screen and (max-width: 767px) {
     .hotale-body .mobile-book-now-btn {
