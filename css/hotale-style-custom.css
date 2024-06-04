@@ -7581,7 +7581,7 @@ html :where(img[class*=wp-image-]) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 110px 40px;
+    padding: 110px 35px;
 }
 
 .hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
@@ -7595,9 +7595,93 @@ html :where(img[class*=wp-image-]) {
     margin-bottom: 35px;
 }
 
+.hotale-body-outer-wrapper .about-us-ocama-map {
+    display: flex;
+    justify-content: center;
+}
+
+.hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
+    padding: 110px 0 35px 0;
+    text-align: center;
+}
+
+.travel-section-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.travel-section-wrapper .travel-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+}
+
+.hotale-body-outer-wrapper .travel-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hotale-body-outer-wrapper .travel-img-container img {
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+}
+
+.transportation-section-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 35px 110px 35px;
+}
+
+.transportation-section-wrapper .transportation-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+}
+
+.transportation-section-wrapper .transportation-header {
+    text-align: center;
+    max-width: 770px;
+}
+
+.transportation-section-wrapper .transportation-header h3{
+    margin: 0;
+}
+
+.transportation-section-wrapper .rental-header {
+    text-align: center;
+}
+
+.transportation-section-wrapper .rental-header h3 {
+    margin: 0;
+}
+
+.transportation-section-wrapper .rental-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+}
+.transportation-section-wrapper .helicopter-header {
+    text-align: center;
+}
+
+.transportation-section-wrapper .helicopter-header h3 {
+    margin: 0;
+}
+
+.transportation-section-wrapper .helicopter-text-wrapper {
+    width: 770px;
+    padding: 35px;
+}
+.faq-section-wrapper .faq-header {
+    text-align: center;
+}
 
 .hotale-body-outer-wrapper .about-us-ocama-map img {
     height: auto;
+    max-width: 1024px;
+    width: 100%;
     margin-bottom: -5px;
 }
 
@@ -7878,21 +7962,27 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-guada-background-header {
     background-image: url(../upload/villas-headers/casa-guada-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-turey-background-header {
     background-image: url(../upload/villas-headers/casa-turey-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-tanama-background-header {
     background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-guama-background-header {
     background-image: url(../upload/villas-headers/casa-guama-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-bagua-background-header {
     background-image: url(../upload/villas-headers/casa-bagua-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-bajacu-background-header {
     background-image: url(../upload/villas-headers/casa-bajacu-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-kachi-background-header {
     background-image: url(../upload/villas-headers/casa-kachi-header.jpg) !important
 }
