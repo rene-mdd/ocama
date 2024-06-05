@@ -2472,10 +2472,10 @@ body .gdlr-core-price-table .gdlr-core-price-table-button:hover {
     color: #1e1e1e;
 }
 
-.gdlr-core-accordion-style-box-background .gdlr-core-active .gdlr-core-accordion-item-title,
+/* .gdlr-core-accordion-style-box-background .gdlr-core-active .gdlr-core-accordion-item-title,
 .gdlr-core-toggle-box-style-box-background .gdlr-core-active .gdlr-core-toggle-box-item-title {
     color: #gdlr;
-}
+} */
 
 .gdlr-core-accordion-style-background-title .gdlr-core-active .gdlr-core-accordion-item-title,
 .gdlr-core-accordion-style-background-title-icon .gdlr-core-active .gdlr-core-accordion-item-title,
@@ -3802,7 +3802,7 @@ del span.woocommerce-Price-amount.amount {
     margin-bottom: -39px;
 }
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 .wp-block-archives-dropdown label {
     display: block
@@ -7598,6 +7598,10 @@ html :where(img[class*=wp-image-]) {
 .hotale-body-outer-wrapper .about-us-ocama-map {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+
 }
 
 .hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
@@ -7610,6 +7614,7 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #f6f6f6;
 }
 
 .travel-section-wrapper .travel-text-wrapper {
@@ -7633,7 +7638,7 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0px 35px 110px 35px;
+    padding: 110px 35px 0px 35px;
 }
 
 .transportation-section-wrapper .transportation-text-wrapper {
@@ -7646,7 +7651,7 @@ html :where(img[class*=wp-image-]) {
     max-width: 770px;
 }
 
-.transportation-section-wrapper .transportation-header h3{
+.transportation-section-wrapper .transportation-header h3 {
     margin: 0;
 }
 
@@ -7662,6 +7667,7 @@ html :where(img[class*=wp-image-]) {
     max-width: 770px;
     padding: 35px;
 }
+
 .transportation-section-wrapper .helicopter-header {
     text-align: center;
 }
@@ -7674,8 +7680,19 @@ html :where(img[class*=wp-image-]) {
     width: 770px;
     padding: 35px;
 }
+
+.faq-section-wrapper {
+    padding: 110px 35px 110px 35px;
+    background-color: #849ca8;
+}
+
 .faq-section-wrapper .faq-header {
     text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq-section-wrapper .faq-header h3 {
+    color: white;
 }
 
 .hotale-body-outer-wrapper .about-us-ocama-map img {
@@ -7928,6 +7945,8 @@ html :where(img[class*=wp-image-]) {
     letter-spacing: 0px;
     text-transform: none;
     margin-bottom: 30px;
+    font-style: italic;
+    font-size: x-large;
 }
 
 .review-text-title {
@@ -7999,4 +8018,164 @@ html :where(img[class*=wp-image-]) {
     .hotale-mobile-header .header-button-wrapper {
         display: none;
     }
+}
+
+/* accordion css */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
+
+
+/* h1.title {
+    text-align: center;
+    font-size: 40px;
+    color: #282828;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+b {
+    color: #FFFFFF;
+    font-size: 55px;
+}
+
+p.remarks,
+a {
+    text-align: center;
+    margin-top: 100px;
+    color: #FFFFFF;
+} */
+
+/* accordion */
+
+.accordion-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+.accordion-container-2 {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+/* accordion-1 */
+#accordion-1 {
+    position: relative;
+    padding: 5px;
+
+}
+
+#accordion-1 .head {
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#accordion-1 .head h2 {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+
+
+#accordion-1 .arrow {
+    color: #FFFFFF;
+    font-size: 30px;
+    transition: 0.25s ease;
+    transform: rotate(-90deg);
+}
+
+#accordion-1 .head:hover .arrow {
+    opacity: 1;
+}
+
+#accordion-1 .head:hover,
+#accordion-1 .active {
+    border-radius: 5px 5px 0 0;
+}
+
+#accordion-1 .arrow-animate {
+    transform: rotate(-180deg);
+    opacity: 1;
+}
+
+#accordion-1 .content {
+    display: none;
+    padding: 20px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0 0 5px 5px;
+}
+
+/* accordion-2 */
+#accordion-2 {
+    position: relative;
+    padding: 5px;
+
+}
+
+#accordion-2 .head {
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#accordion-2 .head h2 {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+
+
+#accordion-2 .arrow {
+    color: #FFFFFF;
+    font-size: 30px;
+    transition: 0.25s ease;
+    transform: rotate(-90deg);
+}
+
+#accordion-2 .head:hover .arrow {
+    opacity: 1;
+}
+
+#accordion-2 .head:hover,
+#accordion-2 .active {
+    border-radius: 5px 5px 0 0;
+}
+
+#accordion-2 .arrow-animate {
+    transform: rotate(-180deg);
+    opacity: 1;
+}
+
+#accordion-2 .content {
+    display: none;
+    padding: 20px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0 0 5px 5px;
+}
+
+.remove-reset {
+    border-radius: 5px !important;
 }
