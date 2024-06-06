@@ -7876,6 +7876,11 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
     min-width: 160px;
 }
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities div img[src$=".svg"],
+.flex-amenities-bottom div img[src$=".svg"] {
+    width: 40px;
+}
+
 
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities span,
 .flex-amenities-bottom span {
@@ -7904,15 +7909,15 @@ html :where(img[class*=wp-image-]) {
     margin-top: 50px;
 }
 
-.hotale-page-wrapper .values-list-wrapper,
-.values-list-wrapper-bottom {
+.hotale-page-wrapper .value-list-wrapper,
+.value-list-wrapper-bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.hotale-page-wrapper .values-list-wrapper div,
-.values-list-wrapper-bottom div {
+.hotale-page-wrapper .value-list-wrapper div,
+.value-list-wrapper-bottom div {
     margin-top: 20px;
 }
 
@@ -7947,6 +7952,20 @@ html :where(img[class*=wp-image-]) {
     margin-bottom: 30px;
     font-style: italic;
     font-size: x-large;
+    text-align: left;
+}
+
+.value-container .value-list-wrapper h6 {
+    text-align: center;
+}
+
+.value-container .value-list-wrapper-bottom h6,
+.value-icon-wrapper {
+    text-align: center;
+}
+
+.value-container .value-icon-wrapper img {
+    width: 40px;
 }
 
 .review-text-title {
@@ -8018,6 +8037,12 @@ html :where(img[class*=wp-image-]) {
     .hotale-mobile-header .header-button-wrapper {
         display: none;
     }
+}
+
+.hotale-page-wrapper .about-text-wrapper {
+    font-size: 20px;
+    text-transform: none;
+    text-align: left;
 }
 
 /* accordion css */
