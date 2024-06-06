@@ -7935,6 +7935,7 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-column-service-icon-left .villa-properties-flex {
     margin: 0 !important;
+    width: 50px;
 }
 
 .center-title {
