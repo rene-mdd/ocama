@@ -1397,7 +1397,7 @@ body.hotale-boxed .hotale-body-wrapper,
 
 .hotale-body,
 .hotale-body span.wpcf7-not-valid-tip {
-    color: #656565;
+    color: #343837;
 }
 
 .hotale-body h1,
@@ -7677,13 +7677,14 @@ html :where(img[class*=wp-image-]) {
 }
 
 .transportation-section-wrapper .helicopter-text-wrapper {
-    width: 770px;
+    max-width: 770px;
     padding: 35px;
+    width: 100%;
 }
 
 .faq-section-wrapper {
     padding: 110px 35px 110px 35px;
-    background-color: #849ca8;
+    background-color: #f6f6f6;
 }
 
 .faq-section-wrapper .faq-header {
@@ -7692,7 +7693,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .faq-section-wrapper .faq-header h3 {
-    color: white;
+    color: #343837;
 }
 
 .hotale-body-outer-wrapper .about-us-ocama-map img {
@@ -7978,12 +7979,12 @@ html :where(img[class*=wp-image-]) {
 }
 
 .pages-header-style {
-    height: 470px;
+    height: 35vw;
 }
 
 .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
-    padding-top: 35px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     padding-left: 60px;
 }
 
@@ -8046,6 +8047,10 @@ html :where(img[class*=wp-image-]) {
     text-align: left;
 }
 
+.tourmaster-room-side-thumbnail-inner .villas-text {
+    color: #0c0c0c;
+}
+
 /* accordion css */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,900);
 
@@ -8100,26 +8105,26 @@ a {
 }
 
 #accordion-1 .head {
-    color: #FFFFFF;
+    color: #343837;
     padding: 5px 10px;
     cursor: pointer;
     transition: 0.2s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid #343837;
     border-radius: 5px;
 }
 
 #accordion-1 .head h2 {
     font-size: 30px;
     margin: 0;
-    color: white;
+    color: #343837;
 }
 
 
 #accordion-1 .arrow {
-    color: #FFFFFF;
+    color: #343837;
     font-size: 30px;
     transition: 0.25s ease;
     transform: rotate(-90deg);
@@ -8142,8 +8147,8 @@ a {
 #accordion-1 .content {
     display: none;
     padding: 20px 30px;
-    color: white;
-    border: 1px solid white;
+    color: #343837;
+    border: 1px solid #343837;
     border-radius: 0 0 5px 5px;
 }
 
@@ -8155,26 +8160,26 @@ a {
 }
 
 #accordion-2 .head {
-    color: #FFFFFF;
+    color: #343837;
     padding: 5px 10px;
     cursor: pointer;
     transition: 0.2s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid #343837;
     border-radius: 5px;
 }
 
 #accordion-2 .head h2 {
     font-size: 30px;
     margin: 0;
-    color: white;
+    color: #343837;
 }
 
 
 #accordion-2 .arrow {
-    color: #FFFFFF;
+    color: #343837;
     font-size: 30px;
     transition: 0.25s ease;
     transform: rotate(-90deg);
@@ -8197,11 +8202,15 @@ a {
 #accordion-2 .content {
     display: none;
     padding: 20px 30px;
-    color: white;
-    border: 1px solid white;
+    color: #343837;
+    border: 1px solid #343837;
     border-radius: 0 0 5px 5px;
 }
 
 .remove-reset {
     border-radius: 5px !important;
+}
+
+.tourmaster-single-review-content .tourmaster-single-review-detail-rating i {
+    color: #ffc100 !important
 }
