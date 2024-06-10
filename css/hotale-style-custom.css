@@ -758,7 +758,7 @@ blockquote {
 }
 
 .hotale-body {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .hotale-body,
@@ -7983,9 +7983,9 @@ html :where(img[class*=wp-image-]) {
 }
 
 .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
-    padding-top: 25px;
-    padding-bottom: 30px;
-    padding-left: 60px;
+    max-width: 800px;
+    padding: 30px;
+    margin-right: auto;
 }
 
 .hotale-page-wrapper .individual-villa-caption {
