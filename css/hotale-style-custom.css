@@ -7956,6 +7956,9 @@ html :where(img[class*=wp-image-]) {
     font-size: x-large;
     text-align: left;
 }
+.gdlr-core-pbf-wrapper-content .information-subtitle {
+    font-size: x-large;
+}
 
 .value-container .value-list-wrapper h6 {
     text-align: center;
