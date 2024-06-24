@@ -579,6 +579,12 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     background-image: url(../upload/villas-list/villas-list-header.jpg);
     height: 345px;
 }
+.las-galeras-page-title-wrap {
+    background-image: url(../upload/las-galeras/las-galeras-header.jpg);
+    height: 345px;
+    background-position: center;
+    background-size: cover;
+}
 
 body.single-product .hotale-header-background-transparent {
     background-image: url(https://demo.goodlayers.com/hotale/resort2/wp-content/uploads/sites/6/2022/05/resort2-title-bg.jpg);
@@ -7883,6 +7889,9 @@ html :where(img[class*=wp-image-]) {
 }
 .hotale-page-wrapper .casa-tanama-background-header {
     background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
+}
+.las-galeras-images-list-parent li .gdlr-core-media-image img {
+    height: 700px;
 }
 
 @media only screen and (max-width: 767px) {
