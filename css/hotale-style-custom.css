@@ -764,7 +764,7 @@ blockquote {
 }
 
 .hotale-body {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .hotale-body,
@@ -1403,7 +1403,7 @@ body.hotale-boxed .hotale-body-wrapper,
 
 .hotale-body,
 .hotale-body span.wpcf7-not-valid-tip {
-    color: #656565;
+    color: #343837;
 }
 
 .hotale-body h1,
@@ -2478,10 +2478,10 @@ body .gdlr-core-price-table .gdlr-core-price-table-button:hover {
     color: #1e1e1e;
 }
 
-.gdlr-core-accordion-style-box-background .gdlr-core-active .gdlr-core-accordion-item-title,
+/* .gdlr-core-accordion-style-box-background .gdlr-core-active .gdlr-core-accordion-item-title,
 .gdlr-core-toggle-box-style-box-background .gdlr-core-active .gdlr-core-toggle-box-item-title {
     color: #gdlr;
-}
+} */
 
 .gdlr-core-accordion-style-background-title .gdlr-core-active .gdlr-core-accordion-item-title,
 .gdlr-core-accordion-style-background-title-icon .gdlr-core-active .gdlr-core-accordion-item-title,
@@ -3808,7 +3808,7 @@ del span.woocommerce-Price-amount.amount {
     margin-bottom: -39px;
 }
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 .wp-block-archives-dropdown label {
     display: block
@@ -7587,7 +7587,7 @@ html :where(img[class*=wp-image-]) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 110px 40px;
+    padding: 110px 35px;
 }
 
 .hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
@@ -7601,9 +7601,111 @@ html :where(img[class*=wp-image-]) {
     margin-bottom: 35px;
 }
 
+.hotale-body-outer-wrapper .about-us-ocama-map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+
+}
+
+.hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
+    padding: 110px 0 35px 0;
+    text-align: center;
+}
+
+.travel-section-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.travel-section-wrapper .travel-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+}
+
+.hotale-body-outer-wrapper .travel-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hotale-body-outer-wrapper .travel-img-container img {
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+}
+
+.transportation-section-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 35px 0px 35px;
+}
+
+.transportation-section-wrapper .transportation-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+}
+
+.transportation-section-wrapper .transportation-header {
+    text-align: center;
+    max-width: 770px;
+}
+
+.transportation-section-wrapper .transportation-header h3 {
+    margin: 0;
+}
+
+.transportation-section-wrapper .rental-header {
+    text-align: center;
+}
+
+.transportation-section-wrapper .rental-header h3 {
+    margin: 0;
+}
+
+.transportation-section-wrapper .rental-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+}
+
+.transportation-section-wrapper .helicopter-header {
+    text-align: center;
+}
+
+.transportation-section-wrapper .helicopter-header h3 {
+    margin: 0;
+}
+
+.transportation-section-wrapper .helicopter-text-wrapper {
+    max-width: 770px;
+    padding: 35px;
+    width: 100%;
+}
+
+.faq-section-wrapper {
+    padding: 110px 35px 110px 35px;
+    background-color: #f6f6f6;
+}
+
+.faq-section-wrapper .faq-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq-section-wrapper .faq-header h3 {
+    color: #343837;
+}
 
 .hotale-body-outer-wrapper .about-us-ocama-map img {
     height: auto;
+    max-width: 1024px;
+    width: 100%;
     margin-bottom: -5px;
 }
 
@@ -7781,6 +7883,11 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
     min-width: 160px;
 }
+.gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities div img[src$=".svg"],
+.flex-amenities-bottom div img[src$=".svg"] {
+    width: 40px;
+}
+
 
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities span,
 .flex-amenities-bottom span {
@@ -7809,15 +7916,15 @@ html :where(img[class*=wp-image-]) {
     margin-top: 50px;
 }
 
-.hotale-page-wrapper .values-list-wrapper,
-.values-list-wrapper-bottom {
+.hotale-page-wrapper .value-list-wrapper,
+.value-list-wrapper-bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.hotale-page-wrapper .values-list-wrapper div,
-.values-list-wrapper-bottom div {
+.hotale-page-wrapper .value-list-wrapper div,
+.value-list-wrapper-bottom div {
     margin-top: 20px;
 }
 
@@ -7835,6 +7942,7 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-column-service-icon-left .villa-properties-flex {
     margin: 0 !important;
+    width: 50px;
 }
 
 .center-title {
@@ -7850,6 +7958,25 @@ html :where(img[class*=wp-image-]) {
     letter-spacing: 0px;
     text-transform: none;
     margin-bottom: 30px;
+    font-style: italic;
+    font-size: x-large;
+    text-align: left;
+}
+.gdlr-core-pbf-wrapper-content .information-subtitle {
+    font-size: x-large;
+}
+
+.value-container .value-list-wrapper h6 {
+    text-align: center;
+}
+
+.value-container .value-list-wrapper-bottom h6,
+.value-icon-wrapper {
+    text-align: center;
+}
+
+.value-container .value-icon-wrapper img {
+    width: 40px;
 }
 
 .review-text-title {
@@ -7861,13 +7988,13 @@ html :where(img[class*=wp-image-]) {
 }
 
 .pages-header-style {
-    height: 470px;
+    height: 35vw;
 }
 
 .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
-    padding-top: 35px;
-    padding-bottom: 40px;
-    padding-left: 60px;
+    max-width: 800px;
+    padding: 30px;
+    margin-right: auto;
 }
 
 .hotale-page-wrapper .individual-villa-caption {
@@ -7884,14 +8011,32 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-guada-background-header {
     background-image: url(../upload/villas-headers/casa-guada-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-turey-background-header {
     background-image: url(../upload/villas-headers/casa-turey-header.jpg) !important
 }
+
 .hotale-page-wrapper .casa-tanama-background-header {
     background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
 }
 .las-galeras-images-list-parent li .gdlr-core-media-image img {
     height: 700px;
+}
+
+.hotale-page-wrapper .casa-guama-background-header {
+    background-image: url(../upload/villas-headers/casa-guama-header.jpg) !important
+}
+
+.hotale-page-wrapper .casa-bagua-background-header {
+    background-image: url(../upload/villas-headers/casa-bagua-header.jpg) !important
+}
+
+.hotale-page-wrapper .casa-bajacu-background-header {
+    background-image: url(../upload/villas-headers/casa-bajacu-header.jpg) !important
+}
+
+.hotale-page-wrapper .casa-kachi-background-header {
+    background-image: url(../upload/villas-headers/casa-kachi-header.jpg) !important
 }
 
 @media only screen and (max-width: 767px) {
@@ -7906,4 +8051,178 @@ html :where(img[class*=wp-image-]) {
     .hotale-mobile-header .header-button-wrapper {
         display: none;
     }
+}
+
+.hotale-page-wrapper .about-text-wrapper {
+    font-size: 20px;
+    text-transform: none;
+    text-align: left;
+}
+
+.tourmaster-room-side-thumbnail-inner .villas-text {
+    color: #0c0c0c;
+}
+
+/* accordion css */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
+
+
+/* h1.title {
+    text-align: center;
+    font-size: 40px;
+    color: #282828;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+b {
+    color: #FFFFFF;
+    font-size: 55px;
+}
+
+p.remarks,
+a {
+    text-align: center;
+    margin-top: 100px;
+    color: #FFFFFF;
+} */
+
+/* accordion */
+
+.accordion-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+.accordion-container-2 {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+/* accordion-1 */
+#accordion-1 {
+    position: relative;
+    padding: 5px;
+
+}
+
+#accordion-1 .head {
+    color: #343837;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #343837;
+    border-radius: 5px;
+}
+
+#accordion-1 .head h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #343837;
+}
+
+
+#accordion-1 .arrow {
+    color: #343837;
+    font-size: 30px;
+    transition: 0.25s ease;
+    transform: rotate(-90deg);
+}
+
+#accordion-1 .head:hover .arrow {
+    opacity: 1;
+}
+
+#accordion-1 .head:hover,
+#accordion-1 .active {
+    border-radius: 5px 5px 0 0;
+}
+
+#accordion-1 .arrow-animate {
+    transform: rotate(-180deg);
+    opacity: 1;
+}
+
+#accordion-1 .content {
+    display: none;
+    padding: 20px 30px;
+    color: #343837;
+    border: 1px solid #343837;
+    border-radius: 0 0 5px 5px;
+}
+
+/* accordion-2 */
+#accordion-2 {
+    position: relative;
+    padding: 5px;
+
+}
+
+#accordion-2 .head {
+    color: #343837;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #343837;
+    border-radius: 5px;
+}
+
+#accordion-2 .head h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #343837;
+}
+
+
+#accordion-2 .arrow {
+    color: #343837;
+    font-size: 30px;
+    transition: 0.25s ease;
+    transform: rotate(-90deg);
+}
+
+#accordion-2 .head:hover .arrow {
+    opacity: 1;
+}
+
+#accordion-2 .head:hover,
+#accordion-2 .active {
+    border-radius: 5px 5px 0 0;
+}
+
+#accordion-2 .arrow-animate {
+    transform: rotate(-180deg);
+    opacity: 1;
+}
+
+#accordion-2 .content {
+    display: none;
+    padding: 20px 30px;
+    color: #343837;
+    border: 1px solid #343837;
+    border-radius: 0 0 5px 5px;
+}
+
+.remove-reset {
+    border-radius: 5px !important;
+}
+
+.tourmaster-single-review-content .tourmaster-single-review-detail-rating i {
+    color: #ffc100 !important
 }
