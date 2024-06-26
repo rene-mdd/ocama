@@ -8038,6 +8038,18 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-kachi-background-header {
     background-image: url(../upload/villas-headers/casa-kachi-header.jpg) !important
 }
+.hotale-page-wrapper .activities-text-container {
+    max-width: 770px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.hotale-page-wrapper .activities-container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.gdlr-core-item-list .activity-title {
+    font-size: 40px;
+}
 
 @media only screen and (max-width: 767px) {
     .hotale-body .mobile-book-now-btn {
