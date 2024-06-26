@@ -8020,7 +8020,7 @@ html :where(img[class*=wp-image-]) {
     background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
 }
 .las-galeras-images-list-parent li .gdlr-core-media-image img {
-    /* height: 700px; */
+    height: 700px;
 }
 
 .hotale-page-wrapper .casa-guama-background-header {
