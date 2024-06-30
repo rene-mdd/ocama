@@ -1,8 +1,8 @@
 
 // Example POST method implementation:
-async function postData(url = "") {
+async function postData(urlPost, urlMedia) {
   // Default options are marked with *
-  const response = await fetch(url, {
+  const responsePost = await fetch(urlPost, {
     signal: AbortSignal.timeout(1000),
     mode: "no-cors", // no-cors, *cors, same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -14,28 +14,58 @@ async function postData(url = "") {
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
   });
+  const responseMedia = await fetch(urlMedia, {
+    signal: AbortSignal.timeout(1000),
+    mode: "no-cors", 
+    cache: "no-cache", 
+    credentials: "same-origin", 
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow", 
+    referrerPolicy: "no-referrer", 
+  });
 
-  if (response?.ok) {
-    return response.json(); // parses JSON response into native JavaScript objects
-  } else {
+  if (responsePost?.ok && responseMedia?.ok) {
+    const resultPost = responsePost.json();
+    const resultMedia = responseMedia.json();
+    return { resultPost, resultMedia } 
+  }
+  else {
     return null;
   }
 }
 
-postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/").then((data) => {
+postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/", "http://ocama.docksal.site/wp-json/wp/v2/media").then((data) => {
+  Promise.all([data.resultMedia, data.resultPost]).then((value) => {
+    const anaImgList = document.getElementById("ana_21047-a").children;
+      const filterResult = value[0].filter((element, index, array) => {
+        const lowerCase = element.link.toLowerCase();
+        console.log(lowerCase.includes("ana"))
+        if(lowerCase.includes("ana")) {
+          return element;
+        }
+    })
+    console.log(filterResult)
+    filterResult.map((el, index) => {
+      console.log(el)
+      anaImgList[index].childNodes[1].childNodes[1].setAttribute("href", el.source_url);
+      anaImgList[index].childNodes[1].childNodes[1].children[0].setAttribute("src", el.source_url);
+    })
 
-  console.log(data)
+    console.log(anaImgList);
+  })
   let casaAnaBody = document.getElementById("casa-ana-text");
   let casaAnaTitle = document.getElementById("casa-ana-title");
   let newElement = document.createElement("div");
-  // const baseWpImgUrl = "http://ocama.docksal.site/wp-content/uploads/2024/06/";
-  // const anaImgList = document.getElementById("ana_21047-a").children;
-  // anaImgList[0].childNodes[1].childNodes[1].setAttribute("href", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
-  // anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
-  // console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
+  const baseWpImgUrl = "http://ocama.docksal.site/wp-content/uploads/2024/06/";
+  const anaImgList = document.getElementById("ana_21047-a").children;
+  anaImgList[0].childNodes[1].childNodes[1].setAttribute("href", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
+  anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
+  console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
   // console.log(data)
-  if (data?.id === 1) {
-    newElement.innerHTML = !!(data.content.rendered) ? data.content.rendered : bodyData;
+  if (data?.resultPost?.id === 1) {
+    newElement.innerHTML = !!(data.cresultPost?.ontent.rendered) ? data.cresultPost?.ontent.rendered : bodyData;
     casaAnaBody.appendChild(newElement);
     casaAnaTitle.innerText = data.title.rendered;
   } else {
