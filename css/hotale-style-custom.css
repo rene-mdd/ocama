@@ -7721,6 +7721,16 @@ html :where(img[class*=wp-image-]) {
     .gdlr-core-pbf-wrapper .image-container-width {
         max-width: none;
     }
+
+    .wellness-main-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .activities-text-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
@@ -8089,7 +8099,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .wellness-main-text {
-    width: 770px;
+    max-width: 770px;
     text-align: center;
 }
 
