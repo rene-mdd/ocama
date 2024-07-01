@@ -579,6 +579,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     background-image: url(../upload/villas-list/villas-list-header.jpg);
     height: 345px;
 }
+
 .las-galeras-page-title-wrap {
     background-image: url(../upload/las-galeras/las-galeras-header.jpg);
     height: 345px;
@@ -7883,6 +7884,7 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
     min-width: 160px;
 }
+
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities div img[src$=".svg"],
 .flex-amenities-bottom div img[src$=".svg"] {
     width: 40px;
@@ -7962,6 +7964,7 @@ html :where(img[class*=wp-image-]) {
     font-size: x-large;
     text-align: left;
 }
+
 .gdlr-core-pbf-wrapper-content .information-subtitle {
     font-size: x-large;
 }
@@ -8019,6 +8022,7 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-tanama-background-header {
     background-image: url(../upload/villas-headers/casa-tanama-header.jpg) !important
 }
+
 .las-galeras-images-list-parent li .gdlr-core-media-image img {
     height: 700px;
 }
@@ -8038,15 +8042,18 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .casa-kachi-background-header {
     background-image: url(../upload/villas-headers/casa-kachi-header.jpg) !important
 }
+
 .hotale-page-wrapper .activities-text-container {
     max-width: 770px;
     margin-bottom: 80px;
     text-align: center;
 }
+
 .hotale-page-wrapper .activities-container-wrapper {
     display: flex;
     justify-content: center;
 }
+
 .gdlr-core-item-list .activity-title {
     font-size: 40px;
 }
@@ -8074,6 +8081,29 @@ html :where(img[class*=wp-image-]) {
 .tourmaster-room-side-thumbnail-inner .villas-text {
     color: #0c0c0c;
 }
+
+.wellness-main-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.wellness-main-text {
+    width: 770px;
+    text-align: center;
+}
+
+.footer-note-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.wellness-footer-note {
+    max-width: 720px;
+    text-align: center;
+}
+
+
 
 /* accordion css */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,900);
