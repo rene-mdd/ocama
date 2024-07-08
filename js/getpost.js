@@ -1,9 +1,9 @@
-
+// import { parse } from '@wordpress/block-serialization-default-parser';
 // Example POST method implementation:
-async function postData(urlPost, urlMedia) {
+async function postData(urlPost) {
   // Default options are marked with *
   const responsePost = await fetch(urlPost, {
-    signal: AbortSignal.timeout(1000),
+    signal: AbortSignal.timeout(1500),
     mode: "no-cors", // no-cors, *cors, same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     credentials: "same-origin", // include, *same-origin, omit
@@ -14,58 +14,34 @@ async function postData(urlPost, urlMedia) {
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
   });
-  const responseMedia = await fetch(urlMedia, {
-    signal: AbortSignal.timeout(1000),
-    mode: "no-cors", 
-    cache: "no-cache", 
-    credentials: "same-origin", 
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow", 
-    referrerPolicy: "no-referrer", 
-  });
 
-  if (responsePost?.ok && responseMedia?.ok) {
-    const resultPost = responsePost.json();
-    const resultMedia = responseMedia.json();
-    return { resultPost, resultMedia } 
+  if (responsePost?.ok) {
+    const resultPost = await responsePost.json();
+    console.log(resultPost)
+    return resultPost;
   }
   else {
     return null;
   }
 }
 
-postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/", "http://ocama.docksal.site/wp-json/wp/v2/media").then((data) => {
-  Promise.all([data.resultMedia, data.resultPost]).then((value) => {
-    const anaImgList = document.getElementById("ana_21047-a").children;
-      const filterResult = value[0].filter((element, index, array) => {
-        const lowerCase = element.link.toLowerCase();
-        console.log(lowerCase.includes("ana"))
-        if(lowerCase.includes("ana")) {
-          return element;
-        }
-    })
-    console.log(filterResult)
-    filterResult.map((el, index) => {
-      console.log(el)
-      anaImgList[index].childNodes[1].childNodes[1].setAttribute("href", el.source_url);
-      anaImgList[index].childNodes[1].childNodes[1].children[0].setAttribute("src", el.source_url);
-    })
+postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/").then((data) => {
 
-    console.log(anaImgList);
-  })
+  // const blockContent = parse(data?.content?.rendered) ;
+  // console.log(blockContent)
   let casaAnaBody = document.getElementById("casa-ana-text");
   let casaAnaTitle = document.getElementById("casa-ana-title");
   let newElement = document.createElement("div");
-  const baseWpImgUrl = "http://ocama.docksal.site/wp-content/uploads/2024/06/";
-  const anaImgList = document.getElementById("ana_21047-a").children;
-  anaImgList[0].childNodes[1].childNodes[1].setAttribute("href", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
-  anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
-  console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
+  // const baseWpImgUrl = "http://ocama.docksal.site/wp-content/uploads/2024/06/";
+  // const anaImgList = document.getElementById("ana_21047-a").children;
+  // anaImgList[0].childNodes[1].childNodes[1].setAttribute("href", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
+  // anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
+  // console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
   // console.log(data)
-  if (data?.resultPost?.id === 1) {
-    newElement.innerHTML = !!(data.cresultPost?.ontent.rendered) ? data.cresultPost?.ontent.rendered : bodyData;
+  console.log(data)
+  if (data?.id === 1) {
+    console.log(data)
+    newElement.innerHTML = !!(data?.content?.rendered) ? data?.content?.rendered : bodyData;
     casaAnaBody.appendChild(newElement);
     casaAnaTitle.innerText = data.title.rendered;
   } else {
