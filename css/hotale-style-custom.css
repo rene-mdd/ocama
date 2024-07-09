@@ -7520,6 +7520,7 @@ html :where(img[class*=wp-image-]) {
 
 .about-us-landing-page-text {
     font-family: "Brygada 1918", serif;
+    font-style: italic;
     max-width: 900px;
     margin: auto;
     padding-left: 40px;
@@ -7532,6 +7533,7 @@ html :where(img[class*=wp-image-]) {
 
 .landing-page-text p {
     font-family: "Brygada 1918", serif;
+    font-style: italic;
     color: white;
     line-height: 1.1;
     font-size: 38px;
@@ -8038,10 +8040,6 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
 }
 
-.gdlr-core-item-list .activity-title {
-    font-size: 40px;
-}
-
 @media only screen and (max-width: 767px) {
     .hotale-body .mobile-book-now-btn {
         display: block;
@@ -8076,9 +8074,18 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
 }
 
+.wellness-main-text h1 {
+    font-size: 40px;
+}
+
 .footer-note-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.footer-note-wrapper small {
+    font-family: "Brygada 1918", serif;
+    font-style: italic;
 }
 
 .wellness-footer-note {
@@ -8160,6 +8167,7 @@ a {
 }
 
 #accordion-1 .head h2 {
+    font-weight: 100;
     font-size: 30px;
     margin: 0;
     color: #343837;
@@ -8215,6 +8223,7 @@ a {
 }
 
 #accordion-2 .head h2 {
+    font-weight: 100;
     font-size: 30px;
     margin: 0;
     color: #343837;
