@@ -1,4 +1,3 @@
-
 .hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
@@ -672,7 +671,7 @@ footer {
     padding-bottom: 37px;
 }
 
-.hotale-body h1,
+/* .hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
 .hotale-body h4,
@@ -685,7 +684,7 @@ footer {
     font-weight: 600;
     font-style: normal;
     font-size: 150%;
-}
+} */
 
 .woocommerce-breadcrumb,
 .woocommerce span.onsale,
@@ -711,32 +710,6 @@ footer {
     /* font-family: "DM Sans", sans-serif; */
 }
 
-.hotale-body .gdlr-core-info-font,
-.hotale-body .hotale-info-font {
-    font-family: "Jost", sans-serif;
-}
-
-.hotale-body .gdlr-core-blog-info-font,
-.hotale-body .hotale-blog-info-font {
-    font-family: "Jost", sans-serif;
-}
-
-.hotale-body .gdlr-core-quote-font,
-blockquote {
-    font-family: "Amiri", serif;
-}
-
-.hotale-body .gdlr-core-testimonial-content {
-    font-family: "Jost", sans-serif;
-}
-
-.hotale-additional-font {
-    font-family: "Allison", handwriting !important;
-}
-
-.hotale-additional-font2 {
-    font-family: "Jost", sans-serif !important;
-}
 
 .hotale-body h1 {
     font-size: 38px;
@@ -7546,6 +7519,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .about-us-landing-page-text {
+    font-family: "Brygada 1918", serif;
     max-width: 900px;
     margin: auto;
     padding-left: 40px;
@@ -7557,6 +7531,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .landing-page-text p {
+    font-family: "Brygada 1918", serif;
     color: white;
     line-height: 1.1;
     font-size: 38px;
@@ -7690,7 +7665,7 @@ html :where(img[class*=wp-image-]) {
 
 .faq-section-wrapper {
     padding: 110px 35px 110px 35px;
-    background-color: #f6f6f6;
+    background-color: white;
 }
 
 .faq-section-wrapper .faq-header {
@@ -7972,7 +7947,6 @@ html :where(img[class*=wp-image-]) {
     margin-bottom: 30px;
     font-style: italic;
     font-size: x-large;
-    text-align: left;
 }
 
 .gdlr-core-pbf-wrapper-content .information-subtitle {
@@ -8085,7 +8059,6 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .about-text-wrapper {
     font-size: 20px;
     text-transform: none;
-    text-align: left;
 }
 
 .tourmaster-room-side-thumbnail-inner .villas-text {
@@ -8113,7 +8086,13 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
 }
 
-
+.gdlr-core-title-item-title-wrap .amenities-text {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #343837;
+}
 
 /* accordion css */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,900);
