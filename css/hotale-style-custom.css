@@ -671,7 +671,7 @@ footer {
     padding-bottom: 37px;
 }
 
-/* .hotale-body h1,
+.hotale-body h1,
 .hotale-body h2,
 .hotale-body h3,
 .hotale-body h4,
@@ -684,7 +684,7 @@ footer {
     font-weight: 600;
     font-style: normal;
     font-size: 150%;
-} */
+}
 
 .woocommerce-breadcrumb,
 .woocommerce span.onsale,
