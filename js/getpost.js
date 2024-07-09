@@ -1,4 +1,4 @@
-// import { parse } from '@wordpress/block-serialization-default-parser';
+// const {parse} = require('@wordpress/block-serialization-default-parser');
 // Example POST method implementation:
 async function postData(urlPost) {
   // Default options are marked with *
@@ -17,7 +17,6 @@ async function postData(urlPost) {
 
   if (responsePost?.ok) {
     const resultPost = await responsePost.json();
-    console.log(resultPost)
     return resultPost;
   }
   else {
@@ -27,8 +26,13 @@ async function postData(urlPost) {
 
 postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/").then((data) => {
 
-  // const blockContent = parse(data?.content?.rendered) ;
-  // console.log(blockContent)
+  // const blocks = parse(data?.content?.rendered);
+  // console.log(blocks)
+  // const paragraphBlock = blocks.find(block => block.innerHTML === 'core/paragraph');
+  // console.log(paragraphBlock)
+  // if (paragraphBlock) {
+  //   console.log(paragraphBlock.innerHTML); // This will give you the content of the paragraph block
+  // }
   let casaAnaBody = document.getElementById("casa-ana-text");
   let casaAnaTitle = document.getElementById("casa-ana-title");
   let newElement = document.createElement("div");
@@ -38,9 +42,7 @@ postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/").then((data) => {
   // anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
   // console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
   // console.log(data)
-  console.log(data)
   if (data?.id === 1) {
-    console.log(data)
     newElement.innerHTML = !!(data?.content?.rendered) ? data?.content?.rendered : bodyData;
     casaAnaBody.appendChild(newElement);
     casaAnaTitle.innerText = data.title.rendered;
@@ -58,7 +60,6 @@ postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/").then((data) => {
   newElement.innerHTML = bodyData;
   casaAnaBody.appendChild(newElement);
   casaAnaTitle.innerText = titleData;
-  console.log(casaAnaBody)
 });
 
 const titleData = `Casa Ana`
