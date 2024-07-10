@@ -8095,10 +8095,47 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-title-item-title-wrap .amenities-text {
     font-weight: 700;
+
     font-size: 17px;
     letter-spacing: 0px;
     text-transform: none;
     color: #343837;
+}
+
+.gdlr-core-pbf-element .subtitle-dinner-wrapper {
+    font-family: "Brygada 1918", serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #898989;
+}
+
+.gdlr-core-title-item-title-wrap .dinner-title {
+    font-size: 38px;
+    font-family: "Alkatra", system-ui;
+}
+
+.gdlr-core-pbf-element .dinner-menu-wrapper h4 {
+    font-size: 20px;
+}
+
+.gdlr-core-pbf-element .dinner-menu-wrapper ul li {
+    font-size: 16px;
+}
+
+.gdlr-core-title-item-title-wrap .side-img-dinner-title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: none;
+    color: #000000;
+}
+
+.gdlr-core-pbf-column .dinner-text-container {
+    margin-top: 0px;
+    /* padding: 160px 0px 37px 55px; */
 }
 
 /* accordion css */
