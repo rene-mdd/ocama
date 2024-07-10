@@ -8125,17 +8125,18 @@ html :where(img[class*=wp-image-]) {
     font-size: 16px;
 }
 
-.gdlr-core-title-item-title-wrap .side-img-dinner-title {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 1.6;
-    text-transform: none;
-    color: #000000;
+.gdlr-core-pbf-wrapper .dining-side-images {
+    width: 600px;
+    height: 330px;
+    border-radius: 20px;
 }
 
-.gdlr-core-pbf-column .dinner-text-container {
-    margin-top: 0px;
-    /* padding: 160px 0px 37px 55px; */
+.gdlr-core-title-item-title-wrap .dining-side-title {
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+.gdlr-core-pbf-element .dining-side-text {
+    font-size: 18px;
 }
 
 /* accordion css */

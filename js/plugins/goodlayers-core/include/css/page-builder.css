@@ -1268,7 +1268,7 @@ body .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-button .gdlr-c
 .gdlr-core-title-item .gdlr-core-title-item-caption-prefix{ border-right-width: 3px; border-right-style: solid; display: inline-block; 
 	height: 1em; margin-right: 12px; margin-bottom: 0.28em; vertical-align: middle; }
 .gdlr-core-title-item .gdlr-core-title-item-title{ font-size: 41px; font-weight: 800; display: inline-block;
-	text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0px; 
+	letter-spacing: 1px; margin-bottom: 0px; 
  	transition: color 200ms; -moz-transition: color 200ms;
  	-o-transition: color 200ms; -webkit-transition: color 200ms; }
  .gdlr-core-title-item .gdlr-core-title-item-title i{ margin-right: 30px; }
