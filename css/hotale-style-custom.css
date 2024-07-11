@@ -8135,8 +8135,25 @@ html :where(img[class*=wp-image-]) {
     font-size: 30px;
     margin: 15px 0 15px 0;
 }
+
 .gdlr-core-pbf-element .dining-side-text {
     font-size: 18px;
+}
+
+.gdlr-core-pbf-column-content-margin .five-stars-text-container p {
+    font-family: "Brygada 1918", serif;
+    font-style: italic;
+}
+
+.gdlr-core-pbf-column-content-margin .five-stars-text-container .second-subtitle {
+    font-family: "Krub", sans-serif;
+}
+.gdlr-core-icon-item .five-stars-icon {
+    width: 70px;
+}
+
+.gdlr-core-pbf-wrapper-content .five-stars-container {
+    margin-top: 80px;
 }
 
 /* accordion css */
