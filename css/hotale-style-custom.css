@@ -8035,6 +8035,9 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
 }
 
+.hotale-page-wrapper .activities-text-container p {
+    font-family: "Brygada 1918", serif;
+}
 .hotale-page-wrapper .activities-container-wrapper {
     display: flex;
     justify-content: center;
@@ -8148,12 +8151,20 @@ html :where(img[class*=wp-image-]) {
 .gdlr-core-pbf-column-content-margin .five-stars-text-container .second-subtitle {
     font-family: "Krub", sans-serif;
 }
+
 .gdlr-core-icon-item .five-stars-icon {
     width: 70px;
 }
 
 .gdlr-core-pbf-wrapper-content .five-stars-container {
     margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gdlr-core-pbf-wrapper-content .five-stars-container .business-event-container {
+    max-width: 470px;
 }
 
 /* accordion css */
