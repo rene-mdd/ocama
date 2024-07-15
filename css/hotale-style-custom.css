@@ -8130,7 +8130,7 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-pbf-wrapper .dining-side-images {
     width: 600px;
-    height: 330px;
+    height: auto;
     border-radius: 20px;
 }
 
