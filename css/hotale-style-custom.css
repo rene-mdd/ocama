@@ -575,6 +575,11 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     height: 345px;
 }
 
+.dining-page-title-wrap {
+    background-image: url(../upload/dining-images/dining-header.jpg) !important;
+    height: 345px;
+}
+
 .las-galeras-page-title-wrap {
     background-image: url(../upload/las-galeras/las-galeras-header.jpg);
     height: 345px;
@@ -7667,7 +7672,7 @@ html :where(img[class*=wp-image-]) {
 
 .faq-section-wrapper {
     padding: 110px 35px 110px 35px;
-    background-color: white;
+    background-color: #e6e6e6;
 }
 
 .faq-section-wrapper .faq-header {
@@ -7691,6 +7696,16 @@ html :where(img[class*=wp-image-]) {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.gallery-main-container {
+    background-color: white;
+    margin-bottom: 80px;
+}
+
+.gallery-index-fix {
+    z-index: -1 !important;
+    padding-bottom: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8146,10 +8161,6 @@ html :where(img[class*=wp-image-]) {
 .gdlr-core-pbf-column-content-margin .five-stars-text-container p {
     font-family: "Brygada 1918", serif;
     font-style: italic;
-}
-
-.gdlr-core-pbf-column-content-margin .five-stars-text-container .second-subtitle {
-    font-family: "Krub", sans-serif;
 }
 
 .gdlr-core-icon-item .five-stars-icon {
