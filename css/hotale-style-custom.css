@@ -7704,7 +7704,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gallery-index-fix {
-    z-index: -1 !important;
+    z-index: 16 !important;
     padding-bottom: 0;
 }
 
