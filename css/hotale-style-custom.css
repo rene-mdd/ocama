@@ -587,6 +587,11 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     background-size: cover;
 }
 
+.about-page-title-wrap {
+    background-image: url(../upload/about-us-images/about-us-header.jpg) !important;
+    height: 345px;
+}
+
 body.single-product .hotale-header-background-transparent {
     background-image: url(https://demo.goodlayers.com/hotale/resort2/wp-content/uploads/sites/6/2022/05/resort2-title-bg.jpg);
     background-position: center;
