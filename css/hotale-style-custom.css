@@ -592,6 +592,16 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     height: 345px;
 }
 
+.activities-page-title-wrap {
+    background-image: url(../upload/activities-images/activities-header.jpg) !important;
+    height: 345px;
+}
+
+.five-stars-page-title-wrap {
+    background-image: url(../upload/five-stars-images/5-star-service-header.jpg) !important;
+    height: 345px;
+}
+
 body.single-product .hotale-header-background-transparent {
     background-image: url(https://demo.goodlayers.com/hotale/resort2/wp-content/uploads/sites/6/2022/05/resort2-title-bg.jpg);
     background-position: center;
@@ -7517,6 +7527,17 @@ html :where(img[class*=wp-image-]) {
     background-color: #849ca8;
     padding: 110px 0 165px 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-page-text-wrapper .about-us-phrase-container {
+    min-width: 240px;
+}
+
+.about-us-page-text-wrapper .about-us-phrase-container img {
+    border-radius: 8px;
 }
 
 .landing-page-text {
@@ -7532,7 +7553,7 @@ html :where(img[class*=wp-image-]) {
     font-family: "Brygada 1918", serif;
     font-style: italic;
     max-width: 900px;
-    margin: auto;
+    /* margin: auto; */
     padding-left: 40px;
     padding-right: 40px;
     color: white;
