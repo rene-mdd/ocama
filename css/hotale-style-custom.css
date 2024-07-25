@@ -403,7 +403,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 }
 
 .hotale-logo-inner {
-    max-width: 150px;
+    max-width: 200px;
 }
 
 @media only screen and (max-width: 999px) {
@@ -676,19 +676,13 @@ footer {
 }
 
 .hotale-footer-wrapper {
-    padding-top: 80px;
-}
-
-.hotale-footer-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+    padding-top: 30px;
 }
 
 .hotale-copyright-container {
     padding-top: 9px;
-}
-
-.hotale-copyright-container {
-    padding-bottom: 37px;
+    padding-bottom: 9px;
 }
 
 .hotale-body h1,
@@ -753,7 +747,7 @@ footer {
 }
 
 .hotale-body h6 {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .hotale-body {
@@ -7525,7 +7519,7 @@ html :where(img[class*=wp-image-]) {
 
 .about-us-page-text-wrapper {
     background-color: #849ca8;
-    padding: 110px 0 165px 0;
+    padding: 65px 10px 30px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7538,6 +7532,7 @@ html :where(img[class*=wp-image-]) {
 
 .about-us-page-text-wrapper .about-us-phrase-container img {
     border-radius: 8px;
+    border: 3px solid white;
 }
 
 .landing-page-text {
@@ -7781,16 +7776,18 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-footer-wrapper .footer-wrapper-ocama {
     margin: auto;
-    font-size: 150%;
 }
 
 .hotale-footer-wrapper .footer-wrapper-ocama {
     margin: auto;
-    font-size: 150%;
+    /* font-size: 150%; */
 }
 
 .hotale-item-pdlr .contact-description {
     color: #013220;
+    font-family: "Brygada 1918", serif;
+    font-style: italic;
+    line-height: 1.5;
 }
 
 .contact-footer-wrapper .contact-icons-wrapper p {
@@ -8270,8 +8267,9 @@ a {
 }
 
 #accordion-1 .head h2 {
-    font-weight: 100;
-    font-size: 30px;
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     margin: 0;
     color: #343837;
 }
@@ -8326,8 +8324,9 @@ a {
 }
 
 #accordion-2 .head h2 {
-    font-weight: 100;
-    font-size: 30px;
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     margin: 0;
     color: #343837;
 }
