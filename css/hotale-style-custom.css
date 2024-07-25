@@ -867,22 +867,6 @@ footer {
     text-transform: none;
 }
 
-.hotale-sidebar-area .hotale-widget-title {
-    font-size: 20px;
-}
-
-.hotale-sidebar-area .hotale-widget-title {
-    font-weight: 500;
-}
-
-.hotale-sidebar-area .hotale-widget-title {
-    letter-spacing: 0px;
-}
-
-.hotale-sidebar-area .hotale-widget-title {
-    text-transform: none;
-}
-
 .hotale-footer-wrapper .hotale-widget-title {
     font-size: 20px;
 }
@@ -7788,6 +7772,7 @@ html :where(img[class*=wp-image-]) {
     font-family: "Brygada 1918", serif;
     font-style: italic;
     line-height: 1.5;
+    font-size: 20px;
 }
 
 .contact-footer-wrapper .contact-icons-wrapper p {
@@ -7987,6 +7972,7 @@ html :where(img[class*=wp-image-]) {
     margin-bottom: 30px;
     font-style: italic;
     font-size: x-large;
+    color: #898989;
 }
 
 .gdlr-core-pbf-wrapper-content .information-subtitle {
@@ -8201,31 +8187,6 @@ html :where(img[class*=wp-image-]) {
     max-width: 470px;
 }
 
-/* accordion css */
-@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
-
-
-/* h1.title {
-    text-align: center;
-    font-size: 40px;
-    color: #282828;
-    font-weight: 300;
-    margin-bottom: 2.5rem;
-}
-
-b {
-    color: #FFFFFF;
-    font-size: 55px;
-}
-
-p.remarks,
-a {
-    text-align: center;
-    margin-top: 100px;
-    color: #FFFFFF;
-} */
-
-/* accordion */
 
 .accordion-wrapper {
     display: flex;
@@ -8245,6 +8206,12 @@ a {
     max-width: 600px;
     min-width: 300px;
     padding: 0 10px;
+}
+
+.hotale-footer-column .hotale-widget-title {
+    font-family: "Krub", sans-serif;
+	font-weight: 600;
+    font-size: 24px;
 }
 
 /* accordion-1 */
