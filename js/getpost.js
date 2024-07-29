@@ -14,7 +14,7 @@ async function postData(urlPost) {
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
   });
-
+  console.log(responsePost)
   if (responsePost?.ok) {
     const resultPost = await responsePost.json();
     return resultPost;
@@ -33,33 +33,34 @@ postData("http://ocama.docksal.site/wp-json/wp/v2/posts/1/").then((data) => {
   // if (paragraphBlock) {
   //   console.log(paragraphBlock.innerHTML); // This will give you the content of the paragraph block
   // }
+  console.log(data)
   let casaAnaBody = document.getElementById("casa-ana-text");
   let casaAnaTitle = document.getElementById("casa-ana-title");
   let newElement = document.createElement("div");
-  // const baseWpImgUrl = "http://ocama.docksal.site/wp-content/uploads/2024/06/";
-  // const anaImgList = document.getElementById("ana_21047-a").children;
-  // anaImgList[0].childNodes[1].childNodes[1].setAttribute("href", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
-  // anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
-  // console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
-  // console.log(data)
+    const baseWpImgUrl = "http://ocama.docksal.site/wp-content/uploads/2024/06/";
+    const anaImgList = document.getElementById("ana_21047-a").children;
+
+
   if (data?.id === 1) {
+    console.log(!!(data?.title?.rendered))
+    casaAnaBody.innerHTML = "";
+    casaAnaTitle.innerHTML = "";
     newElement.innerHTML = !!(data?.content?.rendered) ? data?.content?.rendered : bodyData;
     casaAnaBody.appendChild(newElement);
-    casaAnaTitle.innerText = data.title.rendered;
-  } else {
-    newElement.innerHTML = bodyData;
-    casaAnaBody.appendChild(newElement);
-    casaAnaTitle.innerText = titleData;
-  }
+    casaAnaTitle.innerText = data?.title?.rendered;
+    anaImgList[0].childNodes[1].childNodes[1].setAttribute("href", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
+    anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg");
+    // console.log(anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute("src", "http://ocama.docksal.site/wp-content/uploads/2024/06/ana_21047.jpg"));
+  } 
 
 }).catch((err) => {
   console.error(err)
-  let casaAnaBody = document.getElementById("casa-ana-text");
-  let casaAnaTitle = document.getElementById("casa-ana-title");
-  let newElement = document.createElement("div");
-  newElement.innerHTML = bodyData;
-  casaAnaBody.appendChild(newElement);
-  casaAnaTitle.innerText = titleData;
+  // let casaAnaBody = document.getElementById("casa-ana-text");
+  // let casaAnaTitle = document.getElementById("casa-ana-title");
+  // let newElement = document.createElement("div");
+  // newElement.innerHTML = bodyData;
+  // casaAnaBody.appendChild(newElement);
+  // casaAnaTitle.innerText = titleData;
 });
 
 const titleData = `Casa Ana`
