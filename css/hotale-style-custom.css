@@ -8102,6 +8102,11 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
 }
 
+.wellness-main-text p {
+    font-family: "Brygada 1918", serif;
+    font-style: italic;
+}
+
 .wellness-main-text h1 {
     font-size: 40px;
 }
