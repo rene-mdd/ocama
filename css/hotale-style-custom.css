@@ -7749,11 +7749,11 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-footer-wrapper .footer-wrapper-ocama {
     margin: auto;
+    /* font-size: 150%; */
 }
 
-.hotale-footer-wrapper .footer-wrapper-ocama {
-    margin: auto;
-    /* font-size: 150%; */
+.hotale-footer-wrapper .footer-wrapper-ocama .wp-image-15871 {
+    width: 200px;
 }
 
 .hotale-item-pdlr .contact-description {
