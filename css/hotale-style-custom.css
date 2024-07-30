@@ -7795,7 +7795,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-testimonial .review-container {
-    min-height: 750px !important;
+    min-height: 772px !important;
 }
 
 .gdlr-core-testimonial-author-image .review-image {
@@ -8061,6 +8061,7 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-page-wrapper .activities-text-container p {
     font-family: "Brygada 1918", serif;
+    font-style: italic;
 }
 .hotale-page-wrapper .activities-container-wrapper {
     display: flex;
