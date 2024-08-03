@@ -7482,12 +7482,12 @@ html :where(img[class*=wp-image-]) {
 
 .landing-page-text-wrapper {
     background-color: #849ca8;
-    padding: 110px 0 165px 0;
+    padding: 65px 0 65px 0;
 }
 
 .room-list-page-text-wrapper {
     background-color: #828261;
-    padding: 110px 0 110px 0;
+    padding: 65px 0 65px 0;
 }
 
 .about-us-page-text-wrapper {
@@ -7512,9 +7512,9 @@ html :where(img[class*=wp-image-]) {
     max-width: 900px;
     text-align: center;
     margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1000px;
 }
 
 .about-us-landing-page-text {
@@ -7534,8 +7534,9 @@ html :where(img[class*=wp-image-]) {
     font-family: "Brygada 1918", serif;
     font-style: italic;
     color: white;
-    line-height: 1.1;
-    font-size: 38px;
+    line-height: 1.5;
+    font-size: 28px;
+    margin-bottom: 0;
 }
 
 .dining-wrapper {
@@ -7716,6 +7717,23 @@ html :where(img[class*=wp-image-]) {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .hotale-body .mobile-book-now-btn {
+        display: block;
+    }
+
+    .hotale-mobile-header-wrap .header-button-wrapper a {
+        display: none;
+    }
+
+    .hotale-mobile-header .header-button-wrapper {
+        display: none;
+    }
+
+    .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
+        padding: 0px 0 30px 0 !important;
+    }
+
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
@@ -7737,10 +7755,18 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-title-item-title-wrap .second-section-title {
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: none;
     color: #222222;
     margin-top: 10px;
+}
+
+.gdlr-core-text-box-item .landing-page-content-text p {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    color: #222222;
+    line-height: 1.5;
 }
 
 .hotale-item-pdlr .contact-footer-wrapper {
@@ -7856,7 +7882,9 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper h1 {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: 500;
 }
 
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper .flex-amenities {
@@ -7894,14 +7922,15 @@ html :where(img[class*=wp-image-]) {
 .flex-amenities-bottom span {
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 15px;
 }
 
 .gdlr-core-pbf-wrapper .gdlr-core-pbf-element .landing-villas-info {
-    font-size: 25px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
-    padding: 14px 33px 14px 33px;
+    padding: 8px 25px 8px 25px;
     text-transform: none;
     border-radius: 8px;
     -moz-border-radius: 8px;
@@ -7939,6 +7968,10 @@ html :where(img[class*=wp-image-]) {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.gdlr-core-pbf-column-content .amenities-flex-icons .gdlr-core-column-service-title-wrap h3 {
+    font-family: "Krub", sans-serif;
 }
 
 .gdlr-core-column-service-icon-left .villa-properties-flex {
@@ -7995,17 +8028,21 @@ html :where(img[class*=wp-image-]) {
 }
 
 .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
     padding: 30px;
     margin-right: auto;
+    height: 292px;
 }
 
 .hotale-page-wrapper .individual-villa-caption {
-    font-size: 40px;
+    font-size: 75px;
+    font-weight: 400;
 }
 
 .hotale-page-wrapper .amenities-title {
-    font-size: 30px;
+    font-size: 41px;
     font-weight: 500;
     letter-spacing: 0px;
     text-transform: none;
@@ -8053,23 +8090,10 @@ html :where(img[class*=wp-image-]) {
     font-family: "Brygada 1918", serif;
     font-style: italic;
 }
+
 .hotale-page-wrapper .activities-container-wrapper {
     display: flex;
     justify-content: center;
-}
-
-@media only screen and (max-width: 767px) {
-    .hotale-body .mobile-book-now-btn {
-        display: block;
-    }
-
-    .hotale-mobile-header-wrap .header-button-wrapper a {
-        display: none;
-    }
-
-    .hotale-mobile-header .header-button-wrapper {
-        display: none;
-    }
 }
 
 .hotale-page-wrapper .about-text-wrapper {
@@ -8079,6 +8103,8 @@ html :where(img[class*=wp-image-]) {
 
 .tourmaster-room-side-thumbnail-inner .villas-text {
     color: #0c0c0c;
+    line-height: 1.5;
+    margin-bottom: 15px !important;
 }
 
 .wellness-main-container {
@@ -8117,12 +8143,32 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-title-item-title-wrap .amenities-text {
-    font-weight: 700;
-
-    font-size: 17px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
     letter-spacing: 0px;
     text-transform: none;
     color: #343837;
+}
+
+.gdlr-core-pbf-wrapper .view-gallery-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gdlr-core-pbf-wrapper .view-gallery-title h3 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.tourmaster-container .review-title {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.gdlr-core-pbf-wrapper .gallery-carrousel-container {
+    background-color: #f3f3f3;
 }
 
 .gdlr-core-pbf-element .subtitle-dinner-wrapper {
@@ -8206,14 +8252,14 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-footer-column .hotale-widget-title {
     font-family: "Krub", sans-serif;
-	font-weight: 600;
+    font-weight: 600;
     font-size: 24px;
 }
 
 .gdlr-core-text-box-item .las-galeras-text-container p {
     font-family: "Brygada 1918", serif;
     font-style: italic;
-} 
+}
 
 /* accordion-1 */
 #accordion-1 {
@@ -8270,6 +8316,14 @@ html :where(img[class*=wp-image-]) {
     color: #343837;
     border: 1px solid #343837;
     border-radius: 0 0 5px 5px;
+}
+
+.tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container .tourmaster-type-text {
+    font-size: 15px;
+}
+
+.tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container .check-availability-wrapper {
+    margin-top: auto;
 }
 
 /* accordion-2 */
