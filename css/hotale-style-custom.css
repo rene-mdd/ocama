@@ -8167,6 +8167,16 @@ html :where(img[class*=wp-image-]) {
     padding: 20px 0;
 }
 
+.tourmaster-container .kachi-padding-fix {
+    text-align: center;
+    font-size: 40px;
+    padding: 0;
+}
+
+.tourmaster-container .kachi-padding-fix h3 {
+    margin-bottom: 10px;
+}
+
 .gdlr-core-pbf-wrapper .gallery-carrousel-container {
     background-color: #f3f3f3;
 }
