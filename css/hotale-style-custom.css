@@ -575,13 +575,18 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     height: 345px;
 }
 
+.wellness-page-title-wrap {
+    background-image: url(../upload/wellness-images/wellness-header-1903x671.jpg) !important;
+    height: 345px;
+}
+
 .dining-page-title-wrap {
     background-image: url(../upload/dining-images/dining-header.jpg) !important;
     height: 345px;
 }
 
 .las-galeras-page-title-wrap {
-    background-image: url(../upload/las-galeras/las-galeras-header.jpg);
+    background-image: url(../upload/las-galeras/las-galeras-header.jpg) !important;
     height: 345px;
     background-position: center;
     background-size: cover;
@@ -7509,7 +7514,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .landing-page-text {
@@ -7712,7 +7717,7 @@ html :where(img[class*=wp-image-]) {
         max-width: none;
     }
 
-    .wellness-main-text {
+    .wellness-main-text-wrapper {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -8114,21 +8119,42 @@ html :where(img[class*=wp-image-]) {
 .wellness-main-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
-.wellness-main-text {
-    max-width: 770px;
+.wellness-main-text-wrapper {
+    max-width: 1000px;
     text-align: center;
 }
 
-.wellness-main-text p {
+.wellness-main-text-wrapper .wellness-subtitle {
     font-family: "Brygada 1918", serif;
     font-style: italic;
+    font-size: 28px;
+    color: #898989;
+    line-height: 1.5;
+    margin-bottom: 60px;
 }
 
-.wellness-main-text h1 {
+.wellness-main-text-wrapper h1 {
     font-size: 40px;
+}
+
+.wellness-container {
+    max-width: 1000px;
+}
+
+.wellness-main-subcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wellness-main-container-wrapper h5 {
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .footer-note-wrapper {
@@ -8139,6 +8165,7 @@ html :where(img[class*=wp-image-]) {
 .footer-note-wrapper small {
     font-family: "Brygada 1918", serif;
     font-style: italic;
+    font-size: 18px;
 }
 
 .wellness-footer-note {
@@ -8195,6 +8222,11 @@ html :where(img[class*=wp-image-]) {
     color: #343837;
 }
 
+.gdlr-core-pbf-element .subtitle-dinner-wrapper P {
+    font-size: 28px;
+    color: #898989;
+}
+
 .gdlr-core-title-item-title-wrap .dinner-title {
     font-size: 38px;
     font-family: "Alkatra", system-ui;
@@ -8215,7 +8247,9 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-title-item-title-wrap .dining-side-title {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
     margin: 15px 0 15px 0;
 }
 
