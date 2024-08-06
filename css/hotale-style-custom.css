@@ -6,7 +6,7 @@
 .hotale-body h6 {
     margin-top: 0px;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 700;
 }
 
@@ -470,7 +470,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 }
 
 .hotale-mobile-header.hotale-fixed-navigation .hotale-logo-inner {
-    max-width: 150px;
+    max-width: 200px;
 }
 
 .hotale-animate-fixed-navigation.hotale-header-style-plain .hotale-logo,
@@ -7508,6 +7508,10 @@ html :where(img[class*=wp-image-]) {
     border: 3px solid white;
 }
 
+.gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
+	margin-bottom: 40px;
+}
+
 .landing-page-text {
     max-width: 900px;
     text-align: center;
@@ -7989,12 +7993,12 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-pbf-wrapper-content .gdlr-core-title-item .subtitle-about-us {
     font-family: "Brygada 1918", serif;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0px;
     text-transform: none;
     margin-bottom: 30px;
     font-style: italic;
-    font-size: x-large;
+    font-size: 28px;
     color: #898989;
 }
 

@@ -1273,9 +1273,6 @@ body .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-button .gdlr-c
  	-o-transition: color 200ms; -webkit-transition: color 200ms; }
  .gdlr-core-title-item .gdlr-core-title-item-title i{ margin-right: 30px; }
 .gdlr-core-title-item .gdlr-core-title-item-title-wrap{ position: relative; }
-.gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
-	margin-bottom: 35px;
-}
 
 .gdlr-core-title-item .gdlr-core-title-item-divider{ position: absolute; top: 50%; margin-top: -1px; 
  	border-bottom-width: 1px; border-bottom-style: solid; }
