@@ -8108,7 +8108,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .hotale-page-wrapper .activities-text-container {
-    max-width: 770px;
+    max-width: 1000px;
     margin-bottom: 80px;
     text-align: center;
 }
@@ -8121,6 +8121,11 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .activities-container-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.gdlr-core-pbf-wrapper-container .activity-title {
+    font-size: 24px;
+    
 }
 
 .hotale-page-wrapper .about-text-wrapper {
