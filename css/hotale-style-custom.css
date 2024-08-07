@@ -575,6 +575,24 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     height: 345px;
 }
 
+.hotale-page-wrapper .experiences-title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+}
+
+.hotale-page-wrapper .subtitle-experiences {
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: italic;
+    font-size: 28px;
+    color: #898989;
+    margin-bottom: 60px;
+}
+
 .wellness-page-title-wrap {
     background-image: url(../upload/wellness-images/wellness-header-1903x671.jpg) !important;
     height: 345px;
@@ -8127,20 +8145,18 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
 }
 
-.wellness-main-text-wrapper .wellness-subtitle {
-    font-family: "Brygada 1918", serif;
-    font-style: italic;
-    font-size: 28px;
-    color: #898989;
-    line-height: 1.5;
-    margin-bottom: 60px;
-}
 
 .wellness-main-text-wrapper h1 {
     font-size: 40px;
+    letter-spacing: 0;
 }
 
-.wellness-container {
+.dining-main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.experiences-container {
     max-width: 1000px;
 }
 
@@ -8210,26 +8226,6 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-pbf-wrapper .gallery-carrousel-container {
     background-color: #f3f3f3;
-}
-
-.gdlr-core-pbf-element .subtitle-dinner-wrapper {
-    font-family: "Brygada 1918", serif;
-    font-style: italic;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    text-transform: none;
-    color: #343837;
-}
-
-.gdlr-core-pbf-element .subtitle-dinner-wrapper P {
-    font-size: 28px;
-    color: #898989;
-}
-
-.gdlr-core-title-item-title-wrap .dinner-title {
-    font-size: 38px;
-    font-family: "Alkatra", system-ui;
 }
 
 .gdlr-core-pbf-element .dinner-menu-wrapper h4 {
@@ -8302,11 +8298,6 @@ html :where(img[class*=wp-image-]) {
     font-family: "Krub", sans-serif;
     font-weight: 600;
     font-size: 24px;
-}
-
-.gdlr-core-text-box-item .las-galeras-text-container p {
-    font-family: "Brygada 1918", serif;
-    font-style: italic;
 }
 
 /* accordion-1 */
