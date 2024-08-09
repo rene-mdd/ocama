@@ -582,6 +582,51 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     margin-bottom: 40px;
 }
 
+.hotale-page-wrapper .contact-title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hotale-page-wrapper .contact-icons-title {
+    font-size: 26px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.contact-info-parent .contact-info {
+    text-decoration: underline;
+    letter-spacing: 1.1;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 1.1px;
+    
+}
+
+.gdlr-core-contact-form-7-item .submit-button {
+    background-color: #013220 !important;
+}
+
+.gdlr-core-pbf-element .secondary-title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+
+
+
+.hotale-page-wrapper .information-title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+}
+
 .hotale-page-wrapper .subtitle-experiences {
     font-family: "Brygada 1918", serif;
     font-weight: 400;
@@ -591,6 +636,12 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     font-size: 28px;
     color: #898989;
     margin-bottom: 60px;
+}
+
+.hotale-page-wrapper .services-title {
+    font-family: "Krub", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .wellness-page-title-wrap {
@@ -7532,6 +7583,9 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
     margin-bottom: 40px;
 }
 
@@ -7596,16 +7650,20 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
 .our-story-text-wrapper {
-    max-width: 770px;
-
+    max-width: 1000px;
+    text-align: center;
 }
 
 .hotale-body-outer-wrapper .our-story-container h3 {
     text-align: center;
     margin-bottom: 35px;
+    font-size: 40px;
 }
 
 .hotale-body-outer-wrapper .about-us-ocama-map {
+    padding-top: 40px;
+    padding-bottom: 110px;
+    background-color: #e6e6e6;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7615,7 +7673,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
-    padding: 110px 0 35px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -7624,12 +7682,12 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #f6f6f6;
 }
 
 .travel-section-wrapper .travel-text-wrapper {
-    max-width: 770px;
+    max-width: 1000px;
     padding: 35px;
+    text-align: center;
 }
 
 .hotale-body-outer-wrapper .travel-img-container {
@@ -7652,17 +7710,19 @@ html :where(img[class*=wp-image-]) {
 }
 
 .transportation-section-wrapper .transportation-text-wrapper {
-    max-width: 770px;
+    max-width: 1000px;
     padding: 35px;
+    text-align: center;
 }
 
 .transportation-section-wrapper .transportation-header {
     text-align: center;
-    max-width: 770px;
+    max-width: 1000px;
 }
 
 .transportation-section-wrapper .transportation-header h3 {
     margin: 0;
+    font-size: 40px;
 }
 
 .transportation-section-wrapper .rental-header {
@@ -7671,11 +7731,14 @@ html :where(img[class*=wp-image-]) {
 
 .transportation-section-wrapper .rental-header h3 {
     margin: 0;
+    font-size: 28px;
+    padding-bottom: 20px;
 }
 
 .transportation-section-wrapper .rental-text-wrapper {
-    max-width: 770px;
+    max-width: 1000px;
     padding: 35px;
+    text-align: center;
 }
 
 .transportation-section-wrapper .helicopter-header {
@@ -7684,16 +7747,19 @@ html :where(img[class*=wp-image-]) {
 
 .transportation-section-wrapper .helicopter-header h3 {
     margin: 0;
+    padding-bottom: 20px;
+    font-size: 28px;
 }
 
 .transportation-section-wrapper .helicopter-text-wrapper {
-    max-width: 770px;
+    max-width: 1000px;
     padding: 35px;
     width: 100%;
+    text-align: center;
 }
 
 .faq-section-wrapper {
-    padding: 110px 35px 110px 35px;
+    padding: 40px 35px 40px 35px;
     background-color: #e6e6e6;
 }
 
@@ -8019,27 +8085,39 @@ html :where(img[class*=wp-image-]) {
     font-weight: 400;
     letter-spacing: 0px;
     text-transform: none;
-    margin-bottom: 30px;
     font-style: italic;
     font-size: 28px;
     color: #898989;
+    margin-bottom: 60px;
+}
+
+.gdlr-core-pbf-wrapper-content .information-check-in {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .gdlr-core-pbf-wrapper-content .information-subtitle {
-    font-size: x-large;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 60px;
 }
 
-.value-container .value-list-wrapper h6 {
+.value-container .value-list-wrapper h6,
+.value-list-wrapper-bottom h6 {
     text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
-.value-container .value-list-wrapper-bottom h6,
-.value-icon-wrapper {
+.gdlr-core-pbf-element .value-container .value-icon-wrapper {
     text-align: center;
+    margin-top: 0;
 }
 
 .value-container .value-icon-wrapper img {
-    width: 40px;
+    width: 80px;
 }
 
 .review-text-title {
@@ -8125,12 +8203,13 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-pbf-wrapper-container .activity-title {
     font-size: 24px;
-    
+
 }
 
 .hotale-page-wrapper .about-text-wrapper {
-    font-size: 20px;
     text-transform: none;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .tourmaster-room-side-thumbnail-inner .villas-text {
@@ -8268,7 +8347,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-pbf-wrapper-content .five-stars-container {
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -8327,7 +8406,7 @@ html :where(img[class*=wp-image-]) {
 #accordion-1 .head h2 {
     font-family: "Krub", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     color: #343837;
 }
@@ -8392,7 +8471,7 @@ html :where(img[class*=wp-image-]) {
 #accordion-2 .head h2 {
     font-family: "Krub", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     color: #343837;
 }
