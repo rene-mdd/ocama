@@ -600,8 +600,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 
 .contact-info-parent .contact-info {
     text-decoration: underline;
-    letter-spacing: 1.1;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: none;
     letter-spacing: 1.1px;
     
@@ -616,9 +615,6 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     font-weight: 600;
     letter-spacing: 0px;
 }
-
-
-
 
 .hotale-page-wrapper .information-title {
     font-size: 40px;
@@ -7645,7 +7641,7 @@ html :where(img[class*=wp-image-]) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 110px 35px;
+    padding: 60px 35px;
 }
 
 .hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
@@ -7661,7 +7657,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .hotale-body-outer-wrapper .about-us-ocama-map {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 110px;
     background-color: #e6e6e6;
     display: flex;
@@ -7673,7 +7669,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
-    padding: 80px 0;
+    padding: 40px 0 0 0;
     text-align: center;
 }
 
@@ -7682,12 +7678,13 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 35px;
 }
 
 .travel-section-wrapper .travel-text-wrapper {
     max-width: 1000px;
-    padding: 35px;
     text-align: center;
+    margin-top: 35px;
 }
 
 .hotale-body-outer-wrapper .travel-img-container {
@@ -7706,12 +7703,11 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 110px 35px 0px 35px;
+    padding: 25px 35px 35px 35px;
 }
 
 .transportation-section-wrapper .transportation-text-wrapper {
     max-width: 1000px;
-    padding: 35px;
     text-align: center;
 }
 
@@ -7721,41 +7717,18 @@ html :where(img[class*=wp-image-]) {
 }
 
 .transportation-section-wrapper .transportation-header h3 {
-    margin: 0;
     font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.transportation-section-wrapper .rental-header {
+.transportation-section-wrapper .transportation-subheader {
     text-align: center;
 }
 
-.transportation-section-wrapper .rental-header h3 {
-    margin: 0;
+.transportation-section-wrapper .transportation-subheader h3 {
+    margin-top: 40px; 
     font-size: 28px;
-    padding-bottom: 20px;
-}
-
-.transportation-section-wrapper .rental-text-wrapper {
-    max-width: 1000px;
-    padding: 35px;
-    text-align: center;
-}
-
-.transportation-section-wrapper .helicopter-header {
-    text-align: center;
-}
-
-.transportation-section-wrapper .helicopter-header h3 {
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: 28px;
-}
-
-.transportation-section-wrapper .helicopter-text-wrapper {
-    max-width: 1000px;
-    padding: 35px;
-    width: 100%;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 .faq-section-wrapper {
@@ -7970,7 +7943,7 @@ html :where(img[class*=wp-image-]) {
 
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper {
     width: 100%;
-    margin: 0 20px 100px 20px;
+    margin: 0 20px 0px 20px;
 }
 
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper h1 {
@@ -8107,7 +8080,6 @@ html :where(img[class*=wp-image-]) {
 .value-list-wrapper-bottom h6 {
     text-align: center;
     font-size: 22px;
-    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -8187,7 +8159,6 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-page-wrapper .activities-text-container {
     max-width: 1000px;
-    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -8255,6 +8226,10 @@ html :where(img[class*=wp-image-]) {
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.gdlr-core-pbf-element .wellness-main-container-wrapper {
+   text-align: center;
 }
 
 .footer-note-wrapper {
