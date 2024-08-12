@@ -7941,6 +7941,19 @@ html :where(img[class*=wp-image-]) {
 
 /* amenities villas list */
 
+.gdlr-core-pbf-element .villa-details-title {
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: none;
+}
+
+.gdlr-core-pbf-element .villa-details-description {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0px;
+}
+
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper {
     width: 100%;
     margin: 0 20px 0px 20px;
