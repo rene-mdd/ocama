@@ -407,8 +407,8 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 }
 
 @media only screen and (max-width: 999px) {
-    .hotale-mobile-header .hotale-logo-inner {
-        max-width: 103px;
+    .hotale-mobile-header .hotale-logo .hotale-logo-inner {
+        max-width: 130px;
     }
 }
 
@@ -4074,8 +4074,8 @@ del span.woocommerce-Price-amount.amount {
     .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
         flex-basis: 100% !important
     }
-    .room-list-page-text-wrapper .landing-page-text p {
-        font-size: 21px;
+    .landing-page-text p {
+        font-size: 21px !important;
     }
     .gdlr-core-page-builder-body .room-list-page-text-wrapper {
         padding: 25px 0 25px 0;
@@ -4094,6 +4094,9 @@ del span.woocommerce-Price-amount.amount {
         font-size: 28px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .hotale-page-wrapper .landing-page-text-wrapper {
+        padding: 25px 0 25px 0;
     }
 }
 
@@ -7789,14 +7792,18 @@ html :where(img[class*=wp-image-]) {
     -webkit-box-shadow: rgb(10 10 10 / 52%) 0px 5px 20px;
 }
 
+ .hotale-mobile-header-container .hotale-mobile-menu-right {
+    right: 20px;
+ }
+
 @media only screen and (max-width: 767px) {
 
     .gdlr-core-pbf-wrapper #gdlr-core-wrapper-5.gdlr-core-pbf-wrapper {
         padding-top: 60px !important;
     }
 
-    .hotale-mobile-header .hotale-logo-inner {
-        max-width: 103px;
+    .hotale-mobile-header .hotale-logo .hotale-logo-inner {
+        max-width: 130px;
     }
 
     .mmr30 {
@@ -7835,6 +7842,12 @@ html :where(img[class*=wp-image-]) {
 
     .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
         padding: 0px 0 30px 0 !important;
+    }
+    .hotale-body .hotale-mobile-header {
+        padding: 0;
+    }
+    .gdlr-core-pbf-wrapper .gdlr-core-pbf-element .landing-villas-info {
+        font-weight: 600 !important;
     }
 
 }

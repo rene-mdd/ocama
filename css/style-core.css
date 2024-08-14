@@ -5172,7 +5172,7 @@ body .hotale-mobile-header .hotale-logo {
 
 @media only screen and (max-width: 999px) {
 	.gdlr-core-pbf-element .gdlr-core-title-item-title-wrap .second-section-title {
-		font-size: 75px !important;
+		font-size: 60px !important;
 	}
 
 	body {
@@ -5261,8 +5261,8 @@ body .hotale-mobile-header .hotale-logo {
 
 	body.hotale-body-front .gdlr-core-container {
 		/* max-width: 500px; */
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.hotale-column-10,
