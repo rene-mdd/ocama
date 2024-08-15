@@ -7664,10 +7664,12 @@ html :where(img[class*=wp-image-]) {
 
 .dining-wrapper {
     background-color: white;
+    padding: 100px 0px 90px 0px;
 }
 
 .villas-wrapper {
     background-color: #f3f3f3;
+    padding: 100px 0px 90px 0px;
 }
 
 .gdlr-core-pbf-wrapper-content .flex-reverse {
@@ -7677,6 +7679,7 @@ html :where(img[class*=wp-image-]) {
 
 .experiences-wrapper {
     background-color: #f3f3f3;
+    padding: 40px 0px 20px 0px;
 }
 
 .gdlr-core-pbf-element .gdlr-core-item-pdb {
@@ -8050,6 +8053,24 @@ html :where(img[class*=wp-image-]) {
     }
     .gdlr-core-pbf-wrapper-content .five-stars-container {
         margin-top: 0 !important;
+    }
+    .hotale-page-wrapper .subtitle-experiences {
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+    .villas-wrapper {
+        background-color: #f3f3f3;
+        padding: 40px 0px 20px 0px;
+    }
+    .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title-wrap .dining-side-title {
+        font-size: 32px !important;
+    }
+    .dining-wrapper {
+        background-color: white;
+        padding: 40px 0px 20px 0px;
+    }
+    .hotale-body #gdlr-core-wrapper-3.gdlr-core-pbf-wrapper {
+        padding-top: 20px !important;
     }
 }
 
