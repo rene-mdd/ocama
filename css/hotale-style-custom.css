@@ -8019,6 +8019,11 @@ html :where(img[class*=wp-image-]) {
         margin-bottom: 30px;
     }
 
+    .villas-main-container .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
+        font-size: 36px;
+        margin-bottom: 0 !important;
+    }
+
     .gdlr-core-pbf-element .gallery-main-title {
         padding-bottom: 10px;
     }
