@@ -7937,7 +7937,7 @@ html :where(img[class*=wp-image-]) {
     }
 
     .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container {
-        padding: 0px 0 30px 0 !important;
+        padding: 0px 0 0px 0 !important;
     }
 
     .hotale-body .hotale-mobile-header {
@@ -8015,7 +8015,7 @@ html :where(img[class*=wp-image-]) {
     }
 
     .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
-        font-size: 36px !important;
+        font-size: 36px;
         margin-bottom: 30px;
     }
 
@@ -8184,10 +8184,22 @@ html :where(img[class*=wp-image-]) {
     .leave-us-info-wrapper .gdlr-core-pbf-wrapper-content .gdlr-core-pbf-wrapper-container .gdlr-core-pbf-column #remove-bottom-padding {
         padding-bottom: 40px !important;
     }
+
     .hotale-page-wrapper .social-icons-wrapper {
         padding: 40px 0px 40px 0px;
     }
 
+    .gdlr-core-title-item-title-wrap .amenities-text {
+        font-size: 15px !important;
+    }
+
+    .hotale-body .mobile-book-now-btn {
+        height: 45px
+    }
+
+    .hotale-body .mobile-book-now-btn a {
+        font-size: 18px;
+    }
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
@@ -8208,7 +8220,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-title-item-title-wrap .second-section-title {
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 400;
     text-transform: none;
     color: #222222;
