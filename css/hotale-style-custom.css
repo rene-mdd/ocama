@@ -597,7 +597,11 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     font-weight: 400;
     text-transform: none;
     letter-spacing: 1.1px;
+}
 
+.contact-info-parent .google-maps-anchor {
+    letter-spacing: normal;
+    font-weight: 600;
 }
 
 .gdlr-core-contact-form-7-item .submit-button {
@@ -7839,21 +7843,53 @@ html :where(img[class*=wp-image-]) {
 .gdlr-core-pbf-element .gallery-main-title {
     padding-bottom: 60px;
 }
+
 .gdlr-core-pbf-wrapper .las-galeras-main-container {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .las-galeras-gallery-container {
     padding: 20px 20px 40px 20px;
 }
+
 .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-caption-bottom {
     padding-bottom: 20px;
 }
+
 .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-title {
     margin-bottom: 20px;
 }
+
 .gdlr-core-container .five-stars-main-container {
     padding: 0px 0px 45px 0px;
+}
+
+.gdlr-core-pbf-column .contact-grid-container .sidebar-grid div {
+    padding-bottom: 40px;
+}
+
+.gdlr-core-pbf-column .contact-grid-container .header-grid div {
+    padding-bottom: 25px;
+}
+
+.hotale-body .leave-us-info-wrapper {
+    padding: 90px 0px 35px 0px;
+}
+
+.leave-us-info-wrapper .leave-us-info-subtitle {
+    font-size: 39px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.leave-us-info-wrapper .leave-us-info-secondary-container {
+    padding-bottom: 60px;
+}
+
+.hotale-page-wrapper .social-icons-wrapper {
+    padding: 80px 0px 50px 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7968,6 +8004,7 @@ html :where(img[class*=wp-image-]) {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
     }
+
     .gdlr-core-pbf-wrapper#gallery {
         padding-top: 30px;
     }
@@ -7981,97 +8018,176 @@ html :where(img[class*=wp-image-]) {
         font-size: 36px !important;
         margin-bottom: 30px;
     }
+
     .gdlr-core-pbf-element .gallery-main-title {
         padding-bottom: 10px;
     }
+
     .gallery-main-container {
         margin-bottom: 40px;
     }
+
     .hotale-page-wrapper .contact-title {
         font-size: 36px;
         margin-bottom: 20px;
     }
+
     .gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
         line-height: 120%;
     }
+
     .gdlr-core-pbf-wrapper-content .gdlr-core-title-item .subtitle-about-us {
         font-size: 21px !important;
         margin-bottom: 40px !important;
     }
+
     .about-us-landing-page-text {
         font-size: 21px;
         padding: 40px 0px 10px 0px;
     }
+
     .hotale-body-outer-wrapper .our-story-container h3 {
         font-size: 32px;
         margin-bottom: 20px;
     }
-    .hotale-body-outer-wrapper .about-us-ocama-map  {
+
+    .hotale-body-outer-wrapper .about-us-ocama-map {
         padding-top: 10px;
         padding-bottom: 40px;
     }
+
     .hotale-body-outer-wrapper .about-us-ocama-map h3 {
         font-size: 32px;
         margin-bottom: 10px;
     }
+
     .hotale-body-outer-wrapper .travel-section-wrapper .travel-header h3 {
         font-size: 32px;
         line-height: 120%;
     }
+
     .hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
         padding-top: 0;
     }
+
     .transportation-section-wrapper .transportation-header h3 {
         font-size: 32px;
         line-height: 120%;
         margin-bottom: 20px;
     }
+
     .faq-section-wrapper .faq-header {
         font-size: 32px;
         margin-bottom: 0;
     }
+
     .gdlr-core-pbf-column-content-margin .five-stars-text-container p {
         font-size: 21px;
     }
+
     .gdlr-core-pbf-column-content-margin .five-stars-text-container .second-services-subtitle {
         margin-bottom: 40px !important;
     }
+
     .hotale-page-wrapper .experiences-title {
         margin-bottom: 0 !important;
     }
+
     .las-galeras-gallery-container {
         padding: 10px 20px 40px 20px;
     }
+
     .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-title {
         margin-bottom: 0px;
     }
+
     .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-caption-bottom {
         padding-bottom: 10px;
     }
+
     .gdlr-core-container .five-stars-main-container {
         padding: 0;
     }
+
     .gdlr-core-pbf-wrapper-content .five-stars-container {
         margin-top: 0 !important;
     }
+
     .hotale-page-wrapper .subtitle-experiences {
         font-size: 21px;
         margin-bottom: 40px;
     }
+
     .villas-wrapper {
         background-color: #f3f3f3;
         padding: 40px 0px 20px 0px;
     }
+
     .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title-wrap .dining-side-title {
         font-size: 32px !important;
     }
+
     .dining-wrapper {
         background-color: white;
         padding: 40px 0px 20px 0px;
     }
+
     .hotale-body #gdlr-core-wrapper-3.gdlr-core-pbf-wrapper {
         padding-top: 20px !important;
     }
+
+    .gdlr-core-pbf-column .contact-grid-container .header-grid div h3 {
+        margin-bottom: 0;
+    }
+
+    .gdlr-core-pbf-column .contact-grid-container {
+        display: grid;
+        grid-template-columns: 80px auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            'sidebar header'
+            'sidebar footer';
+    }
+
+    .gdlr-core-pbf-column .contact-grid-container .sidebar-grid {
+        grid-area: sidebar;
+    }
+
+    .gdlr-core-pbf-column .contact-grid-container .sidebar-grid div {
+        padding: 0;
+    }
+
+    .gdlr-core-pbf-column .contact-grid-container .header-grid {
+        grid-area: header;
+    }
+
+    .gdlr-core-pbf-column .contact-grid-container .header-grid div {
+        padding-bottom: 0;
+    }
+
+    .gdlr-core-pbf-column .contact-grid-container .footer-grid {
+        grid-area: footer;
+    }
+
+    .footer-grid .google-maps-wrapper {
+        margin-top: 80px;
+    }
+
+    .hotale-body .leave-us-info-wrapper {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .leave-us-info-wrapper .leave-us-info-secondary-container {
+        padding-bottom: 0;
+    }
+
+    .leave-us-info-wrapper .gdlr-core-pbf-wrapper-content .gdlr-core-pbf-wrapper-container .gdlr-core-pbf-column #remove-bottom-padding {
+        padding-bottom: 40px !important;
+    }
+    .hotale-page-wrapper .social-icons-wrapper {
+        padding: 40px 0px 40px 0px;
+    }
+
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
