@@ -4071,6 +4071,7 @@ del span.woocommerce-Price-amount.amount {
 .wp-block-columns.are-vertically-aligned-bottom {
     align-items: flex-end
 }
+
 .tourmaster-single-review .tourmaster-single-review-content {
     padding-left: 0;
 }
@@ -4121,13 +4122,16 @@ del span.woocommerce-Price-amount.amount {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
     .gdlr-core-pbf-element .villas-title-wrapper {
         padding-top: 20px;
         padding-bottom: 10px;
     }
+
     .gdlr-core-pbf-sidebar-container .gdlr-core-pbf-sidebar-padding {
         padding-top: 40px;
     }
+
     .gdlr-core-pbf-element .gdlr-core-title-item .review-text-title {
         font-size: 32px;
     }
@@ -7604,7 +7608,7 @@ html :where(img[class*=wp-image-]) {
 
 .about-us-page-text-wrapper {
     background-color: #849ca8;
-    padding: 65px 10px 30px 10px;
+    padding: 65px 20px 30px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7683,7 +7687,7 @@ html :where(img[class*=wp-image-]) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 60px 35px;
+    padding: 60px 20px;
 }
 
 .hotale-body-outer-wrapper .our-story-container .our-story-title-wrapper,
@@ -7720,7 +7724,7 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 35px;
+    padding: 35px 20px 35px 20px;
 }
 
 .travel-section-wrapper .travel-text-wrapper {
@@ -7745,7 +7749,7 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 25px 35px 35px 35px;
+    padding: 25px 20px 35px 20px;
 }
 
 .transportation-section-wrapper .transportation-text-wrapper {
@@ -7774,7 +7778,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .faq-section-wrapper {
-    padding: 40px 35px 40px 35px;
+    padding: 40px 20px 40px 20px;
     background-color: #e6e6e6;
 }
 
@@ -7827,6 +7831,10 @@ html :where(img[class*=wp-image-]) {
 
 .hotale-mobile-header-container .hotale-mobile-menu-right {
     right: 20px;
+}
+
+.gdlr-core-pbf-element .gallery-main-title {
+    padding-bottom: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7889,50 +7897,120 @@ html :where(img[class*=wp-image-]) {
         padding-top: 0;
         padding-bottom: 0;
     }
+
     .gdlr-core-pbf-element .villas-title-wrapper .individual-villa-caption {
         font-size: 48px !important;
     }
+
     .hotale-page-wrapper .amenities-title {
         font-size: 32px !important;
     }
+
     .villa-gallery-main-container .gallery-carrousel-container .view-gallery-title {
         padding: 10px 20px;
     }
+
     .hotale-page-wrapper .gdlr-core-pbf-wrapper.villa-gallery-main-container {
         padding-bottom: 20px;
         padding-top: 0;
     }
+
     .gdlr-core-pbf-wrapper .gallery-carrousel-container .view-gallery-title h3 {
         font-size: 32px;
     }
+
     .hotale-footer-wrapper .footer-wrapper-ocama {
         text-align: center;
     }
+
     .hotale-footer-wrapper .widget {
         margin-bottom: 20px;
     }
+
     .hotale-footer-wrapper .footer-wrapper-ocama {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    .hotale-footer-wrapper .footer-wrapper-ocama > div {
+
+    .hotale-footer-wrapper .footer-wrapper-ocama>div {
         margin-bottom: 20px;
     }
+
     .hotale-footer-wrapper .footer-wrapper-ocama .gdlr-core-with-fa-send-o-button {
         margin: auto;
         width: 224px;
     }
+
     .hotale-footer-column .hotale-widget-title {
         margin-bottom: 0;
     }
+
     #gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
     }
+    .gdlr-core-pbf-wrapper#gallery {
+        padding-top: 30px;
+    }
+
     .hotale-page-wrapper .information-title {
         font-size: 36px;
         margin-bottom: 30px;
     }
+
+    .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
+        font-size: 36px !important;
+    }
+    .gdlr-core-pbf-element .gallery-main-title {
+        padding-bottom: 10px;
+    }
+    .gallery-main-container {
+        margin-bottom: 40px;
+    }
+    .hotale-page-wrapper .contact-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
+        line-height: 120%;
+    }
+    .gdlr-core-pbf-wrapper-content .gdlr-core-title-item .subtitle-about-us {
+        font-size: 21px !important;
+        margin-bottom: 40px !important;
+    }
+    .about-us-landing-page-text {
+        font-size: 21px;
+        padding: 40px 0px 10px 0px;
+    }
+    .hotale-body-outer-wrapper .our-story-container h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .hotale-body-outer-wrapper .about-us-ocama-map  {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .hotale-body-outer-wrapper .about-us-ocama-map h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .hotale-body-outer-wrapper .travel-section-wrapper .travel-header h3 {
+        font-size: 32px;
+        line-height: 120%;
+    }
+    .hotale-body-outer-wrapper .travel-section-wrapper .travel-header {
+        padding-top: 0;
+    }
+    .transportation-section-wrapper .transportation-header h3 {
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+    .faq-section-wrapper .faq-header {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
