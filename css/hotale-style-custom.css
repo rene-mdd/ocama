@@ -7836,6 +7836,22 @@ html :where(img[class*=wp-image-]) {
 .gdlr-core-pbf-element .gallery-main-title {
     padding-bottom: 60px;
 }
+.gdlr-core-pbf-wrapper .las-galeras-main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.las-galeras-gallery-container {
+    padding: 20px 20px 40px 20px;
+}
+.las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-caption-bottom {
+    padding-bottom: 20px;
+}
+.las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-title {
+    margin-bottom: 20px;
+}
+.gdlr-core-container .five-stars-main-container {
+    padding: 0px 0px 45px 0px;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -7960,6 +7976,7 @@ html :where(img[class*=wp-image-]) {
 
     .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
         font-size: 36px !important;
+        margin-bottom: 30px;
     }
     .gdlr-core-pbf-element .gallery-main-title {
         padding-bottom: 10px;
@@ -8010,7 +8027,30 @@ html :where(img[class*=wp-image-]) {
         font-size: 32px;
         margin-bottom: 0;
     }
-
+    .gdlr-core-pbf-column-content-margin .five-stars-text-container p {
+        font-size: 21px;
+    }
+    .gdlr-core-pbf-column-content-margin .five-stars-text-container .second-services-subtitle {
+        margin-bottom: 40px !important;
+    }
+    .hotale-page-wrapper .experiences-title {
+        margin-bottom: 0 !important;
+    }
+    .las-galeras-gallery-container {
+        padding: 10px 20px 40px 20px;
+    }
+    .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-title {
+        margin-bottom: 0px;
+    }
+    .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-caption-bottom {
+        padding-bottom: 10px;
+    }
+    .gdlr-core-container .five-stars-main-container {
+        padding: 0;
+    }
+    .gdlr-core-pbf-wrapper-content .five-stars-container {
+        margin-top: 0 !important;
+    }
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
@@ -8362,7 +8402,8 @@ html :where(img[class*=wp-image-]) {
 }
 
 .las-galeras-images-list-parent li .gdlr-core-media-image img {
-    height: 700px;
+    height: auto;
+    object-fit: scale-down;
 }
 
 .hotale-page-wrapper .casa-guama-background-header {
