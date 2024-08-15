@@ -8205,6 +8205,9 @@ html :where(img[class*=wp-image-]) {
     .hotale-body .mobile-book-now-btn a {
         font-size: 18px;
     }
+    .villas-main-container .tourmaster-single-review .tourmaster-single-review-content {
+        padding-bottom: 0 !important;
+    }
 }
 
 .gdlr-core-page-builder-body .landing-page-container {
