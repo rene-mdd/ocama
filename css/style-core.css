@@ -8642,11 +8642,11 @@ span.paypal-button-text.true {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 	#gdlr-core-wrapper-5.gdlr-core-pbf-wrapper {
 		padding-top: 90px !important;
 	}
-}
+} */
 
 #gdlr-core-column-21:hover .gdlr-core-pbf-column-content-margin,
 #gdlr-core-column-21:hover .gdlr-core-pbf-column-content-margin .gdlr-core-pbf-background-wrap,

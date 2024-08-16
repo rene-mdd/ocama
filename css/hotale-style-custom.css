@@ -6,7 +6,7 @@
 .hotale-body h6 {
     margin-top: 0px;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 120%;
     font-weight: 700;
 }
 
@@ -7837,7 +7837,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .hotale-mobile-header-container .hotale-mobile-menu-right {
-    right: 20px;
+    right: -3px;
 }
 
 .gdlr-core-pbf-element .gallery-main-title {
@@ -7851,6 +7851,7 @@ html :where(img[class*=wp-image-]) {
 
 .las-galeras-gallery-container {
     padding: 20px 20px 40px 20px;
+    margin-bottom: 20px;
 }
 
 .las-galeras-gallery-container .gdlr-core-title-item .gdlr-core-title-item-caption-bottom {
@@ -7892,10 +7893,37 @@ html :where(img[class*=wp-image-]) {
     padding: 80px 0px 50px 0px;
 }
 
+.hotale-mobile-header .burger-menu-wrapper {
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+}
+
+.hotale-page-wrapper .about-your-stay-container {
+    padding: 0px 0px 110px 0px;
+}
+
+.hotale-page-wrapper .health-and-safety-container {
+    padding: 0px 0px 45px 0px;
+}
+
+.gdlr-core-pbf-element .experience-gallery-title {
+    text-transform: none;
+    font-size: 40px;
+}
+
 @media only screen and (max-width: 767px) {
 
-    .gdlr-core-pbf-wrapper #gdlr-core-wrapper-5.gdlr-core-pbf-wrapper {
-        padding-top: 60px !important;
+    .gdlr-core-pbf-wrapper-content .information-subtitle.security-title {
+        margin-top: 20px;
+    }
+
+    .hotale-page-wrapper .health-and-safety-container {
+        padding: 0px 0px 0px 0px;
+    }
+
+
+    .hotale-page-wrapper .about-your-stay-container {
+        padding: 0px 0px 40px 0px;
     }
 
     .hotale-mobile-header .hotale-logo .hotale-logo-inner {
@@ -8016,12 +8044,10 @@ html :where(img[class*=wp-image-]) {
 
     .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
         font-size: 36px;
-        margin-bottom: 30px;
     }
 
     .villas-main-container .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
         font-size: 36px;
-        margin-bottom: 0 !important;
     }
 
     .gdlr-core-pbf-element .gallery-main-title {
@@ -8205,6 +8231,7 @@ html :where(img[class*=wp-image-]) {
     .hotale-body .mobile-book-now-btn a {
         font-size: 18px;
     }
+
     .villas-main-container .tourmaster-single-review .tourmaster-single-review-content {
         padding-bottom: 0 !important;
     }
