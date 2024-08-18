@@ -8571,11 +8571,11 @@ span.paypal-button-text.true {
 
 #gdlr-core-column-16:hover .gdlr-core-pbf-column-content-margin .gdlr-core-pbf-background-wrap {}
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 	#gdlr-core-wrapper-3.gdlr-core-pbf-wrapper {
 		padding-top: 80px !important;
 	}
-}
+} */
 
 #gdlr-core-column-17:hover .gdlr-core-pbf-column-content-margin,
 #gdlr-core-column-17:hover .gdlr-core-pbf-column-content-margin .gdlr-core-pbf-background-wrap,

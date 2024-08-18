@@ -202,7 +202,7 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
 }
 
 .hotale-body-front .gdlr-core-container,
-.hotale-body-front .hotale-container {
+.hotale-body-front .hotale-page-wrapper .hotale-container {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -632,10 +632,10 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     margin-bottom: 60px;
 }
 
-.hotale-page-wrapper .services-title {
-    font-family: "Krub", sans-serif;
-    font-size: 22px;
+.gdlr-core-pbf-element .services-title {
+    font-size: 22px !important;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .wellness-page-title-wrap {
@@ -7831,9 +7831,12 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-pbf-element .activities-shadows {
-    box-shadow: rgb(10 10 10 / 52%) 0px 5px 20px;
-    -moz-box-shadow: rgb(10 10 10 / 52%) 0px 5px 20px;
-    -webkit-box-shadow: rgb(10 10 10 / 52%) 0px 5px 20px;
+    box-shadow: rgb(10 10 10 / 10%) 0px 5px 20px;
+    ;
+    -moz-box-shadow: rgb(10 10 10 / 10%) 0px 5px 20px;
+    ;
+    -webkit-box-shadow: rgb(10 10 10 / 10%) 0px 5px 20px;
+    ;
 }
 
 .hotale-mobile-header-container .hotale-mobile-menu-right {
@@ -7911,6 +7914,23 @@ html :where(img[class*=wp-image-]) {
     font-size: 40px;
 }
 
+.hotale-page-wrapper .las-galeras-main-container .mobile-padding-removal {
+    padding: 0px 0px 45px 0px;
+}
+
+.gdlr-core-pbf-element .five-stars-services-wrapper {
+    margin-top: 20px;
+}
+
+.gdlr-core-pbf-element .lower-mobile-padding {
+    padding-bottom: 40px;
+}
+
+.dinner-side-text ul li {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
 @media only screen and (max-width: 767px) {
 
     .gdlr-core-pbf-wrapper-content .information-subtitle.security-title {
@@ -7940,11 +7960,6 @@ html :where(img[class*=wp-image-]) {
 
     .gdlr-core-pbf-wrapper .image-container-width {
         max-width: none;
-    }
-
-    .wellness-main-text-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .activities-text-container {
@@ -8039,7 +8054,20 @@ html :where(img[class*=wp-image-]) {
 
     .hotale-page-wrapper .information-title {
         font-size: 36px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .hotale-page-wrapper .las-galeras-main-container .mobile-padding-removal {
+        padding: 0;
+    }
+
+    .gdlr-core-pbf-column#gdlr-core-column-4 .mobile-padding-removal {
+        padding: 0 !important;
+    }
+
+    .gdlr-core-pbf-element .lower-mobile-padding {
+        padding-bottom: 20px;
     }
 
     .gdlr-core-pbf-element .gdlr-core-title-item .gdlr-core-title-item-title {
@@ -8064,7 +8092,7 @@ html :where(img[class*=wp-image-]) {
     }
 
     .gdlr-core-title-item .gdlr-core-title-item-title-wrap .about-us-title {
-        line-height: 120%;
+        margin-top: 20px;
     }
 
     .gdlr-core-pbf-wrapper-content .gdlr-core-title-item .subtitle-about-us {
@@ -8121,7 +8149,8 @@ html :where(img[class*=wp-image-]) {
     }
 
     .hotale-page-wrapper .experiences-title {
-        margin-bottom: 0 !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .las-galeras-gallery-container {
@@ -8164,7 +8193,7 @@ html :where(img[class*=wp-image-]) {
     }
 
     .hotale-body #gdlr-core-wrapper-3.gdlr-core-pbf-wrapper {
-        padding-top: 20px !important;
+        padding-top: 0 !important;
     }
 
     .gdlr-core-pbf-column .contact-grid-container .header-grid div h3 {
@@ -8234,6 +8263,24 @@ html :where(img[class*=wp-image-]) {
 
     .villas-main-container .tourmaster-single-review .tourmaster-single-review-content {
         padding-bottom: 0 !important;
+    }
+
+    .hotale-body-wrapper .wellness-main-container {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .wellness-main-container .wellness-responsive-padding {
+        padding: 0;
+    }
+    .wellness-main-subcontainer .experiences-container {
+        margin-bottom: 0;
+    }
+    .wellness-main-subcontainer .gdlr-core-blog-thumbnail {
+        margin-bottom: 20px;
+    }
+    .gdlr-core-pbf-element .wellness-main-subcontainer {
+        margin: 0 0 40px 0;
     }
 }
 
@@ -8529,6 +8576,7 @@ html :where(img[class*=wp-image-]) {
     text-align: center;
     font-size: 22px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .gdlr-core-pbf-element .value-container .value-icon-wrapper {
@@ -8644,6 +8692,12 @@ html :where(img[class*=wp-image-]) {
     margin-bottom: 60px;
 }
 
+.wellness-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
 .wellness-main-text-wrapper {
     max-width: 1000px;
     text-align: center;
@@ -8669,6 +8723,7 @@ html :where(img[class*=wp-image-]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 65px 0;
 }
 
 .wellness-main-container-wrapper h5 {
