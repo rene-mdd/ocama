@@ -7874,7 +7874,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-pbf-column .contact-grid-container .header-grid div {
-    padding-bottom: 25px;
+    padding-bottom: 0;
 }
 
 .hotale-body .leave-us-info-wrapper {
@@ -7931,7 +7931,39 @@ html :where(img[class*=wp-image-]) {
     color: #0000EE;
 }
 
+.gdlr-core-pbf-column .contact-container {
+    padding: 50px 20px 0px 20px;
+}
+
+.gdlr-core-pbf-column-content .gdlr-core-pbf-element .contact-icon-container#contact-icon-id {
+    background-color: #ffffff;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    padding: 24px 24px 24px 24px;
+}
+.gdlr-core-pbf-column-content .gdlr-core-pbf-element .contact-phone-container#contact-icon-id {
+    background-color: #ffffff;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    padding: 20px 20px 20px 20px;
+}
+
+
 @media only screen and (max-width: 767px) {
+
+    .contact-info-parent .contact-info {
+        letter-spacing: 0;
+    }
+
+    .gdlr-core-pbf-column-content .header-grid div, .footer-grid div {
+        padding-left: 0px;
+    }    
+
+    .gdlr-core-pbf-column .contact-container {
+        padding: 20px 20px 0px 20px;
+    }
 
     .gdlr-core-pbf-wrapper-content .information-subtitle.security-title {
         margin-top: 20px;
@@ -8221,16 +8253,16 @@ html :where(img[class*=wp-image-]) {
         grid-area: header;
     }
 
-    .gdlr-core-pbf-column .contact-grid-container .header-grid div {
+    /* .gdlr-core-pbf-column .contact-grid-container .header-grid div {
         padding-bottom: 0;
-    }
+    } */
 
     .gdlr-core-pbf-column .contact-grid-container .footer-grid {
         grid-area: footer;
     }
 
     .footer-grid .google-maps-wrapper {
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .hotale-body .leave-us-info-wrapper {
@@ -8273,14 +8305,23 @@ html :where(img[class*=wp-image-]) {
     .wellness-main-container .wellness-responsive-padding {
         padding: 0;
     }
+
     .wellness-main-subcontainer .experiences-container {
         margin-bottom: 0;
     }
+
     .wellness-main-subcontainer .gdlr-core-blog-thumbnail {
         margin-bottom: 20px;
     }
+
     .gdlr-core-pbf-element .wellness-main-subcontainer {
         margin: 0 0 40px 0;
+    }
+    .gdlr-core-pbf-column-content .gdlr-core-pbf-element .contact-icon-container#contact-icon-id {
+        padding: 15px;
+    }
+    .gdlr-core-pbf-column-content .gdlr-core-pbf-element .contact-phone-container#contact-icon-id {
+        padding: 10px;
     }
 }
 
