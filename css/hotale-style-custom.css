@@ -7971,6 +7971,10 @@ html :where(img[class*=wp-image-]) {
 
 @media only screen and (max-width: 767px) {
 
+    .hotale-page-wrapper .activities-wrapper {
+        padding-top: 20px;
+    } 
+
     .hotale-page-wrapper .gdlr-core-pbf-element .individual-villa-caption {
         margin-top: 0;
     }
@@ -8727,10 +8731,11 @@ html :where(img[class*=wp-image-]) {
     font-style: italic;
 }
 
-.hotale-page-wrapper .activities-container-wrapper {
+.hotale-page-wrapper .activities-container {
     display: flex;
     justify-content: center;
 }
+
 
 .gdlr-core-pbf-wrapper-container .activity-title {
     font-size: 24px;

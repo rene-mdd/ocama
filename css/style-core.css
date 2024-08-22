@@ -8397,12 +8397,12 @@ span.paypal-button-text.true {
 	height: calc(100vh - 75px);
 }
 
-@media only screen and (max-width: 999px) {
+/* @media only screen and (max-width: 999px) {
 	#gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {
 		padding-top: 120px !important;
 	}
 
-}
+} */
 
 @media only screen and (max-width: 767px) {
 	#gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {
