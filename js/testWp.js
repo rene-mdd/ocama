@@ -117,7 +117,7 @@
 //           dining, and stargazing.
 //       </p>
 //       <p>
-//           Descending via a marble-clad staircase, you'll discover
+//           Descending via a marble-clad staircase, you will discover
 //           the second level, home to a fully equipped kitchen,
 //           breakfast bar and dining area boasting live-edge
 //           elements. Floor-to-ceiling glass doors unveil yet
@@ -128,7 +128,7 @@
 //           Adjacent to this, a flexible space awaits—ideal for
 //           relaxation, lounging, or converting into a cozy
 //           secondary queen bedroom, complete with an ensuite
-//           natural slate bathroom, outdoor shower and a work desk.
+//           natural slate bathroom, outdoor shower, and a work desk.
 //           A descent to the third level reveals another inviting
 //           wooden sun deck, outdoor shower, and an 18-foot infinity
 //           pool, adorned with natural slate tiles. Here, you have

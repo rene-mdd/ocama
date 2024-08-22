@@ -7823,7 +7823,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .gdlr-core-page-builder-body .villa-gallery-main-container {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .hotale-body .mm-menu.mm-offcanvas {
@@ -7970,6 +7970,10 @@ html :where(img[class*=wp-image-]) {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .hotale-page-wrapper .gdlr-core-pbf-element .individual-villa-caption {
+        margin-top: 0;
+    }
 
     .contact-info-parent .contact-info {
         letter-spacing: 0;
@@ -8670,6 +8674,7 @@ html :where(img[class*=wp-image-]) {
 .hotale-page-wrapper .individual-villa-caption {
     font-size: 75px !important;
     font-weight: 400;
+    margin-top: 40px;
 }
 
 .hotale-page-wrapper .amenities-title {
