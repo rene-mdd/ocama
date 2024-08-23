@@ -1,4 +1,4 @@
-var wordpressBaseUrl = "http:\/\/ocama.docksal.site/";
+var wordpressBaseUrl = "https://ocama.com/wpbackend.ocama.com/";
 async function postData(urlPost) {
   // Default options are marked with *
   const responsePost = await fetch(urlPost, {
@@ -13,6 +13,7 @@ async function postData(urlPost) {
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
   });
+  console.log(responsePost)
   if (responsePost?.ok) {
     const resultPost = await responsePost.json();
     return resultPost;

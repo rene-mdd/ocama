@@ -1,4 +1,4 @@
-var wordpressBaseUrl = "http:\/\/ocama.docksal.site/";
+var wordpressBaseUrl = "https://ocama.com/wpbackend.ocama.com/";
 async function postData(urlPost) {
   // Default options are marked with *
   const responsePost = await fetch(urlPost, {
@@ -23,7 +23,6 @@ async function postData(urlPost) {
 }
 
 postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts/1/`).then((data) => {
-
   let casaAnaBody = document.getElementById("casa-ana-text");
   let casaAnaTitle = document.getElementById("casa-ana-title");
   let newElement = document.createElement("div");
