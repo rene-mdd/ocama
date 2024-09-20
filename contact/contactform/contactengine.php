@@ -1,12 +1,12 @@
 <?php
 
-$EmailFrom = Trim(stripslashes($_POST['Email'])); 
-$EmailTo = "reservations@ocama.com";
+$EmailFrom = Trim(stripslashes($_POST['Email']));
+$EmailTo = "rene.rrrg@gmail.com";
 $Subject = "Testing This one";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Tel = Trim(stripslashes($_POST['Tel'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$Name = Trim(stripslashes($_POST['Name']));
+$Tel = Trim(stripslashes($_POST['Tel']));
+$Email = Trim(stripslashes($_POST['Email']));
+$Message = Trim(stripslashes($_POST['Message']));
 
 // validation
 $validationOK=true;
