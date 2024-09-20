@@ -8502,6 +8502,10 @@ html :where(img[class*=wp-image-]) {
     margin-top: 0px;
 }
 
+.guest-icon-wrapper .villa-details-description {
+    padding-top: 8px;
+}
+
 .gdlr-core-pbf-wrapper-container .resort-amenities-wrapper {
     width: 100%;
     margin: 0 20px 0px 20px;
@@ -8931,6 +8935,13 @@ html :where(img[class*=wp-image-]) {
     font-size: 24px;
 }
 
+.villas-thumbnail-container .guest-icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
 /* accordion-1 */
 #accordion-1 {
     position: relative;
@@ -8994,6 +9005,10 @@ html :where(img[class*=wp-image-]) {
 
 .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container .check-availability-wrapper {
     margin-top: auto;
+}
+
+.tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container h3 {
+    margin: 0;
 }
 
 /* accordion-2 */
