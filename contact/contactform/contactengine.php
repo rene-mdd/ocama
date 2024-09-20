@@ -1,7 +1,7 @@
 <?php
 
 $EmailFrom = Trim(stripslashes($_POST['Email']));
-$EmailTo = "rene.rrrg@gmail.com";
+$EmailTo = "rene.r@live.com";
 $Subject = "Testing This one";
 $Name = Trim(stripslashes($_POST['Name']));
 $Tel = Trim(stripslashes($_POST['Tel']));
@@ -32,6 +32,8 @@ $Body .= "\n";
 
 // send email 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 // redirect to success page 
 if ($success){
