@@ -6,19 +6,11 @@
 </head>
 
 <body class="contact-body">
-
 	<div id="page-wrap">
-
 		<br /><br />
-		
-			
 		<h1>Your message has been sent!</h1><br />
-		
-		<p><a href="../contact.html">Back to Contact Form</a></p>
-	
+		<p><a href="https://www.ocama.com/contact/">Back to Contact Form</a></p>
 	</div>
-	
-
 
 </body>
 
