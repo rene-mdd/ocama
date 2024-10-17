@@ -8428,6 +8428,10 @@ html :where(img[class*=wp-image-]) {
     min-height: 772px !important;
 }
 
+.tourmaster-single-review-container {
+    margin-bottom: 20px;
+}
+
 .gdlr-core-testimonial-author-image .review-image {
     height: 80px;
     width: 80px;
