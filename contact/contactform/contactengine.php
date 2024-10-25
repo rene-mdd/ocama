@@ -1,12 +1,12 @@
 <?php
 
-$EmailFrom = Trim(stripslashes($_POST['Email']));
-$EmailTo = "rene.r@live.com";
-$Subject = "Testing This one";
-$Name = Trim(stripslashes($_POST['Name']));
-$Tel = Trim(stripslashes($_POST['Tel']));
-$Email = Trim(stripslashes($_POST['Email']));
-$Message = Trim(stripslashes($_POST['Message']));
+$EmailFrom = Trim(stripslashes($_POST['Email'])); 
+$EmailTo = "reservations@ocama.com";
+$Name = Trim(stripslashes($_POST['Name'])); 
+$Subject = "Website inquiry from $Name ";
+$Tel = Trim(stripslashes($_POST['Tel'])); 
+$Email = Trim(stripslashes($_POST['Email'])); 
+$Message = Trim(stripslashes($_POST['Message'])); 
 
 // validation
 $validationOK=true;
@@ -32,8 +32,6 @@ $Body .= "\n";
 
 // send email 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 
 // redirect to success page 
 if ($success){

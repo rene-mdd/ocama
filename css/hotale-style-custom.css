@@ -648,6 +648,11 @@ body.hotale-boxed .hotale-fixed-footer .hotale-copyright-wrapper {
     height: 345px;
 }
 
+.menu-page-title-wrap {
+    background-image: url(../upload/menu/menus_header_1903x671.jpg) !important;
+    height: 345px;
+}
+
 .las-galeras-page-title-wrap {
     background-image: url(../upload/las-galeras/las-galeras-header.jpg) !important;
     height: 345px;
@@ -7930,6 +7935,12 @@ html :where(img[class*=wp-image-]) {
 .dinner-side-text ul li {
     text-decoration: underline;
     color: #0000EE;
+}
+
+.menu-side-text p a {
+    text-decoration: underline;
+    color: #0000EE;
+    font-size: xx-large;
 }
 
 .gdlr-core-pbf-column .contact-container {
