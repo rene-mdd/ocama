@@ -7932,13 +7932,13 @@ html :where(img[class*=wp-image-]) {
     padding-bottom: 40px;
 }
 
-.dinner-side-text ul li {
-    text-decoration: underline;
+.download-sample-menu a {
     color: #0000EE;
+    font-size: x-large;
+
 }
 
 .menu-side-text p a {
-    text-decoration: underline;
     color: #0000EE;
     font-size: xx-large;
 }
@@ -8457,7 +8457,7 @@ html :where(img[class*=wp-image-]) {
     margin: auto;
 }
 
-.hotale-mobile-header .header-button-wrapper a {
+.hotale-mobile-header .header-button-wrapper button {
     display: inline-block;
     background-color: #013220;
     color: white !important;
@@ -8489,9 +8489,16 @@ html :where(img[class*=wp-image-]) {
     padding: 0 20px;
     height: 60px;
     line-height: 2.6;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
+    color: white;
+}
+.mobile-book-now-btn button {
+    all: unset;
+}
+.mobile-book-now-btn button[data-be-url] {
+    all: unset;
 }
 
 .mobile-book-now-btn a {
