@@ -8457,7 +8457,7 @@ html :where(img[class*=wp-image-]) {
     margin: auto;
 }
 
-.hotale-mobile-header .header-button-wrapper button {
+.hotale-mobile-header .header-button-wrapper a {
     display: inline-block;
     background-color: #013220;
     color: white !important;
