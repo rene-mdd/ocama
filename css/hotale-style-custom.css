@@ -8475,12 +8475,15 @@ html :where(img[class*=wp-image-]) {
     font-weight: bold;
 }
 
+.mobile-book-now-btn-wrapper {
+    position: relative;
+}
+
 .mobile-book-now-btn {
     display: none;
     background: #013220;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     width: 100%;
-    position: absolute;
     position: fixed;
     z-index: 10;
     bottom: 0;
