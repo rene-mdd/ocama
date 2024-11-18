@@ -1066,7 +1066,7 @@
 
             }, 1000));
 
-            // checking coupon
+            // check-ing coupon
             price_sidebar.on('input change', '.tourmaster-room-coupon-code', tourmaster_debounce(function(e){
                 var coupon_input = $(this);
                 var coupon_code = coupon_input.val();
