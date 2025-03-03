@@ -7985,7 +7985,7 @@ html :where(img[class*=wp-image-]) {
 
     .hotale-page-wrapper .activities-wrapper {
         padding-top: 20px;
-    } 
+    }
 
     .hotale-page-wrapper .gdlr-core-pbf-element .individual-villa-caption {
         margin-top: 0;
@@ -8497,9 +8497,11 @@ html :where(img[class*=wp-image-]) {
     font-weight: bold;
     color: white;
 }
+
 .mobile-book-now-btn button {
     all: unset;
 }
+
 .mobile-book-now-btn button[data-be-url] {
     all: unset;
 }
@@ -8933,6 +8935,78 @@ html :where(img[class*=wp-image-]) {
 .gdlr-core-pbf-wrapper-content .five-stars-container .business-event-container {
     max-width: 470px;
 }
+
+/* Parallax scroll */
+
+.parallax-scroll-wrapper {
+    background-color: gray;
+    color: #fff;
+    min-height: 100dvh;
+    max-width: 100%;
+    position: relative;
+}
+
+.parallax-scroll-wrapper h4 {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 60px;
+}
+
+.image-background-bg {
+    background-color: #252525;
+    background-position: bottom center;
+    min-height: 100dvh;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    margin-bottom: -100vh;
+    background-color: #333;
+    background-image: url("../upload/custom-images/ocama-landing-photo.webp");
+    background-size: cover;
+}
+
+.background-text-bg {
+    /* background-color: #333;
+    background-image: url("../upload/custom-images/ocama-landing-photo.webp");
+    background-size: cover; */
+    color: #fff;
+    min-height: 100dvh;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: -100vh;
+}
+.background-video-bg {
+    /* background-color: #333;
+    background-image: url("../upload/custom-images/ocama-landing-photo.webp");
+    background-size: cover; */
+    height: 100vh;
+    background-image: url("../upload/custom-images/playa-background-video.jpg");
+    color: #fff;
+    min-height: 100dvh;
+    max-width: 100%;
+    position: relative;
+    /* margin-bottom: -100vh; */
+}
+
+.gdlr-core-pbf-wrapper-content .homepage-title {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    position: relative;
+    z-index: 1;
+}
+
+/* Parallax end */
 
 
 .accordion-wrapper {
