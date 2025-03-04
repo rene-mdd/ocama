@@ -5112,7 +5112,7 @@ body.hotale-boxed .gdlr-core-column-extend-right .gdlr-core-pbf-background-wrap 
   * 6.0 - Responsive
   */
 .hotale-mobile-header-wrap {
-	/* display: none; */
+	display: none;
 }
 
 .hotale-mobile-header {
@@ -5196,7 +5196,7 @@ body .hotale-mobile-header .hotale-logo {
 
 
 	.hotale-mobile-header-wrap {
-		display: block;
+		/* display: block; */
 	}
 
 	.hotale-mobile-header-wrap .hotale-top-bar {
@@ -8393,9 +8393,9 @@ span.paypal-button-text.true {
 	margin-top: -40px;
 }
 
-.landing-page-container {
-	height: calc(100vh - 75px);
-}
+/* .landing-page-container {
+	height: 100vh;
+} */
 
 /* @media only screen and (max-width: 999px) {
 	#gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {
