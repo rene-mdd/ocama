@@ -7321,10 +7321,10 @@ li.mm-vertical.mm-opened>.mm-panel {
 	z-index: 2
 }
 
-html.mm-opened {
+/* html.mm-opened {
 	overflow-x: hidden;
 	position: static;
-}
+} */
 
 #mm-blocker {
 	background: rgba(3, 2, 1, 0);

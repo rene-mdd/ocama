@@ -7833,7 +7833,7 @@ html :where(img[class*=wp-image-]) {
 }
 
 .hotale-body .mm-menu.mm-offcanvas {
-    z-index: 1;
+    z-index: 3;
 }
 
 .gdlr-core-pbf-element .activities-shadows {
