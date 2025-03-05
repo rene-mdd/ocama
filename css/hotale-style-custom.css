@@ -9007,41 +9007,57 @@ html :where(img[class*=wp-image-]) {
 
 /* Parallax end */
 
+/* secondary homepage section */
 
-.accordion-wrapper {
+.gdlr-core-page-builder-body .secondary-homepage-wrapper {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #F5F5F5;
+    padding: 120px;
 }
 
-.accordion-container {
-    width: 100%;
-    max-width: 600px;
-    min-width: 300px;
-    padding: 0 10px;
-}
-
-.accordion-container-2 {
-    width: 100%;
-    max-width: 600px;
-    min-width: 300px;
-    padding: 0 10px;
-}
-
-.hotale-footer-column .hotale-widget-title {
-    font-family: "Krub", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.villas-thumbnail-container .guest-icon-wrapper {
+.gdlr-core-page-builder-body .secondary-homepage-wrapper > div {
+    flex-grow: 1;
+    flex-basis: 40%;
+    padding: 40px;
+    min-width: 350px;
     display: flex;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-/* accordion-1 */
+.gdlr-core-page-builder-body .secondary-homepage-wrapper .secondary-homepage-img {
+    border-radius: 10px;
+    max-width: 785px;
+    width: 100%;
+    height: auto;
+}
+
+.gdlr-core-page-builder-body .secondary-homepage-wrapper div p {
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 999px) {
+    .gdlr-core-page-builder-body .secondary-homepage-wrapper > div {
+        padding: 20px;
+    }
+    .gdlr-core-page-builder-body .secondary-homepage-wrapper {
+        padding: 10px !important;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .gdlr-core-page-builder-body .secondary-homepage-wrapper {
+        padding: 0 40px;
+    }
+    .gdlr-core-page-builder-body .secondary-homepage-wrapper div > h2 {
+        font-size: 35px  !important;
+    }
+}
+
+    /* secondary homepage end */
+
+    /* accordion-1 */
 #accordion-1 {
     position: relative;
     padding: 5px;
@@ -9109,6 +9125,41 @@ html :where(img[class*=wp-image-]) {
 .tourmaster-room-item-style-side-thumbnail .villas-thumbnail-container h3 {
     margin: 0;
 }
+
+.accordion-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+.accordion-container-2 {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 0 10px;
+}
+
+.hotale-footer-column .hotale-widget-title {
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.villas-thumbnail-container .guest-icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
 
 /* accordion-2 */
 #accordion-2 {
