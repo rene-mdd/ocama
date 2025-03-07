@@ -9102,11 +9102,6 @@ html :where(img[class*="wp-image-"]) {
   max-width: 1320px;
 }
 
-@media only screen and (max-width: 999px) {
-  .homepage-villas-wrapper {
-    flex-direction: column;
-  }
-}
 
 .homepage-villas-wrapper>div {
   max-width: 500px;
@@ -9205,6 +9200,10 @@ html :where(img[class*="wp-image-"]) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+
+  .homepage-villas-wrapper {
+    flex-direction: column;
   }
 
   .experience-wrapper {
