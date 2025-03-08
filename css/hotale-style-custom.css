@@ -7628,9 +7628,15 @@ html :where(img[class*="wp-image-"]) {
 
 /* additional styles */
 
-.landing-page-text-wrapper {
-  background-color: #849ca8;
+.hotale-page-wrapper .landing-page-text-wrapper {
+  background-color: #F5F5F5;
   padding: 65px 0 65px 0;
+}
+
+.hotale-page-wrapper .landing-page-text-wrapper h3 {
+  color: #043221;
+  text-align: center;
+  font-weight: 300;
 }
 
 .room-list-page-text-wrapper {
@@ -7676,7 +7682,6 @@ html :where(img[class*="wp-image-"]) {
   font-family: "Brygada 1918", serif;
   font-style: italic;
   max-width: 900px;
-  /* margin: auto; */
   padding-left: 40px;
   padding-right: 40px;
   color: white;
@@ -7688,7 +7693,7 @@ html :where(img[class*="wp-image-"]) {
 .landing-page-text p {
   font-family: "Brygada 1918", serif;
   font-style: italic;
-  color: white;
+  color: #043221;
   line-height: 1.5;
   font-size: 28px;
   margin-bottom: 0;
@@ -9194,6 +9199,8 @@ html :where(img[class*="wp-image-"]) {
   font-size: 50px;
   font-weight: 300;
 }
+
+
 
 @media only screen and (max-width: 999px) {
   .experience-secondary-wrapper {
