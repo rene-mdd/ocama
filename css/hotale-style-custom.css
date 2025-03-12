@@ -9242,13 +9242,12 @@ html :where(img[class*="wp-image-"]) {
   align-items: center;
   position: relative;
   background-image: url("../upload/home-page/massage-beach.jpg");
-  height: auto;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
 
-.weddings-section-wrapper .weddings-dim-background {
+.weddings-dim-background {
   position: absolute;
   background-color: #000000;
   opacity: 0.3;
@@ -9286,6 +9285,18 @@ html :where(img[class*="wp-image-"]) {
   margin-bottom: 50%;
 }
 
+@media only screen and (max-width: 999px) {
+  .weddings-section-wrapper .weddings-section p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .weddings-section-wrapper .weddings-section p {
+    font-size: 16px;
+  }
+}
+
 /* wedding-section end */
 
 /* concierge section */
@@ -9298,7 +9309,7 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .concierge-section .concierge-text-wrapper {
-  max-width: 1000px;
+  max-width: 800px;
   padding: 65px 20px;
 }
 
@@ -9313,7 +9324,7 @@ html :where(img[class*="wp-image-"]) {
 .concierge-section .concierge-text-wrapper h3 {
   color: #043221;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 3em;
 }
 
 .concierge-img-wrapper {
@@ -9324,19 +9335,104 @@ html :where(img[class*="wp-image-"]) {
   max-width: 1320px;
 }
 
-.concierge-img-wrapper > div {
+.concierge-img-wrapper>div {
   max-width: 380px;
   margin: 10px;
   min-height: 575px;
 }
 
-.concierge-img-wrapper > div img {
+.concierge-img-wrapper>div img {
   border-radius: 10px;
 }
 
 @media only screen and (max-width: 1300px) {
   .concierge-img-wrapper {
     justify-content: center;
+  }
+}
+
+/* end concierge section */
+
+/* homepage dining section */
+
+.dining-homepage-section {
+  position: relative;
+  background-image: url(../upload/home-page/massage-beach.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.dining-homepage-section p {
+  color: white;
+  z-index: 9;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50%;
+}
+
+.dining-homepage-section h3 {
+  color: white;
+  text-align: center;
+}
+
+.dining-homepage-section .dining-text-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.dining-title-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #043221;
+  min-height: 350px;
+}
+
+.dining-title-wrapper h3 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 65px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: white;
+}
+
+.dining-title-wrapper p {
+  text-align: center;
+  color: white;
+  font-family: "Brygada 1918", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.dining-title-wrapper div {
+  max-width: 800px;
+}
+
+.dining-homepage-section .dining-text-wrapper .private-cheff-experiences {
+  border-right: 2px solid white;
+}
+
+.dining-homepage-section .dining-text-wrapper>div {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 999px) {
+  .dining-homepage-section p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dining-homepage-section p {
+    font-size: 16px;
   }
 }
 
