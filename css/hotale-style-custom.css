@@ -4109,10 +4109,6 @@ del span.woocommerce-Price-amount.amount {
     flex-basis: 100% !important;
   }
 
-  .landing-page-text p {
-    font-size: 21px !important;
-  }
-
   .gdlr-core-page-builder-body .room-list-page-text-wrapper {
     padding: 25px 0 25px 0;
   }
@@ -7628,9 +7624,16 @@ html :where(img[class*="wp-image-"]) {
 
 /* additional styles */
 
-.landing-page-text-wrapper {
-  background-color: #849ca8;
+.hotale-page-wrapper .landing-page-text-wrapper {
+  background-color: #F5F5F5;
   padding: 65px 0 65px 0;
+}
+
+.hotale-page-wrapper .landing-page-text-wrapper h3 {
+  color: #043221;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
 }
 
 .room-list-page-text-wrapper {
@@ -7676,7 +7679,6 @@ html :where(img[class*="wp-image-"]) {
   font-family: "Brygada 1918", serif;
   font-style: italic;
   max-width: 900px;
-  /* margin: auto; */
   padding-left: 40px;
   padding-right: 40px;
   color: white;
@@ -7688,9 +7690,10 @@ html :where(img[class*="wp-image-"]) {
 .landing-page-text p {
   font-family: "Brygada 1918", serif;
   font-style: italic;
-  color: white;
+  font-weight: 300;
+  color: #043221;
   line-height: 1.5;
-  font-size: 28px;
+  font-size: 1.4em;
   margin-bottom: 0;
 }
 
@@ -9090,7 +9093,6 @@ html :where(img[class*="wp-image-"]) {
 .our-villas-section h2 {
   text-align: center;
   padding-bottom: 40px;
-  ;
   color: white;
   font-weight: 300;
 }
@@ -9144,7 +9146,7 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .experience-wrapper img {
-  max-width: 700px;
+  max-width: 675px;
   width: 100%;
   height: auto;
 }
@@ -9164,10 +9166,10 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .experience-secondary-wrapper img {
-  max-width: 700px;
+  max-width: 675px;
   width: 100%;
   height: auto;
-  translate: -25px -60px;
+  translate: 0 -45px;
 }
 
 .experience-wrapper>div {
@@ -9194,6 +9196,7 @@ html :where(img[class*="wp-image-"]) {
   font-size: 50px;
   font-weight: 300;
 }
+
 
 @media only screen and (max-width: 999px) {
   .experience-secondary-wrapper {
@@ -9230,6 +9233,417 @@ html :where(img[class*="wp-image-"]) {
 }
 
 /* end our villas section */
+
+/* wellness sections */
+
+.weddings-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../upload/home-page/massage-beach.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.weddings-dim-background {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.3;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+
+.weddings-section-wrapper .weddings-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.weddings-section-wrapper .weddings-section>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.weddings-section-wrapper .weddings-section .corporate-middle-section {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.weddings-section-wrapper .weddings-section p {
+  color: white;
+  z-index: 9;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50%;
+}
+
+@media only screen and (max-width: 999px) {
+  .weddings-section-wrapper .weddings-section p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .weddings-section-wrapper .weddings-section p {
+    font-size: 16px;
+  }
+}
+
+/* wedding-section end */
+
+/* concierge section */
+.concierge-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.concierge-section .concierge-text-wrapper {
+  max-width: 800px;
+  padding: 65px 20px;
+}
+
+.concierge-section .concierge-text-wrapper p {
+  font-family: "Brygada 1918", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4em;
+  color: black
+}
+
+.concierge-section .concierge-text-wrapper h3 {
+  color: #043221;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.concierge-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1320px;
+}
+
+.concierge-img-wrapper>div {
+  max-width: 380px;
+  margin: 10px;
+  min-height: 575px;
+}
+
+.concierge-img-wrapper>div img {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .concierge-img-wrapper {
+    justify-content: center;
+  }
+}
+
+/* end concierge section */
+
+/* homepage dining section */
+
+.dining-homepage-section {
+  position: relative;
+  background-image: url(../upload/home-page/couple-at-dinner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.dining-homepage-section p {
+  color: white;
+  z-index: 9;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50%;
+}
+
+.dining-homepage-section h3 {
+  color: white;
+  text-align: center;
+}
+
+.dining-homepage-section .dining-text-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.dining-title-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #043221;
+  min-height: 350px;
+}
+
+.dining-title-wrapper h3 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 65px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: white;
+}
+
+.dining-title-wrapper p {
+  text-align: center;
+  color: white;
+  font-family: "Brygada 1918", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.dining-title-wrapper div {
+  max-width: 800px;
+}
+
+.dining-homepage-section .dining-text-wrapper .private-cheff-experiences {
+  border-right: 2px solid white;
+}
+
+.dining-homepage-section .dining-text-wrapper>div {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 999px) {
+  .dining-homepage-section p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dining-homepage-section p {
+    font-size: 16px;
+  }
+}
+
+/* end dining section  */
+
+/* homepage activities section */
+
+.activities-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities-section .activities-text-wrapper {
+  max-width: 800px;
+  padding: 65px 20px;
+}
+
+.activities-section .activities-text-wrapper p {
+  font-family: "Brygada 1918", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.4em;
+  color: black
+}
+
+.activities-section .activities-text-wrapper h3 {
+  color: #043221;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.activities-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1320px;
+}
+
+.activities-img-wrapper>div {
+  max-width: 380px;
+  margin: 10px;
+  min-height: 515px;
+}
+
+.activities-img-wrapper>div img {
+  border-radius: 10px;
+}
+
+.homepage-activities-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #2F3831;
+  border-radius: 13px;
+  color: #2F3831;
+  cursor: pointer;
+  margin-bottom: 65px;
+}
+
+.homepage-activities-btn p {
+  font-weight: 600;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .activities-img-wrapper {
+    justify-content: center;
+  }
+}
+
+/* end activities section */
+
+/* nurture section */
+.nurture-activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../upload/home-page/hand-brush-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nurture-activities .nurture-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 65px 20px;
+}
+
+.nurture-text-wrapper .nurture-learn-more {
+  border: 1px solid white;
+  border-radius: 13px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-bottom: 65px;
+}
+
+.nurture-learn-more p {
+  color: white;
+  margin: 0;
+}
+
+.nurture-activities .nurture-text-wrapper p,
+.nurture-activities .nurture-text-wrapper h3 {
+  color: white;
+  z-index: 9;
+}
+
+.nurture-activities .nurture-text-wrapper p {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.nurture-activities .nurture-text-wrapper h3 {
+  font-size: 1.4em;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+/* nurture activities section end */
+
+/* nurture subactivities section */
+.nurture-subsection-wrapper {
+  background-color: #849CA8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nurture-subsection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  padding: 65px 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nurture-subsection>div {
+  max-width: 510px;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.nurture-subsection .nurture-left-column p {
+  margin: 45px 0;
+}
+.nurture-subsection .nurture-right-column p {
+  margin-bottom: auto;
+}
+
+.nurture-subsection>div img {
+  border-radius: 8px;
+}
+
+.nurture-subsection .nurture-right-column {
+  margin-left: 0;
+  flex-direction: column-reverse;
+}
+.nurture-subsection .nurture-learn-more {
+  border: 1px solid white;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+  .nurture-subsection .nurture-right-column {
+    flex-direction: column;
+    margin: 45px 10px 0 10px;
+  }
+  .nurture-subsection .nurture-left-column {
+    margin: 0 10px 0 10px;
+  }
+  .nurture-subsection .nurture-left-column p {
+    margin: 45px 0;
+  }
+  .nurture-subsection .nurture-right-column p {
+    margin: 45px 0 0 0;
+  }
+
+}
 
 /* accordion-1 */
 #accordion-1 {
