@@ -9436,11 +9436,11 @@ html :where(img[class*="wp-image-"]) {
   }
 }
 
- /* end dining section  */
+/* end dining section  */
 
- /* homepage activities section */
+/* homepage activities section */
 
- .activities-section {
+.activities-section {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -9497,11 +9497,12 @@ html :where(img[class*="wp-image-"]) {
   color: #2F3831;
   cursor: pointer;
   margin-bottom: 65px;
-} 
+}
+
 .homepage-activities-btn p {
   font-weight: 600;
   margin: 0;
-} 
+}
 
 @media only screen and (max-width: 1300px) {
   .activities-img-wrapper {
@@ -9511,63 +9512,138 @@ html :where(img[class*="wp-image-"]) {
 
 /* end activities section */
 
-  /* nurture section */
-  .nurture-activities {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+/* nurture section */
+.nurture-activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../upload/home-page/hand-brush-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nurture-activities .nurture-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 65px 20px;
+}
+
+.nurture-text-wrapper .nurture-learn-more {
+  border: 1px solid white;
+  border-radius: 13px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-bottom: 65px;
+}
+
+.nurture-learn-more p {
+  color: white;
+  margin: 0;
+}
+
+.nurture-activities .nurture-text-wrapper p,
+.nurture-activities .nurture-text-wrapper h3 {
+  color: white;
+  z-index: 9;
+}
+
+.nurture-activities .nurture-text-wrapper p {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.nurture-activities .nurture-text-wrapper h3 {
+  font-size: 1.4em;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+/* nurture activities section end */
+
+/* nurture subactivities section */
+.nurture-subsection-wrapper {
+  background-color: #849CA8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nurture-subsection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  padding: 65px 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nurture-subsection>div {
+  max-width: 510px;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.nurture-subsection .nurture-left-column p {
+  margin: 45px 0;
+}
+.nurture-subsection .nurture-right-column p {
+  margin-bottom: auto;
+}
+
+.nurture-subsection>div img {
+  border-radius: 8px;
+}
+
+.nurture-subsection .nurture-right-column {
+  margin-left: 0;
+  flex-direction: column-reverse;
+}
+.nurture-subsection .nurture-learn-more {
+  border: 1px solid white;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+  .nurture-subsection .nurture-right-column {
     flex-direction: column;
-    position: relative;
-    background-image: url(../upload/home-page/hand-brush-background.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    margin: 45px 10px 0 10px;
+  }
+  .nurture-subsection .nurture-left-column {
+    margin: 0 10px 0 10px;
+  }
+  .nurture-subsection .nurture-left-column p {
+    margin: 45px 0;
+  }
+  .nurture-subsection .nurture-right-column p {
+    margin: 45px 0 0 0;
   }
 
-  .nurture-activities .nurture-text-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    max-width: 800px;
-    padding: 65px 20px;
-  }
-
-  .nurture-activities .nurture-text-wrapper .nurture-learn-more {
-    border: 1px solid white;
-    border-radius: 13px;
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 250px;
-    width: 100%;
-    height: 44px;
-    border: 1px solid white;
-    border-radius: 13px;
-    cursor: pointer;
-    margin-bottom: 65px;
-  }
-
-  .nurture-activities .nurture-text-wrapper p, 
-  .nurture-activities .nurture-text-wrapper h3 {
-    color: white;
-    z-index: 9;
-  }
-
-  .nurture-activities .nurture-text-wrapper p {
-    font-size: 1.4em;
-    margin-bottom: 0;
-  }
-
-  .nurture-activities .nurture-text-wrapper h3 {
-    font-size: 1.4em;
-    font-size: 50px;
-    margin-bottom: 40px;
-  }
+}
 
 /* accordion-1 */
 #accordion-1 {
