@@ -7651,7 +7651,7 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .private-venue-ocama-btn span {
-  font-family: "Brygada 1918", serif;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -9426,6 +9426,7 @@ html :where(img[class*="wp-image-"]) {
   color: white;
   position: relative;
   z-index: 9;
+  font-size: 20px;
 }
 
 .tailored-dining-btn {
@@ -9582,8 +9583,8 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .homepage-activities-btn p {
-  font-weight: 600;
   margin: 0;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1300px) {
