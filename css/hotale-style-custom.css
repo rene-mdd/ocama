@@ -7627,6 +7627,7 @@ html :where(img[class*="wp-image-"]) {
 .hotale-page-wrapper .landing-page-text-wrapper {
   background-color: #F5F5F5;
   padding: 20px 0 0 0;
+  margin-bottom: 30px;
 }
 
 .hotale-page-wrapper .landing-page-text-wrapper h2 {
@@ -9303,7 +9304,7 @@ html :where(img[class*="wp-image-"]) {
   height: 100vh;
 }
 
-.dining-dim-background {
+.dim-background {
   position: absolute;
   background-color: #000000;
   opacity: 0.3;
