@@ -7634,6 +7634,7 @@ html :where(img[class*="wp-image-"]) {
   text-align: center;
   font-size: 48px;
 }
+
 @media only screen and (max-width: 1300px) {
   .hotale-page-wrapper .landing-page-text-wrapper h2 {
     font-size: 36px !important;
@@ -9074,6 +9075,7 @@ html :where(img[class*="wp-image-"]) {
 .gdlr-core-page-builder-body .secondary-homepage div>h3 {
   font-size: 48px;
 }
+
 .gdlr-core-page-builder-body .secondary-homepage div p {
   font-size: 24px;
   margin-bottom: 0;
@@ -9098,6 +9100,7 @@ html :where(img[class*="wp-image-"]) {
   .gdlr-core-page-builder-body .secondary-homepage div>h3 {
     font-size: 36px;
   }
+
   .gdlr-core-page-builder-body .secondary-homepage div p {
     font-size: 18px;
   }
@@ -9133,17 +9136,17 @@ html :where(img[class*="wp-image-"]) {
   max-width: 500px;
   margin: 10px;
   color: white;
+  text-align: center;
 }
 
 .homepage-villas-wrapper>div span {
-  font-weight: bold;
   font-size: 28px;
   margin-bottom: 5px;
   color: white;
 }
 
 .homepage-villas-wrapper>div :first-child {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 
 .homepage-villas-wrapper>div img {
@@ -9254,9 +9257,15 @@ html :where(img[class*="wp-image-"]) {
   .experience-secondary-wrapper img {
     translate: none;
   }
+
   .experience-wrapper .experience-text-wrapper p {
     font-size: 18px;
   }
+
+  .experience-secondary-text-wrapper p {
+    font-size: 18px;
+  }
+
   .experience-wrapper h3 {
     font-size: 36px !important;
   }
@@ -9277,7 +9286,7 @@ html :where(img[class*="wp-image-"]) {
   height: 100vh;
 }
 
-.weddings-dim-background {
+.dining-dim-background {
   position: absolute;
   background-color: #000000;
   opacity: 0.3;
@@ -9374,10 +9383,56 @@ html :where(img[class*="wp-image-"]) {
   border-radius: 10px;
 }
 
+.tailored-dining-text-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.tailored-dining-text {
+  z-index: 9;
+  max-width: 615px;
+  text-align: center;
+}
+
+.tailored-dining-text-wrapper h3 {
+  font-size: 48px;
+  color: white;
+  position: relative;
+  z-index: 9;
+  margin: 15vh 0 40px 0;
+}
+
+.tailored-dining-text-wrapper p {
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+
+.tailored-dining-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid white;
+  border-radius: 13px;
+  color: white;
+  cursor: pointer;
+  margin: 70px auto 0 auto;
+}
+
+.tailored-dining-btn p {
+  margin: 0;
+}
+
 @media only screen and (max-width: 1300px) {
   .concierge-img-wrapper {
     justify-content: center;
   }
+
   .concierge-section .concierge-text-wrapper h2 {
     color: #043221;
     font-size: 36px !important;
@@ -9387,6 +9442,9 @@ html :where(img[class*="wp-image-"]) {
 @media only screen and (max-width: 800px) {
   .concierge-img-wrapper>div {
     min-height: auto;
+  }
+  .tailored-dining-text-wrapper h3 {
+    font-size: 36px !important;
   }
 }
 
@@ -9400,25 +9458,6 @@ html :where(img[class*="wp-image-"]) {
   background-position: center;
   background-size: cover;
   height: 100vh;
-}
-
-.dining-homepage-section p {
-  color: white;
-  z-index: 9;
-  position: relative;
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 50%;
-}
-
-.dining-homepage-section h3 {
-  color: white;
-  text-align: center;
-}
-
-.dining-homepage-section .dining-text-wrapper {
-  display: flex;
-  height: 100%;
 }
 
 .dining-title-wrapper {
@@ -9448,23 +9487,7 @@ html :where(img[class*="wp-image-"]) {
   max-width: 800px;
 }
 
-.dining-homepage-section .dining-text-wrapper .private-cheff-experiences {
-  border-right: 2px solid white;
-}
-
-.dining-homepage-section .dining-text-wrapper>div {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
 @media only screen and (max-width: 999px) {
-  .dining-homepage-section p {
-    font-size: 30px;
-  }
   .dining-title-wrapper h2 {
     font-size: 36px !important;
   }
@@ -9474,12 +9497,6 @@ html :where(img[class*="wp-image-"]) {
 @media only screen and (min-width: 999px) {
   .dining-title-wrapper h3 {
     font-size: 48px !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .dining-homepage-section p {
-    font-size: 16px;
   }
 }
 
@@ -9554,16 +9571,18 @@ html :where(img[class*="wp-image-"]) {
   .activities-img-wrapper {
     justify-content: center;
   }
+
   .activities-section .activities-text-wrapper h2 {
     font-size: 36px !important;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .activities-img-wrapper>div {
     max-width: 380px;
     margin: 10px;
     min-height: auto;
-  } 
+  }
 }
 
 /* end activities section */
@@ -9661,9 +9680,11 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   flex-direction: column;
 }
+
 .nurture-subsection .nurture-left-column p {
   margin: 45px 0;
 }
+
 .nurture-subsection .nurture-right-column p {
   margin-bottom: auto;
 }
@@ -9676,6 +9697,7 @@ html :where(img[class*="wp-image-"]) {
   margin-left: 0;
   flex-direction: column-reverse;
 }
+
 .nurture-subsection .nurture-learn-more {
   border: 1px solid white;
   border-radius: 13px;
@@ -9694,12 +9716,15 @@ html :where(img[class*="wp-image-"]) {
     flex-direction: column;
     margin: 45px 10px 0 10px;
   }
+
   .nurture-subsection .nurture-left-column {
     margin: 0 10px 0 10px;
   }
+
   .nurture-subsection .nurture-left-column p {
     margin: 45px 0;
   }
+
   .nurture-subsection .nurture-right-column p {
     margin: 45px 0 0 0;
   }
