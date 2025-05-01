@@ -9211,7 +9211,7 @@ html :where(img[class*="wp-image-"]) {
 
 .experience-secondary-text-wrapper p {
   max-width: 500px;
-  font-size: 25px;
+  font-size: 24px;
   padding: 10px;
 }
 
@@ -9405,6 +9405,9 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .tailored-dining-text-wrapper p {
+  font-family: "Brygada 1918", serif;
+  font-style: italic;
+  font-size: 24px;
   color: white;
   position: relative;
   z-index: 9;
@@ -9445,6 +9448,12 @@ html :where(img[class*="wp-image-"]) {
   }
   .tailored-dining-text-wrapper h3 {
     font-size: 36px !important;
+  }
+  .tailored-dining-text-wrapper p {
+    font-size: 20px;
+  }
+  .concierge-section .concierge-text-wrapper p {
+    font-size: 20px;
   }
 }
 
