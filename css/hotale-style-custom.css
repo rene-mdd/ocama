@@ -9017,11 +9017,15 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: 70dvh;
   position: relative;
   z-index: 0;
   color: white;
   font-size: 60px;
+}
+
+.parallax-scroll-wrapper h4:first-of-type {
+  margin-top: 140px;
 }
 
 .image-background-bg {
@@ -9129,9 +9133,11 @@ html :where(img[class*="wp-image-"]) {
   .gdlr-core-page-builder-body .secondary-homepage {
     padding: 10px !important;
   }
+
   .landing-page-text-wrapper .landing-page-text p {
     font-size: 20px;
   }
+
   .landing-page-text-transform p {
     font-size: 20px;
   }
@@ -9475,6 +9481,7 @@ html :where(img[class*="wp-image-"]) {
 .tailored-dining-btn p {
   margin: 0;
 }
+
 .tailored-dining-btn span {
   font-size: 20px;
   color: white;
@@ -9709,6 +9716,7 @@ html :where(img[class*="wp-image-"]) {
   font-family: "Brygada 1918", serif;
   font-style: italic;
 }
+
 .nurture-activities .nurture-text-wrapper span {
   font-size: 20px;
   color: white;
