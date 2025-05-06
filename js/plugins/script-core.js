@@ -944,7 +944,6 @@
 						var clone = t.mobile_menu.clone();
 						clone.insertAfter(t.mobile_menu);
 						clone.slideUp(200, function () { $(this).remove(); });
-
 						t.mobile_menu.insertBefore(placeholder);
 						placeholder.remove();
 						t.mobile_menu.removeClass('hotale-fixed-navigation');
