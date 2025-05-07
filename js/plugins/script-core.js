@@ -539,28 +539,28 @@
 			if ($(window).height() < t.side_nav_content.height()) {
 				t.side_nav.addClass('hotale-allow-slide');
 			} else {
-				t.side_nav.removeClass('hotale-allow-slide hotale-fix-top hotale-fix-bottom').css('top', '');
+				// t.side_nav.removeClass('hotale-allow-slide hotale-fix-top hotale-fix-bottom').css('top', '');
 
-				// set the middle position
-				if (t.side_nav.hasClass('hotale-style-middle')) {
-					middle_pos.each(function () {
-						var top_padding = parseInt($(this).css('padding-top'));
-						var prespace = ((t.side_nav.height() - (t.side_nav_content.height() - top_padding)) / 2) - top_padding;
+				// // set the middle position
+				// if (t.side_nav.hasClass('hotale-style-middle')) {
+				// 	middle_pos.each(function () {
+				// 		var top_padding = parseInt($(this).css('padding-top'));
+				// 		var prespace = ((t.side_nav.height() - (t.side_nav_content.height() - top_padding)) / 2) - top_padding;
 
-						if (prespace > 0) {
-							$('<div class="hotale-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
-						}
-					});
-				}
+				// 		if (prespace > 0) {
+				// 			$('<div class="hotale-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
+				// 		}
+				// 	});
+				// }
 
-				// set the bottom position
-				bottom_pos.each(function () {
-					var prespace = t.side_nav.height() - t.side_nav_content.height();
+				// // set the bottom position
+				// bottom_pos.each(function () {
+				// 	var prespace = t.side_nav.height() - t.side_nav_content.height();
 
-					if (prespace > 0) {
-						$('<div class="hotale-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
-					}
-				});
+				// 	if (prespace > 0) {
+				// 		$('<div class="hotale-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
+				// 	}
+				// });
 
 			}
 		}
