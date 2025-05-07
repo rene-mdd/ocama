@@ -9026,7 +9026,7 @@ html :where(img[class*="wp-image-"]) {
 }
 
 .parallax-scroll-wrapper h4:first-of-type {
-  margin-top: 6vw;
+  margin-top: 7vw;
   max-width: 575px;
 }
 
@@ -9145,6 +9145,9 @@ html :where(img[class*="wp-image-"]) {
   }
   .parallax-scroll-wrapper h4 {
     font-size: 28px !important;
+  }
+  .parallax-scroll-wrapper h4:first-of-type {
+    margin-top: 23vw;
   }
 }
 
