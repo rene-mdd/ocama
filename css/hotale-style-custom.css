@@ -9147,7 +9147,7 @@ html :where(img[class*="wp-image-"]) {
     font-size: 28px !important;
   }
   .parallax-scroll-wrapper h4:first-of-type {
-    margin-top: 30vw;
+    margin-top: 25%;
   }
 }
 
