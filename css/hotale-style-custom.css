@@ -8493,10 +8493,22 @@ html :where(img[class*="wp-image-"]) {
   margin-bottom: 0px;
 }
 
+.contact-footer-wrapper .contact-icons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-footer-wrapper .contact-icons-wrapper p {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
+
+.contact-footer-wrapper .contact-icons-wrapper .media-press,
+.contact-footer-wrapper .contact-icons-wrapper .inquires {
+  margin-bottom: 0;
+}
+
 
 .contact-footer-wrapper .contact-icons-wrapper img {
   margin-right: 10px;
@@ -9149,9 +9161,11 @@ html :where(img[class*="wp-image-"]) {
   .landing-page-text-transform p {
     font-size: 20px;
   }
+
   .parallax-scroll-wrapper h4 {
     font-size: 28px !important;
   }
+
   .parallax-scroll-wrapper h4:first-of-type {
     margin-top: 40vw;
   }
@@ -9924,6 +9938,11 @@ html :where(img[class*="wp-image-"]) {
   font-family: "Krub", sans-serif;
   font-weight: 600;
   font-size: 24px;
+  text-align: center;
+}
+
+.contact-footer-wrapper .menu-quick-links-container {
+  text-align: center;
 }
 
 .villas-thumbnail-container .guest-icon-wrapper {
