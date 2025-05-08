@@ -8052,6 +8052,12 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   justify-content: space-between;
 }
+.footer-grid .contact-info-parent p {
+  font-family: "Alkatra", system-ui;
+}
+.footer-grid .contact-info-parent a {
+  font-family: "Krub", sans-serif;
+}
 
 @media only screen and (max-width: 767px) {
   .hotale-page-wrapper .activities-wrapper {
