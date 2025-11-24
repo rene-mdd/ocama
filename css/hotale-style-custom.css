@@ -11138,9 +11138,9 @@ html :where(img[class*="wp-image-"]) {
   display: block;
 }
 .hotale-page-wrapper .promotions-container {
-  margin: 0 40px;
+  margin: 0 20px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .hotale-page-wrapper .promotions-container .single-promo-wrapper {
   display: flex;
@@ -11169,7 +11169,7 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin: 0px 10px 40px 10px;
 }
 .hotale-page-wrapper .island-indulgence-container .images-container {
   max-width: 870px;
@@ -11215,22 +11215,32 @@ html :where(img[class*="wp-image-"]) {
   text-decoration: underline;
   margin: 40px 0;
 }
+.hotale-page-wrapper .promotion-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1400px) {
   .hotale-page-wrapper .promotions-container .single-promo-wrapper {
     justify-content: center;
   }
   .hotale-page-wrapper .promotion-title-container {
     padding: 60px 10px;
   }
-  .hotale-page-wrapper .promotions-container {
-    margin: 0;
-  }
+
   .hotale-page-wrapper .promotion-title-container h1 {
     font-size: 36px !important;
   }
   .hotale-page-wrapper .promotions-container .single-promo-container h3 {
     font-size: 36px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .hotale-page-wrapper .promotions-container {
+    justify-content: center;
+  }
+    .hotale-page-wrapper .promotions-container {
+    margin: 0 10px;
   }
 }
 
