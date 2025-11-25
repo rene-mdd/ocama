@@ -11141,6 +11141,8 @@ html :where(img[class*="wp-image-"]) {
   margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1320px;
+  width: 100%;
 }
 .hotale-page-wrapper .promotions-container .single-promo-wrapper {
   display: flex;
@@ -11164,6 +11166,7 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   justify-content: space-between;
   text-decoration: underline;
+  margin-top: auto;
 }
 .hotale-page-wrapper .island-indulgence-container {
   display: flex;
@@ -11216,7 +11219,7 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   justify-content: space-between;
   text-decoration: underline;
-  margin: 40px 0;
+  margin: auto auto auto 16px;
 }
 .hotale-page-wrapper .promotion-wrapper {
   display: flex;
