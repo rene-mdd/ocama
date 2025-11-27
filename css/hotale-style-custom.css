@@ -11138,7 +11138,6 @@ html :where(img[class*="wp-image-"]) {
   display: block;
 }
 .hotale-page-wrapper .promotions-container {
-  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
   max-width: 1320px;
@@ -11152,7 +11151,7 @@ html :where(img[class*="wp-image-"]) {
 .hotale-page-wrapper .promotions-container .single-promo-container {
   display: flex;
   flex-direction: column;
-  max-width: 410px;
+  max-width: 420px;
   margin: 0px 10px 60px 10px;
 }
 .hotale-page-wrapper .promotions-container .single-promo-container h3 {
@@ -11172,30 +11171,41 @@ html :where(img[class*="wp-image-"]) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0px 30px 40px 30px;
+  padding: 0px 0px 40px 0px;
   width: 100%;
+  max-width: 1320px;
 }
 .hotale-page-wrapper .promo-1-wrapper {
   display: flex;
   justify-content: center;
 }
 .hotale-page-wrapper .promo-1 .images-container {
-  max-width: 960px;
+  max-width: 880px;
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
 }
 .hotale-page-wrapper .promo-1 .images-container img {
-  margin: 0 10px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
   flex-shrink: 1;
   min-width: 0;
 }
+.hotale-page-wrapper .promo-1 .images-container .left-img-wrapper {
+  max-width: 420px;
+  margin: 0 10px;
+}
+.hotale-page-wrapper .promo-1 .images-container .right-img-wrapper {
+  max-width: 420px;
+  margin: 0 10px;
+}
+
 .hotale-page-wrapper .promo-1 .offer-container {
   display: flex;
   flex-direction: column;
-  max-width: 480px;
+  max-width: 420px;
+  padding: 0 10px;
 }
 .hotale-page-wrapper .promo-1 .offer-container li {
   font-size: 22px;
