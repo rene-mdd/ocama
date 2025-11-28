@@ -11208,13 +11208,13 @@ html :where(img[class*="wp-image-"]) {
   padding: 0 10px;
 }
 .hotale-page-wrapper .promo-1 .offer-container li {
-  font-size: 22px;
+  font-size: 18px;
 }
 .hotale-page-wrapper
   .promo-1
   .offer-container
   .offers-list-title {
-  font-size: 22px;
+  font-size: 18px;
 }
 .accordion-container #accordion-1 .head-promo.head {
   border: none;
@@ -11264,6 +11264,9 @@ html :where(img[class*="wp-image-"]) {
     .hotale-page-wrapper .promotions-container {
     margin: 0 10px;
   }
+  .hotale-page-wrapper .single-promo-links-container a {
+  font-size: 16px;
+}
 }
 
 /* promo arrow code */
