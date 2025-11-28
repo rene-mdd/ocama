@@ -11209,6 +11209,8 @@ html :where(img[class*="wp-image-"]) {
 }
 .hotale-page-wrapper .promo-1 .offer-container li {
   font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 15px;
 }
 .hotale-page-wrapper
   .promo-1
