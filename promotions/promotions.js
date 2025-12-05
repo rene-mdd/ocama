@@ -21,100 +21,68 @@ async function postData(urlPost) {
   }
 }
 
-
 postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
   .then((data) => {
     // if (!post) return;
-    // console.log(data[0]._embedded)
-    console.log(data[0])
-    const dataContent = data[0].content.rendered;
-    console.log(dataContent);
-    console.log(data[0]._embedded?.['wp:featuredmedia']?.[0].link);
-    const featuredImage = data[0]._embedded?.['wp:featuredmedia']?.[0].link;
-    const imgUrls = [];
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(dataContent, "text/html");
-    doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
-    console.log(imgUrls);
-    const imgPromoOne = imgUrls;
-    let casaAnaBody = document.getElementById("casa-ana-text");
-    let casaAnaTitle = document.getElementById("casa-ana-title");
-    let newElement = document.createElement("div");
-    const baseWpImgUrl = `${wordpressBaseUrl}wp-content/uploads/2024/06/`;
-    const anaImgList = document.getElementById(
-      "casa-ana-carrousel-img"
-    ).children;
+    // promotions general page
+    const areWeInMainPromoPage =
+      document.querySelectorAll("#feature-1-active").length;
+    if (!!areWeInMainPromoPage) {
+      const parser = new DOMParser();
+      const dataContent = data[0].content.rendered;
+      const featuredTitle = data[0].title.rendered;
+      const doc = parser.parseFromString(dataContent, "text/html");
+      console.log(doc);
+      const featuredImage = data[0]._embedded?.["wp:featuredmedia"]?.[0];
+      const featuredImgAlt = featuredImage.alt_text;
+      const featuredImgCaption = featuredImage.caption?.rendered;
+      const featuredDescription = featuredImage.description.raw;
+      console.log(featuredDescription);
+      document.getElementById("promo-1-title").innerHTML = featuredTitle;
+      document.getElementById("featured-caption").innerHTML =
+        featuredImgCaption;
+      document.getElementById("promo-1-alt").innerHTML = featuredImgAlt;
+      document.getElementById("featured-description").innerHTML =
+        featuredDescription;
 
-    if (data?.id === 1) {
-      casaAnaBody.innerHTML = "";
-      casaAnaTitle.innerHTML = "";
-      newElement.innerHTML = data?.content?.rendered;
-      casaAnaBody.appendChild(newElement);
-      casaAnaTitle.innerText = data?.title?.rendered;
-      anaImgList[0].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_21047.jpg`
+      console.log(featuredImage.alt_text);
+      document
+        .getElementById("featured-promotion-img")
+        .setAttribute("src", featuredImage.source_url);
+    }
+    // promotion 1
+    const areWeInPromotionOne = document.querySelectorAll(
+      "#promotion-1-active"
+    ).length;
+    if (!!areWeInPromotionOne) {
+      const imgUrls = [];
+      const parser = new DOMParser();
+      const dataContent = data[0].content.rendered;
+      const doc = parser.parseFromString(dataContent, "text/html");
+      const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
+        p.textContent.trim()
       );
-      anaImgList[0].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_21047.jpg`
-      );
-      anaImgList[1].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_4099.jpg`
-      );
-      anaImgList[1].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_4099.jpg`
-      );
-      anaImgList[2].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_55849.jpg`
-      );
-      anaImgList[2].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_55849.jpg`
-      );
-      anaImgList[3].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_73335.jpg`
-      );
-      anaImgList[3].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_73335.jpg`
-      );
-      anaImgList[4].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_90968.jpg`
-      );
-      anaImgList[4].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_90968.jpg`
-      );
-      anaImgList[5].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_94043.jpg`
-      );
-      anaImgList[5].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_94043.jpg`
-      );
-      anaImgList[6].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_123650291.jpg`
-      );
-      anaImgList[6].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_123650291.jpg`
-      );
-      anaImgList[7].childNodes[1].childNodes[1].setAttribute(
-        "href",
-        `${baseWpImgUrl}ana_123650292.jpg`
-      );
-      anaImgList[7].childNodes[1].childNodes[1].children[0].setAttribute(
-        "src",
-        `${baseWpImgUrl}ana_123650292.jpg`
-      );
+      doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
+      const listItems = [...doc.querySelectorAll("li")].map(li => li.textContent.trim());
+      console.log(listItems)
+      const promotionOneLeft = imgUrls[0];
+      const promotionOneRight = imgUrls[1];
+      const featuredTitle = data[0].title.rendered;
+      document
+        .getElementById("promotion-1-left")
+        .setAttribute("src", promotionOneLeft);
+      document
+        .getElementById("promotion-1-right")
+        .setAttribute("src", promotionOneRight);
+      document.getElementById("promo-1-title").innerHTML = featuredTitle;
+      document.getElementById("promo-1-upper-text").innerHTML = paragraphs[0];
+      document.getElementById("promo-1-bottom-text").innerHTML = paragraphs[1];
+            const promoOneListWrapper = document.getElementById("promo-1-list-wrapper").children;
+
+      const promoOneList = document.getElementById("promo-1-list");
+
+      console.log(promoOneListWrapper[2])
+
     }
   })
   .catch((err) => {
