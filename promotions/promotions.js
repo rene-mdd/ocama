@@ -32,20 +32,16 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
       const dataContent = data[0].content.rendered;
       const featuredTitle = data[0].title.rendered;
       const doc = parser.parseFromString(dataContent, "text/html");
-      console.log(doc);
       const featuredImage = data[0]._embedded?.["wp:featuredmedia"]?.[0];
       const featuredImgAlt = featuredImage.alt_text;
       const featuredImgCaption = featuredImage.caption?.rendered;
       const featuredDescription = featuredImage.description.raw;
-      console.log(featuredDescription);
       document.getElementById("promo-1-title").innerHTML = featuredTitle;
       document.getElementById("featured-caption").innerHTML =
         featuredImgCaption;
       document.getElementById("promo-1-alt").innerHTML = featuredImgAlt;
       document.getElementById("featured-description").innerHTML =
         featuredDescription;
-
-      console.log(featuredImage.alt_text);
       document
         .getElementById("featured-promotion-img")
         .setAttribute("src", featuredImage.source_url);
@@ -62,9 +58,12 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
       const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
         p.textContent.trim()
       );
+      console.log(paragraphs);
       doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
-      const listItems = [...doc.querySelectorAll("li")].map(li => li.textContent.trim());
-      console.log(listItems)
+      const listItems = [...doc.querySelectorAll("li")].map((li) =>
+        li.textContent.trim()
+      );
+      console.log(listItems);
       const promotionOneLeft = imgUrls[0];
       const promotionOneRight = imgUrls[1];
       const featuredTitle = data[0].title.rendered;
@@ -76,13 +75,15 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         .setAttribute("src", promotionOneRight);
       document.getElementById("promo-1-title").innerHTML = featuredTitle;
       document.getElementById("promo-1-upper-text").innerHTML = paragraphs[0];
+      document.getElementById("promo-1-offers-deadline").innerHTML = paragraphs[2];
       document.getElementById("promo-1-bottom-text").innerHTML = paragraphs[1];
-            const promoOneListWrapper = document.getElementById("promo-1-list-wrapper").children;
-
-      const promoOneList = document.getElementById("promo-1-list");
-
-      console.log(promoOneListWrapper[2])
-
+      document.getElementById("promo-1-offers-list-title").innerHTML = paragraphs[3];
+      document.getElementById("promo-1-additional-inclusions").innerHTML = paragraphs[4];
+      document.getElementById("promo-1-terms").innerHTML = paragraphs[5];
+      const promoOneListWrapper = document.getElementById("promo-1-list").children;
+      for (let i = 0; i < listItems.length; ++i) {
+        promoOneListWrapper[i].innerHTML = listItems[i];
+      }
     }
   })
   .catch((err) => {
