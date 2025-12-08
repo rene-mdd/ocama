@@ -1,23 +1,28 @@
 var wordpressBaseUrl = "https://clone.wpbackend.ocama.com";
 async function postData(urlPost) {
   // Default options are marked with *
-  const responsePost = await fetch(urlPost, {
-    signal: AbortSignal.timeout(1500),
-    mode: "no-cors", // no-cors, *cors, same-origin
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *same-origin, omit
-    headers: {
-      "Content-Type": "application/json",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-  });
-  if (responsePost?.ok) {
+  try {
+    const responsePost = await fetch(urlPost, {
+      signal: AbortSignal.timeout(1500),
+      method: "GET",
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      redirect: "follow", // manual, *follow, error
+      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    });
+    if (!responsePost.ok) {
+      console.error("HTTP error:", responsePost.status);
+      return null;
+    }
     const resultPost = await responsePost.json();
-    console.log(resultPost)
+    console.log(resultPost);
     return resultPost;
-  } else {
+  } catch (error) {
     return null;
   }
 }
@@ -38,7 +43,7 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const doc = parser.parseFromString(dataContent, "text/html");
         const featuredImage =
           organizedPosts[post]._embedded?.["wp:featuredmedia"]?.[0];
-          console.log(featuredImage)
+        console.log(featuredImage);
         const featuredImgAlt = featuredImage.alt_text;
         const featuredImgCaption = featuredImage.caption?.rendered;
         const featuredDescription = featuredImage.description.raw;
@@ -79,7 +84,7 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
           p.textContent.trim()
         );
-         const listItems = [...doc.querySelectorAll("li")].map((li) =>
+        const listItems = [...doc.querySelectorAll("li")].map((li) =>
           li.textContent.trim()
         );
         doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
@@ -104,10 +109,11 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         document.getElementById("promo-1-additional-inclusions").innerHTML =
           paragraphs[4];
         document.getElementById("promo-1-terms").innerHTML = paragraphs[5];
-        const promoOneListWrapper =
-          document.getElementById("promo-1-list");
+        const promoOneListWrapper = document.getElementById("promo-1-list");
         for (let i = 0; i < listItems.length; ++i) {
-          promoOneListWrapper.appendChild(document.createElement("li")).innerHTML = listItems[i];
+          promoOneListWrapper.appendChild(
+            document.createElement("li")
+          ).innerHTML = listItems[i];
         }
       });
     }
