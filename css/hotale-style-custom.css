@@ -11151,7 +11151,7 @@ html :where(img[class*="wp-image-"]) {
 .hotale-page-wrapper .promotions-container .single-promo-container {
   display: flex;
   flex-direction: column;
-  max-width: 420px;
+  max-width: 400px;
   margin: 0px 10px 60px 10px;
 }
 .hotale-page-wrapper .promotions-container .single-promo-container h3 {
@@ -11212,10 +11212,7 @@ html :where(img[class*="wp-image-"]) {
   line-height: 1.5;
   padding-bottom: 15px;
 }
-.hotale-page-wrapper
-  .promo-1
-  .offer-container
-  .offers-list-title {
+.hotale-page-wrapper .promo-1 .offer-container .offers-list-title {
   font-size: 18px;
 }
 .accordion-container #accordion-1 .head-promo.head {
@@ -11244,6 +11241,11 @@ html :where(img[class*="wp-image-"]) {
   justify-content: center;
 }
 
+.hotale-page-wrapper .promotion-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1400px) {
   .hotale-page-wrapper .promotions-container .single-promo-wrapper {
     justify-content: center;
@@ -11263,12 +11265,12 @@ html :where(img[class*="wp-image-"]) {
   .hotale-page-wrapper .promotions-container {
     justify-content: center;
   }
-    .hotale-page-wrapper .promotions-container {
+  .hotale-page-wrapper .promotions-container {
     margin: 0 10px;
   }
   .hotale-page-wrapper .single-promo-links-container a {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
 }
 
 /* promo arrow code */
@@ -11303,6 +11305,11 @@ html :where(img[class*="wp-image-"]) {
 
 /* hide promotions */
 
-#promotion-0-container, #promotion-1-container {
+#promotion-0-container,
+#promotion-1-container,
+#promotion-2-container,
+#promotion-3-container,
+#promotion-4-container,
+#promotion-5-container {
   display: none;
 }

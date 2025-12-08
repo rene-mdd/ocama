@@ -23,15 +23,12 @@ async function postData(urlPost) {
 
 postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
   .then((data) => {
-    // if (!post) return;
     // promotions general page
     const organizedPosts = data.reverse();
-
     const areWeInMainPromoPage =
       document.querySelectorAll("#feature-1-active").length;
     if (!!areWeInMainPromoPage) {
       for (let post = 0; post <= data.length - 1; ++post) {
-        console.log(data[post]);
         document.getElementById(`promotion-${post}-container`).style.display =
           "flex";
         const parser = new DOMParser();
@@ -56,7 +53,6 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         document.querySelector(`#go-to-promo-${post}`).dataset.apiLink =
           data[post].id;
         document.addEventListener("click", function (e) {
-          console.log(e.target.matches("a[data-api-link]"));
           if (e.target.matches("a[data-api-link]")) {
             const postId = e.target.dataset.apiLink;
             sessionStorage.setItem("selectedPostId", postId);
@@ -81,10 +77,10 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
           p.textContent.trim()
         );
-        doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
-        const listItems = [...doc.querySelectorAll("li")].map((li) =>
+         const listItems = [...doc.querySelectorAll("li")].map((li) =>
           li.textContent.trim()
         );
+        doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
         const promotionOneLeft = imgUrls[0];
         const promotionOneRight = imgUrls[1];
         const featuredTitle = post.title.rendered;
@@ -107,51 +103,10 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
           paragraphs[4];
         document.getElementById("promo-1-terms").innerHTML = paragraphs[5];
         const promoOneListWrapper =
-          document.getElementById("promo-1-list").children;
+          document.getElementById("promo-1-list");
         for (let i = 0; i < listItems.length; ++i) {
-          promoOneListWrapper[i].innerHTML = listItems[i];
+          promoOneListWrapper.appendChild(document.createElement("li")).innerHTML = listItems[i];
         }
-        // else if (getPostId === 246) {
-        //   console.log(post.id);
-        //   console.log(getPostId)
-        //   const imgUrls = [];
-        //   const parser = new DOMParser();
-        //   const dataContent = data[post].content.rendered;
-        //   const doc = parser.parseFromString(dataContent, "text/html");
-        //   const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
-        //     p.textContent.trim()
-        //   );
-        //   doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
-        //   const listItems = [...doc.querySelectorAll("li")].map((li) =>
-        //     li.textContent.trim()
-        //   );
-        //   const promotionOneLeft = imgUrls[0];
-        //   const promotionOneRight = imgUrls[1];
-        //   const featuredTitle = data[post].title.rendered;
-        //   document
-        //     .getElementById("promotion-0-left")
-        //     .setAttribute("src", promotionOneLeft);
-        //   document
-        //     .getElementById("promotion-0-right")
-        //     .setAttribute("src", promotionOneRight);
-        //   document.getElementById("promo-0-title").innerHTML = featuredTitle;
-        //   document.getElementById("promo-0-upper-text").innerHTML =
-        //     paragraphs[0];
-        //   document.getElementById("promo-0-offers-deadline").innerHTML =
-        //     paragraphs[2];
-        //   document.getElementById("promo-0-bottom-text").innerHTML =
-        //     paragraphs[1];
-        //   document.getElementById("promo-0-offers-list-title").innerHTML =
-        //     paragraphs[3];
-        //   document.getElementById("promo-0-additional-inclusions").innerHTML =
-        //     paragraphs[4];
-        //   document.getElementById("promo-0-terms").innerHTML = paragraphs[5];
-        //   const promoOneListWrapper =
-        //     document.getElementById("promo-0-list").children;
-        //   for (let i = 0; i < listItems.length; ++i) {
-        //     promoOneListWrapper[i].innerHTML = listItems[i];
-        //   }
-        // }
       });
     }
   })
