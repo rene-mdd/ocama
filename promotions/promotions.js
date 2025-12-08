@@ -1,4 +1,4 @@
-var wordpressBaseUrl = "http://ocama.docksal.site";
+var wordpressBaseUrl = "https://clone.wpbackend.ocama.com";
 async function postData(urlPost) {
   // Default options are marked with *
   const responsePost = await fetch(urlPost, {
@@ -15,6 +15,7 @@ async function postData(urlPost) {
   });
   if (responsePost?.ok) {
     const resultPost = await responsePost.json();
+    console.log(resultPost)
     return resultPost;
   } else {
     return null;
@@ -37,6 +38,7 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const doc = parser.parseFromString(dataContent, "text/html");
         const featuredImage =
           organizedPosts[post]._embedded?.["wp:featuredmedia"]?.[0];
+          console.log(featuredImage)
         const featuredImgAlt = featuredImage.alt_text;
         const featuredImgCaption = featuredImage.caption?.rendered;
         const featuredDescription = featuredImage.description.raw;
