@@ -11239,7 +11239,7 @@ html :where(img[class*="wp-image-"]) {
   text-decoration: underline;
   margin: 30px 0 30px 0;
 }
-.hotale-page-wrapper .promotion-wrapper {
+.hotale-page-wrapper .promotion-0-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -11299,4 +11299,10 @@ html :where(img[class*="wp-image-"]) {
 
 .thin-x::after {
   transform: rotate(-45deg);
+}
+
+/* hide promotions */
+
+#promotion-0-container, #promotion-1-container {
+  display: none;
 }
