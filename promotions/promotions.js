@@ -56,7 +56,7 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         document.querySelector(`#go-to-promo-${post}`).dataset.apiLink =
           data[post].id;
         document.addEventListener("click", function (e) {
-          console.log(e.target.matches("a[data-api-link]"))
+          console.log(e.target.matches("a[data-api-link]"));
           if (e.target.matches("a[data-api-link]")) {
             const postId = e.target.dataset.apiLink;
             sessionStorage.setItem("selectedPostId", postId);
@@ -70,51 +70,49 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
     ).length;
     if (!!areWeInPromotionOne) {
       const getPostId = sessionStorage.getItem("selectedPostId");
-      console.log(getPostId)
-      for (let post = 0; post <= data.length - 1; ++post) {
-        if (getPostId === 13) {
-          console.log(data[post]);
-          const imgUrls = [];
-          const parser = new DOMParser();
-          const dataContent = data[post].content.rendered;
-          const doc = parser.parseFromString(dataContent, "text/html");
-          const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
-            p.textContent.trim()
-          );
-          doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
-          const listItems = [...doc.querySelectorAll("li")].map((li) =>
-            li.textContent.trim()
-          );
-          const promotionOneLeft = imgUrls[0];
-          const promotionOneRight = imgUrls[1];
-          const featuredTitle = data[post].title.rendered;
-          document
-            .getElementById("promotion-1-left")
-            .setAttribute("src", promotionOneLeft);
-          document
-            .getElementById("promotion-1-right")
-            .setAttribute("src", promotionOneRight);
-          document.getElementById("promo-featured-title").innerHTML =
-            featuredTitle;
-          document.getElementById("promo-1-upper-text").innerHTML =
-            paragraphs[0];
-          document.getElementById("promo-1-offers-deadline").innerHTML =
-            paragraphs[2];
-          document.getElementById("promo-1-bottom-text").innerHTML =
-            paragraphs[1];
-          document.getElementById("promo-1-offers-list-title").innerHTML =
-            paragraphs[3];
-          document.getElementById("promo-1-additional-inclusions").innerHTML =
-            paragraphs[4];
-          document.getElementById("promo-1-terms").innerHTML = paragraphs[5];
-          const promoOneListWrapper =
-            document.getElementById("promo-1-list").children;
-          for (let i = 0; i < listItems.length; ++i) {
-            promoOneListWrapper[i].innerHTML = listItems[i];
-          }
-        } 
+      postData(
+        `${wordpressBaseUrl}/wp-json/wp/v2/posts/${getPostId}?_embed=1`
+      ).then((post) => {
+        if (!post) return;
+        const imgUrls = [];
+        const parser = new DOMParser();
+        const dataContent = post.content.rendered;
+        const doc = parser.parseFromString(dataContent, "text/html");
+        const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
+          p.textContent.trim()
+        );
+        doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
+        const listItems = [...doc.querySelectorAll("li")].map((li) =>
+          li.textContent.trim()
+        );
+        const promotionOneLeft = imgUrls[0];
+        const promotionOneRight = imgUrls[1];
+        const featuredTitle = post.title.rendered;
+        document
+          .getElementById("promotion-1-left")
+          .setAttribute("src", promotionOneLeft);
+        document
+          .getElementById("promotion-1-right")
+          .setAttribute("src", promotionOneRight);
+        document.getElementById("promo-featured-title").innerHTML =
+          featuredTitle;
+        document.getElementById("promo-1-upper-text").innerHTML = paragraphs[0];
+        document.getElementById("promo-1-offers-deadline").innerHTML =
+          paragraphs[2];
+        document.getElementById("promo-1-bottom-text").innerHTML =
+          paragraphs[1];
+        document.getElementById("promo-1-offers-list-title").innerHTML =
+          paragraphs[3];
+        document.getElementById("promo-1-additional-inclusions").innerHTML =
+          paragraphs[4];
+        document.getElementById("promo-1-terms").innerHTML = paragraphs[5];
+        const promoOneListWrapper =
+          document.getElementById("promo-1-list").children;
+        for (let i = 0; i < listItems.length; ++i) {
+          promoOneListWrapper[i].innerHTML = listItems[i];
+        }
         // else if (getPostId === 246) {
-        //   console.log(data[post].id);
+        //   console.log(post.id);
         //   console.log(getPostId)
         //   const imgUrls = [];
         //   const parser = new DOMParser();
@@ -153,11 +151,8 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         //   for (let i = 0; i < listItems.length; ++i) {
         //     promoOneListWrapper[i].innerHTML = listItems[i];
         //   }
-        // } 
-        else {
-          return null;
-        }
-      }
+        // }
+      });
     }
   })
   .catch((err) => {
