@@ -7,7 +7,7 @@ async function postData(urlPost) {
       method: "GET",
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
+      credentials: "omit", // include, *same-origin, omit
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -20,9 +20,9 @@ async function postData(urlPost) {
       return null;
     }
     const resultPost = await responsePost.json();
-    console.log(resultPost);
     return resultPost;
   } catch (error) {
+    console.error("Fetch error:", err);
     return null;
   }
 }
@@ -43,7 +43,6 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const doc = parser.parseFromString(dataContent, "text/html");
         const featuredImage =
           organizedPosts[post]._embedded?.["wp:featuredmedia"]?.[0];
-        console.log(featuredImage);
         const featuredImgAlt = featuredImage.alt_text;
         const featuredImgCaption = featuredImage.caption?.rendered;
         const featuredDescription = featuredImage.description.raw;
