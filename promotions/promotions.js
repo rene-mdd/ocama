@@ -1,4 +1,4 @@
-var wordpressBaseUrl = "https://clone.wpbackend.ocama.com";
+var wordpressBaseUrl = "https://ocama.com/wpbackend.ocama.com/";
 async function postData(urlPost) {
   // Default options are marked with *
   try {
