@@ -11206,6 +11206,7 @@ html :where(img[class*="wp-image-"]) {
   flex-direction: column;
   max-width: 420px;
   padding: 0 10px;
+  margin-right: auto;
 }
 .hotale-page-wrapper .promo-1 .offer-container li {
   font-size: 18px;
@@ -11260,6 +11261,9 @@ html :where(img[class*="wp-image-"]) {
   .hotale-page-wrapper .promotions-container .single-promo-container h3 {
     font-size: 36px;
   }
+  .hotale-page-wrapper .promo-1 {
+  max-width: 880px;
+}
 }
 @media only screen and (max-width: 860px) {
   .hotale-page-wrapper .promotions-container {
