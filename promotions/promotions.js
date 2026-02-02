@@ -1,4 +1,4 @@
-var wordpressBaseUrl = "https://clone.wpbackend.ocama.com";
+var wordpressBaseUrl = "https://ocama.com/wpbackend.ocama.com";
 async function postData(urlPost) {
   // Default options are marked with *
   try {
@@ -58,22 +58,23 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
           .setAttribute("src", featuredImage.source_url);
         document.querySelector(`#go-to-promo-${post}`).dataset.apiLink =
           data[post].id;
-        document.addEventListener("click", function (e) {
-          if (e.target.matches("a[data-api-link]")) {
-            const postId = e.target.dataset.apiLink;
-            sessionStorage.setItem("selectedPostId", postId);
-          }
-        });
+        // const url = new URL(window.location.href).pathname;
+        const postId = data[post].id
+        const promoUrl = `/promotions/promo-${postId}/index.html`;
+        const link = document.getElementById(`go-to-promo-${post}`);
+        link.href = promoUrl;
       }
     }
     // promotion 1
     const areWeInPromotionOne = document.querySelectorAll(
-      "#promotion-1-active"
+      "#promotion-1-active",
     ).length;
     if (!!areWeInPromotionOne) {
-      const getPostId = sessionStorage.getItem("selectedPostId");
+      const url = new URL(window.location.href).pathname;
+      const getPostId = url.match(/promo-(\d+)/)[1];
+      console.log(getPostId)
       postData(
-        `${wordpressBaseUrl}/wp-json/wp/v2/posts/${getPostId}?_embed=1`
+        `${wordpressBaseUrl}/wp-json/wp/v2/posts/${getPostId}?_embed=1`,
       ).then((post) => {
         if (!post) return;
         const imgUrls = [];
@@ -81,10 +82,10 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const dataContent = post.content.rendered;
         const doc = parser.parseFromString(dataContent, "text/html");
         const paragraphs = [...doc.querySelectorAll("p")].map((p) =>
-          p.textContent.trim()
+          p.textContent.trim(),
         );
         const listItems = [...doc.querySelectorAll("li")].map((li) =>
-          li.textContent.trim()
+          li.textContent.trim(),
         );
         doc.querySelectorAll("img").forEach((img) => imgUrls.push(img.src));
         const promotionOneLeft = imgUrls[0];
@@ -111,7 +112,7 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const promoOneListWrapper = document.getElementById("promo-1-list");
         for (let i = 0; i < listItems.length; ++i) {
           promoOneListWrapper.appendChild(
-            document.createElement("li")
+            document.createElement("li"),
           ).innerHTML = listItems[i];
         }
       });
