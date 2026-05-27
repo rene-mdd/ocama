@@ -22,7 +22,7 @@ async function postData(urlPost) {
     const resultPost = await responsePost.json();
     return resultPost;
   } catch (error) {
-    console.error("Fetch error:", err);
+    console.error("Fetch error:", error);
     return null;
   }
 }
@@ -43,9 +43,12 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         const doc = parser.parseFromString(dataContent, "text/html");
         const featuredImage =
           organizedPosts[post]._embedded?.["wp:featuredmedia"]?.[0];
-        const featuredImgAlt = featuredImage.alt_text;
-        const featuredImgCaption = featuredImage.caption?.rendered;
-        const featuredDescription = featuredImage.description.raw;
+
+        const featuredImgAlt = featuredImage?.alt_text ?? "";
+        const featuredImgCaption = featuredImage?.caption?.rendered ?? "";
+        const featuredDescription = featuredImage?.description?.rendered ?? "";
+        const featuredImgUrl = featuredImage?.source_url ?? "";
+
         document.getElementById(`promo-${post}-title`).innerHTML =
           featuredTitle;
         document.getElementById(`featured-${post}-caption`).innerHTML =
@@ -53,14 +56,18 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
         document.getElementById(`promo-${post}-alt`).innerHTML = featuredImgAlt;
         document.getElementById(`featured-${post}-description`).innerHTML =
           featuredDescription;
-        document
-          .getElementById(`featured-${post}-promotion-img`)
-          .setAttribute("src", featuredImage.source_url);
+
+        if (featuredImgUrl) {
+          document
+            .getElementById(`featured-${post}-promotion-img`)
+            .setAttribute("src", featuredImgUrl);
+        }
         document.querySelector(`#go-to-promo-${post}`).dataset.apiLink =
           data[post].id;
         // const url = new URL(window.location.href).pathname;
-        const postId = data[post].id
+        const postId = data[post].id;
         const promoUrl = `/promotions/promo-${postId}/index.html`;
+        console.log(promoUrl);
         const link = document.getElementById(`go-to-promo-${post}`);
         link.href = promoUrl;
       }
