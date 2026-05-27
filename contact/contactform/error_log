@@ -1,0 +1,5 @@
+[28-Nov-2025 22:45:23 UTC] PHP Warning:  Undefined array key "Email" in /home/bg2rtda742w4/public_html/contact/contactform/contactengine.php on line 3
+[28-Nov-2025 22:45:23 UTC] PHP Warning:  Undefined array key "Name" in /home/bg2rtda742w4/public_html/contact/contactform/contactengine.php on line 5
+[28-Nov-2025 22:45:23 UTC] PHP Warning:  Undefined array key "Tel" in /home/bg2rtda742w4/public_html/contact/contactform/contactengine.php on line 7
+[28-Nov-2025 22:45:23 UTC] PHP Warning:  Undefined array key "Email" in /home/bg2rtda742w4/public_html/contact/contactform/contactengine.php on line 8
+[28-Nov-2025 22:45:23 UTC] PHP Warning:  Undefined array key "Message" in /home/bg2rtda742w4/public_html/contact/contactform/contactengine.php on line 9

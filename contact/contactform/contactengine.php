@@ -1,43 +1,36 @@
 <?php
-
-$EmailFrom = Trim(stripslashes($_POST['Email'])); 
 $EmailTo = "reservations@ocama.com";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Subject = "Website inquiry from $Name ";
-$Tel = Trim(stripslashes($_POST['Tel'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
 
-// validation
-$validationOK=true;
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-  exit;
+$Name = trim($_POST['Name'] ?? '');
+$Email = trim($_POST['Email'] ?? '');
+// $Tel = trim($_POST['Tel'] ?? '');
+$City = trim($_POST['City'] ?? '');
+$Message = trim($_POST['Message'] ?? '');
+
+if ($Name === '' || $Email === '' || $Message === '' || !filter_var($Email, FILTER_VALIDATE_EMAIL)) {
+    header("Location: error.htm");
+    exit;
 }
 
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
-$Body .= "\n";
-$Body .= "Tel: ";
-$Body .= $Tel;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
-$Body .= "\n";
+$Subject = "Website inquiry from $Name";
 
-// send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+$Body = "Name: $Name\n";
+$Body .= "City: $City\n";
+// $Body .= "Tel: $Tel\n";
+$Body .= "Email: $Email\n";
+$Body .= "Message: $Message\n";
 
-// redirect to success page 
-if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+$headers = [];
+$headers[] = "From: OCAMA Website <reservations@ocama.com>";
+$headers[] = "Reply-To: $Name <$Email>";
+$headers[] = "Content-Type: text/plain; charset=UTF-8";
+
+$success = mail($EmailTo, $Subject, $Body, implode("\r\n", $headers));
+
+if ($success) {
+    header("Location: contactthanks.php");
+} else {
+    header("Location: error.htm");
 }
-else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-}
+exit;
 ?>

@@ -72,7 +72,6 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
     if (!!areWeInPromotionOne) {
       const url = new URL(window.location.href).pathname;
       const getPostId = url.match(/promo-(\d+)/)[1];
-      console.log(getPostId)
       postData(
         `${wordpressBaseUrl}/wp-json/wp/v2/posts/${getPostId}?_embed=1`,
       ).then((post) => {
