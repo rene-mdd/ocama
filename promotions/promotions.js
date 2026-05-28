@@ -90,17 +90,13 @@ postData(`${wordpressBaseUrl}/wp-json/wp/v2/posts?categories=6&_embed=1`)
 
         // FIX: use organizedPosts[post].id, not data[post].id
         const postId = organizedPosts[post].id;
-
-        if (document.querySelector(`#go-to-promo-${post}`)) {
-          document.querySelector(`#go-to-promo-${post}`).dataset.apiLink =
-            postId;
-        }
-
-        const promoUrl = `/promotions/promo-${postId}/index.html`;
-        console.log(promoUrl);
-
+        const basePath =
+          location.hostname === "rene-mdd.github.io" ? "/ocama" : "";
+        const promoUrl = `${basePath}/promotions/promo-${postId}/index.html`;
         const link = document.getElementById(`go-to-promo-${post}`);
+
         if (link) {
+          link.dataset.apiLink = postId;
           link.href = promoUrl;
         }
       }
